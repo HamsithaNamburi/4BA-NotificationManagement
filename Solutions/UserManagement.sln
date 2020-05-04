@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagement", "..\SVC_Us
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotificationManagementDBEntity", "..\SHR_DBEntity\NotificationManagementDBEntity.csproj", "{709CF1CD-F11C-4876-B2C0-6196B8171AAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagementTestCases", "..\SHR_TestCases\UserManagementTestCases\UserManagementTestCases.csproj", "{1C2A63EF-AF4B-450F-8D9A-C86F72BDCAB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagementTestCases", "..\SHR_TestCases\UserManagementTestCases\UserManagementTestCases.csproj", "{1C2A63EF-AF4B-450F-8D9A-C86F72BDCAB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHR_Model", "..\SHR_Model\SHR_Model.csproj", "{5FA156F8-5752-46B5-B42C-62A6F44BAB09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SHR_Model", "..\SHR_Model\SHR_Model.csproj", "{5FA156F8-5752-46B5-B42C-62A6F44BAB09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{02F78D0D-988F-4969-891A-FC7DE75F8382}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +38,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1C2A63EF-AF4B-450F-8D9A-C86F72BDCAB2} = {02F78D0D-988F-4969-891A-FC7DE75F8382}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C7952CC-E97C-4B65-8A26-BA0E257D9155}

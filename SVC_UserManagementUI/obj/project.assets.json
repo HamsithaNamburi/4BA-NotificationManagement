@@ -6006,23 +6006,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\pandu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\NotificationManagement\\SVC_UserManagementUI\\UserManagementUI.csproj",
+      "projectUniqueName": "D:\\NotificationManagementUpaddate\\4BA-NotificationManagement\\4BA-NotificationManagement\\SVC_UserManagementUI\\UserManagementUI.csproj",
       "projectName": "UserManagementUI",
-      "projectPath": "F:\\NotificationManagement\\SVC_UserManagementUI\\UserManagementUI.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "F:\\NotificationManagement\\SVC_UserManagementUI\\obj\\",
+      "projectPath": "D:\\NotificationManagementUpaddate\\4BA-NotificationManagement\\4BA-NotificationManagement\\SVC_UserManagementUI\\UserManagementUI.csproj",
+      "packagesPath": "C:\\Users\\pandu\\.nuget\\packages\\",
+      "outputPath": "D:\\NotificationManagementUpaddate\\4BA-NotificationManagement\\4BA-NotificationManagement\\SVC_UserManagementUI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pandu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6069,7 +6065,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

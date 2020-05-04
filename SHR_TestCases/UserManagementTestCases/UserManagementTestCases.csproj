@@ -16,4 +16,8 @@
     <ProjectReference Include="..\..\SHR_DBEntity\NotificationManagementDBEntity.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Helper\" />
+  </ItemGroup>
+
 </Project>

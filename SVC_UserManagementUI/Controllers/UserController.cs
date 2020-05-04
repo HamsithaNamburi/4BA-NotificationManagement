@@ -93,7 +93,49 @@ namespace UserManagementUI.Controllers
                     }
                     //userDetails1 = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
                 }
+
             }
+        }
+        [HttpGet]
+        public async Task<IActionResult> UpdateUser(string userid)
+        {
+            UserDetails user = new UserDetails();
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync("http://localhost:62518/api/v1/UpdateUser/" + userid))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    user = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
+                }
+            }
+            return View(user);
+        }
+        [HttpPost]
+        public async Task<IActionResult> UpdateReservation(UserDetails userdetails)
+        {
+            UserDetails user = new UserDetails();
+            int  userid = user.UserId;
+            using (var httpClient = new HttpClient())
+            {
+                var content = new MultipartFormDataContent();
+                content.Add(new StringContent(user.UserId.ToString()), "Empid");
+                content.Add(new StringContent(user.FirstName), "FirstName");
+                content.Add(new StringContent(user.LastName), "LastName");
+                content.Add(new StringContent(user.UserName), "UserName");
+                content.Add(new StringContent(user.UserPassword), "Password");
+                content.Add(new StringContent(user.UpdatedDate.ToString()), "UpdatedDate");
+                content.Add(new StringContent(user.ContactNumber), "contactNumber");
+                content.Add(new StringContent(user.EmailAddr), "EmailAddress");
+                content.Add(new StringContent(user.UserAddress), "UserAddress");
+
+                using (var response = await httpClient.PutAsync("http://localhost:62518/api/v1/UpdateUser/", content))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    ViewBag.Result = "Success";
+                    user = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
+                }
+            }
+            return RedirectToAction("Index");
         }
     }
 }
