@@ -11,6 +11,10 @@ using NotificationManagementDBEntity.Models;
 using NotificationManagementDBEntity.Repositories;
 using UserManagement.Helper;
 using Microsoft.OpenApi.Models;
+//using log4net.Repository.Hierarchy;
+using log4net;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Configuration;
 
 namespace UserManagement
 {
@@ -32,13 +36,13 @@ namespace UserManagement
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            loggerFactory.AddLog4Net();
             app.UseRouting();
             app.UseSwagger();
             app.UseSwaggerUI(c =>

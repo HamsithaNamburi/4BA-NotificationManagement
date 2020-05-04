@@ -34,3 +34,17 @@ D:\NotificationManagementUpaddate\4BA-NotificationManagement\4BA-NotificationMan
 D:\NotificationManagementUpaddate\4BA-NotificationManagement\4BA-NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.csproj.CopyComplete
 D:\NotificationManagementUpaddate\4BA-NotificationManagement\4BA-NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.dll
 D:\NotificationManagementUpaddate\4BA-NotificationManagement\4BA-NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.pdb
+C:\NotificationUpdate\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\NotificationManagementDBEntity.deps.json
+C:\NotificationUpdate\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\NotificationManagementDBEntity.runtimeconfig.json
+C:\NotificationUpdate\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\NotificationManagementDBEntity.runtimeconfig.dev.json
+C:\NotificationUpdate\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\NotificationManagementDBEntity.dll
+C:\NotificationUpdate\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\NotificationManagementDBEntity.pdb
+C:\NotificationUpdate\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\SHR_Model.dll
+C:\NotificationUpdate\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\SHR_Model.pdb
+C:\NotificationUpdate\4BA-NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.csprojAssemblyReference.cache
+C:\NotificationUpdate\4BA-NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.AssemblyInfoInputs.cache
+C:\NotificationUpdate\4BA-NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.AssemblyInfo.cs
+C:\NotificationUpdate\4BA-NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.csproj.CopyComplete
+C:\NotificationUpdate\4BA-NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.dll
+C:\NotificationUpdate\4BA-NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.pdb
+C:\NotificationUpdate\4BA-NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.genruntimeconfig.cache

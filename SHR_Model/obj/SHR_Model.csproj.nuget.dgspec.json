@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NotificationManagementUpaddate\\4BA-NotificationManagement\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {}
+    "C:\\NotificationUpdate\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {}
   },
   "projects": {
-    "D:\\NotificationManagementUpaddate\\4BA-NotificationManagement\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
+    "C:\\NotificationUpdate\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NotificationManagementUpaddate\\4BA-NotificationManagement\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj",
+        "projectUniqueName": "C:\\NotificationUpdate\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj",
         "projectName": "SHR_Model",
-        "projectPath": "D:\\NotificationManagementUpaddate\\4BA-NotificationManagement\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj",
-        "packagesPath": "C:\\Users\\pandu\\.nuget\\packages\\",
-        "outputPath": "D:\\NotificationManagementUpaddate\\4BA-NotificationManagement\\4BA-NotificationManagement\\SHR_Model\\obj\\",
+        "projectPath": "C:\\NotificationUpdate\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\NotificationUpdate\\4BA-NotificationManagement\\SHR_Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pandu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -37,6 +37,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -52,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
