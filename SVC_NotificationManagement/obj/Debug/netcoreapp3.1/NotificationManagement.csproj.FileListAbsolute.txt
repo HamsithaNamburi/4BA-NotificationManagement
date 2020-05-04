@@ -62,3 +62,5 @@ F:\NotificationManagement\SVC_NotificationManagement\bin\Debug\netcoreapp3.1\Swa
 F:\NotificationManagement\SVC_NotificationManagement\obj\Debug\netcoreapp3.1\NotificationManagement.csproj.CoreCompileInputs.cache
 F:\NotificationManagement\SVC_NotificationManagement\obj\Debug\netcoreapp3.1\NotificationManagement.MvcApplicationPartsAssemblyInfo.cs
 F:\NotificationManagement\SVC_NotificationManagement\obj\Debug\netcoreapp3.1\NotificationManagement.MvcApplicationPartsAssemblyInfo.cache
+F:\NotificationManagement\SVC_NotificationManagement\bin\Debug\netcoreapp3.1\SHR_Model.dll
+F:\NotificationManagement\SVC_NotificationManagement\bin\Debug\netcoreapp3.1\SHR_Model.pdb

@@ -21,9 +21,9 @@ namespace NotificationManagement
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddDbContext<NotificationDbContext>();
-            services.AddTransient<INotificationManagementHelper,NotificationMangementHelper>();
-            services.AddTransient<INotificationRepository,NotificationRepository>();
+            services.AddSingleton<NotificationDbContext>();
+            services.AddSingleton<INotificationManagementHelper,NotificationMangementHelper>();
+            services.AddSingleton<INotificationRepository,NotificationRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

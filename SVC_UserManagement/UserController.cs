@@ -42,6 +42,19 @@ namespace UserManagement
                 return NotFound(ex.Message);
             }
         }
+        [HttpGet]
+        [Route("GetAllUsers")]
+        public async Task<IActionResult> GetAllUsers()
+        {
+            try
+            {
+                return Ok(await _iUserManagementHelper.GetAllUsers());
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -65,24 +78,6 @@ namespace UserManagement
             catch (Exception ex)
             {
                 return NotFound(ex.Message);
-            }
-        }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="userDetails"></param>
-        /// <returns></returns>
-        [HttpGet]
-        [Route("RegisterUser1")]
-        public async Task<IActionResult> RegisterUser1(UserDetails userDetails)
-        {
-            try
-            {
-                return Ok(await _iUserManagementHelper.RegisterUser(userDetails));
-            }
-            catch (Exception ex)
-            {
-                return NotFound(ex.InnerException.Message);
             }
         }
         [HttpPost]

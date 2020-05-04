@@ -1545,13 +1545,22 @@
       },
       "NotificationManagementDBEntity/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.3"
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.3",
+          "SHR_Model": "1.0.0"
         },
         "runtime": {
           "NotificationManagementDBEntity.dll": {}
         },
         "compile": {
           "NotificationManagementDBEntity.dll": {}
+        }
+      },
+      "SHR_Model/1.0.0": {
+        "runtime": {
+          "SHR_Model.dll": {}
+        },
+        "compile": {
+          "SHR_Model.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -4064,6 +4073,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "NotificationManagementDBEntity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SHR_Model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

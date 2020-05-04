@@ -14,6 +14,7 @@ namespace UserManagement.Helper
 		Task<bool> UpdateUser(UserDetails userDetails);
 		Task<UserDetails> UserLogin(Login userLogin);
 		Task<UserDetails> GetUser(int userId);
+		Task<List<UserDetails>> GetAllUsers();
 	}
 	public class UserManagementHelper : IUserManagementHelper
 	{
@@ -65,6 +66,19 @@ namespace UserManagement.Helper
 				//	return 1;
 				//else
 				//	return 0;
+			}
+			catch
+			{
+				throw;
+			}
+		}
+
+		public async Task<List<UserDetails>> GetAllUsers()
+		{
+			try
+			{
+				List<UserDetails> userDetails = await _iUserRepository.GetAllUsers();
+				return userDetails;	
 			}
 			catch
 			{

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using NotificationManagementDBEntity.Models;
 using Microsoft.EntityFrameworkCore.Storage;
 using SHR_Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace UserManagement.Helper
 {
@@ -83,6 +84,19 @@ namespace UserManagement.Helper
                 }
             }
             catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        public async Task<List<UserDetails>> GetAllUsers()
+        {
+            try
+            {
+                List<UserDetails> userDetails = await _notificationDBContext.UserDetails.ToListAsync();
+                return userDetails;
+            }
+            catch
             {
                 throw;
             }
