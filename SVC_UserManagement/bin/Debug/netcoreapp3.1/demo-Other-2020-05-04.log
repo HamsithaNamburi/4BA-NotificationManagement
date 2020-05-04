@@ -1,0 +1,2 @@
+2020-05-04 09:18:25.7164||DEBUG|UserManagement.Program|init main function |url: |action: 
+2020-05-04 09:19:06.4457||INFO|UserManagement.UserController|Login was called.. |url: http://localhost/api/v1/UserLogin|action: UserLogin

@@ -1,0 +1,9 @@
+F:\NotificationManagement\SHR_Model\bin\Debug\netcoreapp3.1\SHR_Model.deps.json
+F:\NotificationManagement\SHR_Model\bin\Debug\netcoreapp3.1\SHR_Model.dll
+F:\NotificationManagement\SHR_Model\bin\Debug\netcoreapp3.1\SHR_Model.pdb
+F:\NotificationManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.csprojAssemblyReference.cache
+F:\NotificationManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.csproj.CoreCompileInputs.cache
+F:\NotificationManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.AssemblyInfoInputs.cache
+F:\NotificationManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.AssemblyInfo.cs
+F:\NotificationManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.dll
+F:\NotificationManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.pdb

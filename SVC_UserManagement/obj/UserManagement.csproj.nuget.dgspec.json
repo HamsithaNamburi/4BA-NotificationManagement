@@ -29,7 +29,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
+                "projectPath": "F:\\NotificationManagement\\SHR_Model\\SHR_Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -77,6 +81,61 @@
         }
       }
     },
+    "F:\\NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\NotificationManagement\\SHR_Model\\SHR_Model.csproj",
+        "projectName": "SHR_Model",
+        "projectPath": "F:\\NotificationManagement\\SHR_Model\\SHR_Model.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "F:\\NotificationManagement\\SHR_Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "F:\\NotificationManagement\\SVC_UserManagement\\UserManagement.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -105,6 +164,9 @@
             "projectReferences": {
               "F:\\NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj": {
                 "projectPath": "F:\\NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj"
+              },
+              "F:\\NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
+                "projectPath": "F:\\NotificationManagement\\SHR_Model\\SHR_Model.csproj"
               }
             }
           }
@@ -118,9 +180,31 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.9.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[5.0.0-rc3, )"
+              "version": "[5.4.1, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.8, )"
             }
           },
           "imports": [

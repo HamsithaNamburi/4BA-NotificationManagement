@@ -18,3 +18,6 @@ F:\NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManag
 F:\NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.pdb
 F:\NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.genruntimeconfig.cache
 F:\NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.csproj.CoreCompileInputs.cache
+F:\NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\SHR_Model.dll
+F:\NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\SHR_Model.pdb
+F:\NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.csproj.CopyComplete

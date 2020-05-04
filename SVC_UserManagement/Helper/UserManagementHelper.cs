@@ -1,5 +1,6 @@
 ﻿using NotificationManagementDBEntity.Models;
 using NotificationManagementDBEntity.Repositories;
+using SHR_Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace UserManagement.Helper
 	{
 		Task<bool> RegisterUser(UserDetails userDetails);
 		Task<bool> UpdateUser(UserDetails userDetails);
-		Task<UserDetails> Login(string userName, string userPassword);
+		Task<UserDetails> UserLogin(Login userLogin);
 		Task<UserDetails> GetUser(int userId);
 	}
 	public class UserManagementHelper : IUserManagementHelper
@@ -27,10 +28,6 @@ namespace UserManagement.Helper
 			{
 				bool userId = await _iUserRepository.RegisterUser(userDetails);
 				return userId;
-				//if (userId == true)
-				//	return 1;
-				//else
-				//	return 0;
 			}
 			catch
 			{
@@ -54,9 +51,9 @@ namespace UserManagement.Helper
 				throw;
 			}
 		}
-		public async Task<UserDetails> Login(string userName, string userPassword)
+		public async Task<UserDetails> UserLogin(Login userLogin)
 		{
-			return  await _iUserRepository.Login(userName, userPassword);
+			return  await _iUserRepository.UserLogin(userLogin);
 		}
 		public async Task<bool> UpdateUser(UserDetails userDetails)
 		{

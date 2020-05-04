@@ -1,6 +1,4 @@
 F:\NotificationManagement\SVC_NotificationManagement\obj\Debug\netcoreapp3.1\NotificationManagement.csprojAssemblyReference.cache
-F:\NotificationManagement\SVC_NotificationManagement\obj\Debug\netcoreapp3.1\NotificationManagement.csproj.CoreCompileInputs.cache
-F:\NotificationManagement\SVC_NotificationManagement\obj\Debug\netcoreapp3.1\NotificationManagement.MvcApplicationPartsAssemblyInfo.cache
 F:\NotificationManagement\SVC_NotificationManagement\obj\Debug\netcoreapp3.1\NotificationManagement.AssemblyInfoInputs.cache
 F:\NotificationManagement\SVC_NotificationManagement\obj\Debug\netcoreapp3.1\NotificationManagement.AssemblyInfo.cs
 F:\NotificationManagement\SVC_NotificationManagement\bin\Debug\netcoreapp3.1\appsettings.Development.json
@@ -51,3 +49,16 @@ F:\NotificationManagement\SVC_NotificationManagement\obj\Debug\netcoreapp3.1\sta
 F:\NotificationManagement\SVC_NotificationManagement\obj\Debug\netcoreapp3.1\NotificationManagement.dll
 F:\NotificationManagement\SVC_NotificationManagement\obj\Debug\netcoreapp3.1\NotificationManagement.pdb
 F:\NotificationManagement\SVC_NotificationManagement\obj\Debug\netcoreapp3.1\NotificationManagement.genruntimeconfig.cache
+F:\NotificationManagement\SVC_NotificationManagement\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+F:\NotificationManagement\SVC_NotificationManagement\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+F:\NotificationManagement\SVC_NotificationManagement\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+F:\NotificationManagement\SVC_NotificationManagement\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+F:\NotificationManagement\SVC_NotificationManagement\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+F:\NotificationManagement\SVC_NotificationManagement\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+F:\NotificationManagement\SVC_NotificationManagement\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+F:\NotificationManagement\SVC_NotificationManagement\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+F:\NotificationManagement\SVC_NotificationManagement\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\NotificationManagement\SVC_NotificationManagement\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\NotificationManagement\SVC_NotificationManagement\obj\Debug\netcoreapp3.1\NotificationManagement.csproj.CoreCompileInputs.cache
+F:\NotificationManagement\SVC_NotificationManagement\obj\Debug\netcoreapp3.1\NotificationManagement.MvcApplicationPartsAssemblyInfo.cs
+F:\NotificationManagement\SVC_NotificationManagement\obj\Debug\netcoreapp3.1\NotificationManagement.MvcApplicationPartsAssemblyInfo.cache

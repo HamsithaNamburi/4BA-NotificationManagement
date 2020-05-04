@@ -9,6 +9,7 @@ namespace NotificationManagementDBEntity.Models
         public string NotificationName { get; set; }
         public string Description { get; set; }
         public DateTime? CreatedDatetime { get; set; }
+        public DateTime? UpdateDate { get; set; }
         public int? UserId { get; set; }
 
         public virtual UserDetails User { get; set; }

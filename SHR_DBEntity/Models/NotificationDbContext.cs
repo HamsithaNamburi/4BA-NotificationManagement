@@ -32,7 +32,7 @@ namespace NotificationManagementDBEntity.Models
             modelBuilder.Entity<Notifications>(entity =>
             {
                 entity.HasKey(e => e.NotificationId)
-                    .HasName("PK__Notifica__20CF2E12A2B00AE0");
+                    .HasName("PK__Notifica__20CF2E1225509F09");
 
                 entity.Property(e => e.CreatedDatetime)
                     .HasColumnType("datetime")
@@ -47,10 +47,12 @@ namespace NotificationManagementDBEntity.Models
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
+                entity.Property(e => e.UpdateDate).HasColumnType("datetime");
+
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.Notifications)
                     .HasForeignKey(d => d.UserId)
-                    .HasConstraintName("FK__Notificat__UserI__46E78A0C");
+                    .HasConstraintName("FK__Notificat__UserI__4AB81AF0");
             });
 
             modelBuilder.Entity<UserDetails>(entity =>

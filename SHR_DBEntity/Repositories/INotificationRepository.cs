@@ -2,14 +2,15 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace NotificationManagementDBEntity.Repositories
 {
 	public interface INotificationRepository
 	{
-		public List<Notifications> GetAllNotifications(string userId);
-		public void AddNotification(Notifications notifications);
-		public void UpdateNotification(Notifications notifications);
-		public void DeleteNotification(string notificationId);
+		Task<List<Notifications>> GetAllNotifications(int userId);
+		Task<bool> AddNotification(Notifications notifications);
+		Task<bool> UpdateNotification(Notifications notifications);
+		Task<bool> DeleteNotification(int notificationId);
 	}
 }

@@ -10,7 +10,7 @@ using NotificationManagementDBEntity.Repositories;
 
 namespace NotificationManagement
 {
-	[Route("api/[controller]")]
+	[Route("api/v1")]
 	[ApiController]
 	public class NotificationController : Controller
 	{
@@ -19,26 +19,36 @@ namespace NotificationManagement
         {
             _notificationRepository = notificationRepository;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         [HttpGet]
-        [Route("GetAllNotifications/{id}")]
-        public IActionResult GetAllNotifications(string id)
+        [Route("GetAllNotifications/{UserId}")]
+        public async Task<IActionResult> GetAllNotifications(int userId)
         {
             try
             {
-                return Ok(_notificationRepository.GetAllNotifications(id));
+                return Ok(await _notificationRepository.GetAllNotifications(userId));
             }
             catch (Exception ex)
             {
                 return NotFound(ex.Message);
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="notifications"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("AddNotification")]
-        public IActionResult AddNotification(Notifications notifications)
+        public async Task<IActionResult> AddNotification(Notifications notifications)
         {
             try
             {
-                _notificationRepository.AddNotification(notifications);
+                await _notificationRepository.AddNotification(notifications);
                 return Ok();
             }
             catch (Exception ex)
@@ -46,13 +56,18 @@ namespace NotificationManagement
                 return NotFound(ex.Message);
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="notifications"></param>
+        /// <returns></returns>
         [HttpPut]
         [Route("UpdateNotification")]
-        public IActionResult UpdateNotification(Notifications notifications)
+        public async Task<IActionResult> UpdateNotification(Notifications notifications)
         {
             try
             {
-                _notificationRepository.UpdateNotification(notifications);
+               await _notificationRepository.UpdateNotification(notifications);
                 return Ok();
             }
             catch (Exception ex)
@@ -60,13 +75,18 @@ namespace NotificationManagement
                 return NotFound(ex.Message);
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="notificationId"></param>
+        /// <returns></returns>
         [HttpDelete]
-        [Route("DeleteNotification/{notificationid}")]
-        public IActionResult DeleteNotification(string notificationId)
+        [Route("DeleteNotification/{NotificationId}")]
+        public async Task<IActionResult> DeleteNotification(int notificationId)
         {
             try
             {
-                _notificationRepository.DeleteNotification(notificationId);
+                await _notificationRepository.DeleteNotification(notificationId);
                 return Ok();
             }
             catch (Exception ex)

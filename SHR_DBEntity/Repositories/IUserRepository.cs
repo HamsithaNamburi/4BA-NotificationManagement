@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using NotificationManagementDBEntity.Models;
+using SHR_Model;
 
 namespace NotificationManagementDBEntity.Repositories
 {
@@ -10,7 +8,7 @@ namespace NotificationManagementDBEntity.Repositories
 	{
 		Task<bool> RegisterUser(UserDetails userDetails);
 		Task<bool> UpdateUser(UserDetails userDetails);
-		Task<UserDetails> Login(string userName, string userPassword);
+		Task<UserDetails> UserLogin(Login userLogin);
 		Task<UserDetails> GetUser(int userId);
 	}
 }

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using NotificationManagementDBEntity.Models;
 using Microsoft.EntityFrameworkCore.Storage;
+using SHR_Model;
 
 namespace UserManagement.Helper
 {
@@ -30,11 +31,11 @@ namespace UserManagement.Helper
                 throw;
             }
         }
-        public async Task<UserDetails> Login(string userName, string userPassword)
+        public async Task<UserDetails> UserLogin(Login userLogin)
         {
             try
             {
-                UserDetails userDetails = _notificationDBContext.UserDetails.SingleOrDefault(i => i.UserName == userName && i.UserPassword == userPassword);
+                UserDetails userDetails = _notificationDBContext.UserDetails.SingleOrDefault(i => i.UserName == userLogin.userName && i.UserPassword == userLogin.userPassword);
                 if (userDetails == null)
                 {
                     return null;

@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using NotificationManagementDBEntity.Models;
 using NotificationManagementDBEntity.Repositories;
+using SHR_Model;
 using UserManagement.Helper;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -16,9 +18,11 @@ namespace UserManagement
 	public class UserController : Controller
 	{
         private readonly IUserManagementHelper _iUserManagementHelper;
-        public UserController(IUserManagementHelper iUserManagementHelper)
+        private readonly ILogger<UserController> _logger;
+        public UserController(IUserManagementHelper iUserManagementHelper,ILogger<UserController> logger)
         {
             _iUserManagementHelper = iUserManagementHelper;
+            _logger = logger;
         }
         /// <summary>
         /// 
@@ -45,15 +49,18 @@ namespace UserManagement
         /// <returns></returns>
         [HttpPost]
         [Route("UserLogin")]
-        public async Task<IActionResult> UserLogin(UserDetails userDetails1)
+        public async Task<IActionResult> UserLogin(Login userLogin)
         {
             try
             {
-                UserDetails userDetails= await _iUserManagementHelper.Login(userDetails1.UserName, userDetails1.UserPassword);
+                UserDetails userDetails= await _iUserManagementHelper.UserLogin(userLogin);
+                _logger.LogInformation("Login was called..");
                 if (userDetails == null)
                     return Ok("Invalid User");
                 else
+                {
                     return Ok(userDetails);
+                }
             }
             catch (Exception ex)
             {
@@ -65,6 +72,19 @@ namespace UserManagement
         /// </summary>
         /// <param name="userDetails"></param>
         /// <returns></returns>
+        [HttpGet]
+        [Route("RegisterUser1")]
+        public async Task<IActionResult> RegisterUser1(UserDetails userDetails)
+        {
+            try
+            {
+                return Ok(await _iUserManagementHelper.RegisterUser(userDetails));
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.InnerException.Message);
+            }
+        }
         [HttpPost]
         [Route("RegisterUser")]
         public async Task<IActionResult> RegisterUser(UserDetails userDetails)
