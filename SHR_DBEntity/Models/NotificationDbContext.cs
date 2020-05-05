@@ -4,42 +4,37 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace NotificationManagementDBEntity.Models
 {
-    public partial class NotificationDbContext : DbContext
+    public partial class NotificationDBContext : DbContext
     {
-        public NotificationDbContext()
+        public NotificationDBContext()
         {
         }
 
-        public NotificationDbContext(DbContextOptions<NotificationDbContext> options)
+        public NotificationDBContext(DbContextOptions<NotificationDBContext> options)
             : base(options)
         {
         }
 
-        public virtual DbSet<Notifications> Notifications { get; set; }
+        public virtual DbSet<Notification> Notification { get; set; }
         public virtual DbSet<UserDetails> UserDetails { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=LAPTOP-NCJ1L16F\\SQLEXPRESS;Database=NotificationDb;User Id=sa; Password=pass@word1;");
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+                optionsBuilder.UseSqlServer("Server=DESKTOP-FA0USB5\\SQLEXPRESS;Database=NotificationDB;User Id=sa; Password=158x1a0530;");
             }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Notifications>(entity =>
+            modelBuilder.Entity<Notification>(entity =>
             {
-                entity.HasKey(e => e.NotificationId)
-                    .HasName("PK__Notifica__20CF2E1225509F09");
+                entity.Property(e => e.CreateDate).HasColumnType("datetime");
 
-                entity.Property(e => e.CreatedDatetime)
-                    .HasColumnType("datetime")
-                    .HasDefaultValueSql("(getdate())");
-
-                entity.Property(e => e.Description)
-                    .HasMaxLength(250)
+                entity.Property(e => e.NotificationDesc)
+                    .HasMaxLength(500)
                     .IsUnicode(false);
 
                 entity.Property(e => e.NotificationName)
@@ -47,49 +42,47 @@ namespace NotificationManagementDBEntity.Models
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
-                entity.Property(e => e.UpdateDate).HasColumnType("datetime");
+                entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
 
                 entity.HasOne(d => d.User)
-                    .WithMany(p => p.Notifications)
+                    .WithMany(p => p.Notification)
                     .HasForeignKey(d => d.UserId)
-                    .HasConstraintName("FK__Notificat__UserI__4AB81AF0");
+                    .HasConstraintName("FK__Notificat__UserI__267ABA7A");
             });
 
             modelBuilder.Entity<UserDetails>(entity =>
             {
                 entity.HasKey(e => e.UserId)
-                    .HasName("PK__UserDeta__1788CC4C8F57EDD6");
+                    .HasName("PK__UserDeta__1788CC4CF2FF6269");
 
                 entity.HasIndex(e => e.UserName)
-                    .HasName("UQ__UserDeta__C9F2845619A714C7")
+                    .HasName("UQ__UserDeta__C9F284568DB0AFFB")
                     .IsUnique();
 
-                entity.Property(e => e.ContactNumber)
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
+                entity.Property(e => e.CreateDate).HasColumnType("datetime");
 
                 entity.Property(e => e.EmailAddr)
-                    .HasMaxLength(50)
+                    .IsRequired()
+                    .HasMaxLength(30)
                     .IsUnicode(false);
 
                 entity.Property(e => e.FirstName)
                     .IsRequired()
-                    .HasMaxLength(50)
+                    .HasMaxLength(30)
                     .IsUnicode(false);
 
                 entity.Property(e => e.LastName)
-                    .IsRequired()
-                    .HasMaxLength(50)
+                    .HasMaxLength(30)
                     .IsUnicode(false);
 
-                entity.Property(e => e.RegisteredDatetime)
-                    .HasColumnType("datetime")
-                    .HasDefaultValueSql("(getdate())");
+                entity.Property(e => e.PhoneNumber)
+                    .HasMaxLength(13)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
 
                 entity.Property(e => e.UserAddress)
-                    .HasMaxLength(250)
+                    .HasMaxLength(500)
                     .IsUnicode(false);
 
                 entity.Property(e => e.UserName)
@@ -99,7 +92,7 @@ namespace NotificationManagementDBEntity.Models
 
                 entity.Property(e => e.UserPassword)
                     .IsRequired()
-                    .HasMaxLength(50)
+                    .HasMaxLength(30)
                     .IsUnicode(false);
             });
 

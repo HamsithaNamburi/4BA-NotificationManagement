@@ -6006,20 +6006,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pandu\\.nuget\\packages\\": {}
+    "C:\\Users\\Devika\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\NotificationManagementUpaddate\\4BA-NotificationManagement\\4BA-NotificationManagement\\SVC_UserManagementUI\\UserManagementUI.csproj",
+      "projectUniqueName": "E:\\NotificationManagement\\4BA-NotificationManagement\\SVC_UserManagementUI\\UserManagementUI.csproj",
       "projectName": "UserManagementUI",
-      "projectPath": "D:\\NotificationManagementUpaddate\\4BA-NotificationManagement\\4BA-NotificationManagement\\SVC_UserManagementUI\\UserManagementUI.csproj",
-      "packagesPath": "C:\\Users\\pandu\\.nuget\\packages\\",
-      "outputPath": "D:\\NotificationManagementUpaddate\\4BA-NotificationManagement\\4BA-NotificationManagement\\SVC_UserManagementUI\\obj\\",
+      "projectPath": "E:\\NotificationManagement\\4BA-NotificationManagement\\SVC_UserManagementUI\\UserManagementUI.csproj",
+      "packagesPath": "C:\\Users\\Devika\\.nuget\\packages\\",
+      "outputPath": "E:\\NotificationManagement\\4BA-NotificationManagement\\SVC_UserManagementUI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\pandu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Devika\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -6065,7 +6070,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

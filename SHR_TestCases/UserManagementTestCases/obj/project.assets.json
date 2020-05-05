@@ -7924,20 +7924,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
+    "C:\\Users\\Devika\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\NotificationUpdate\\4BA-NotificationManagement\\SHR_TestCases\\UserManagementTestCases\\UserManagementTestCases.csproj",
+      "projectUniqueName": "E:\\NotificationManagement\\4BA-NotificationManagement\\SHR_TestCases\\UserManagementTestCases\\UserManagementTestCases.csproj",
       "projectName": "UserManagementTestCases",
-      "projectPath": "C:\\NotificationUpdate\\4BA-NotificationManagement\\SHR_TestCases\\UserManagementTestCases\\UserManagementTestCases.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\NotificationUpdate\\4BA-NotificationManagement\\SHR_TestCases\\UserManagementTestCases\\obj\\",
+      "projectPath": "E:\\NotificationManagement\\4BA-NotificationManagement\\SHR_TestCases\\UserManagementTestCases\\UserManagementTestCases.csproj",
+      "packagesPath": "C:\\Users\\Devika\\.nuget\\packages\\",
+      "outputPath": "E:\\NotificationManagement\\4BA-NotificationManagement\\SHR_TestCases\\UserManagementTestCases\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Devika\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -7949,8 +7954,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\NotificationUpdate\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj": {
-              "projectPath": "C:\\NotificationUpdate\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj"
+            "E:\\NotificationManagement\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj": {
+              "projectPath": "E:\\NotificationManagement\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj"
             }
           }
         }

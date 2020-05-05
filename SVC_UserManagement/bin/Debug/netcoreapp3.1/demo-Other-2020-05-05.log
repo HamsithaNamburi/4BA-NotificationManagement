@@ -1,0 +1,9 @@
+2020-05-05 07:21:44.5639||DEBUG|UserManagement.Program|init main function |url: |action: 
+2020-05-05 07:26:43.1829||INFO|UserManagement.UserController|Login was called.. |url: http://localhost/api/v1/UserLogin|action: UserLogin
+2020-05-05 07:31:24.4345||INFO|UserManagement.UserController|Login was called.. |url: http://localhost/api/v1/UserLogin/|action: UserLogin
+2020-05-05 07:34:07.0748||INFO|UserManagement.UserController|Login was called.. |url: http://localhost/api/v1/UserLogin/|action: UserLogin
+2020-05-05 07:34:41.5113||INFO|UserManagement.UserController|Login was called.. |url: http://localhost/api/v1/UserLogin/|action: UserLogin
+2020-05-05 07:36:20.8829||INFO|UserManagement.UserController|Login was called.. |url: http://localhost/api/v1/UserLogin/|action: UserLogin
+2020-05-05 07:39:39.1267||INFO|UserManagement.UserController|Login was called.. |url: http://localhost/api/v1/UserLogin/|action: UserLogin
+2020-05-05 07:40:26.6109||INFO|UserManagement.UserController|Login was called.. |url: http://localhost/api/v1/UserLogin/|action: UserLogin
+2020-05-05 07:40:43.9809||INFO|UserManagement.UserController|Login was called.. |url: http://localhost/api/v1/UserLogin/|action: UserLogin

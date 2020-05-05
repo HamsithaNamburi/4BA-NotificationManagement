@@ -84,7 +84,7 @@ namespace UserManagementUI.Controllers
                     string apiResponse = await response.Content.ReadAsStringAsync();
                     if (apiResponse != null)
                     {
-                        return RedirectToAction("Index");
+                        return RedirectToAction("GetUser");
                     }
                     else
                     {
@@ -111,7 +111,7 @@ namespace UserManagementUI.Controllers
             return View(user);
         }
         [HttpPost]
-        public async Task<IActionResult> UpdateReservation(UserDetails userdetails)
+        public async Task<IActionResult> Update(UserDetails userdetails)
         {
             UserDetails user = new UserDetails();
             int  userid = user.UserId;

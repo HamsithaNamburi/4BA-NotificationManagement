@@ -12,8 +12,8 @@ namespace UserManagement.Helper
 {
     public class UserRepository : IUserRepository
     {
-        private readonly NotificationDbContext _notificationDBContext;
-        public UserRepository(NotificationDbContext notificationDBContext)
+        private readonly NotificationDBContext _notificationDBContext;
+        public UserRepository(NotificationDBContext notificationDBContext)
         {
             _notificationDBContext = notificationDBContext;
         }

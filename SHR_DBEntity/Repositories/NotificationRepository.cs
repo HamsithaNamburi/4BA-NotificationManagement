@@ -10,16 +10,16 @@ namespace NotificationManagement
 {
 	public class NotificationRepository:INotificationRepository
 	{
-        private readonly NotificationDbContext _notificationDBContext;
-        public NotificationRepository(NotificationDbContext notificationDBContext)
+        private readonly NotificationDBContext _notificationDBContext;
+        public NotificationRepository(NotificationDBContext notificationDBContext)
         {
             _notificationDBContext = notificationDBContext;
         }
-        public async Task<bool> AddNotification(Notifications notifications)
+        public async Task<bool> AddNotification(Notification notifications)
         {
             try
             {
-                _notificationDBContext.Notifications.Add(notifications);
+                _notificationDBContext.Notification.Add(notifications);
                 var notification = await _notificationDBContext.SaveChangesAsync();
                 if (notification > 0)
                     return true;
@@ -35,10 +35,10 @@ namespace NotificationManagement
 
         public async Task<bool> DeleteNotification(int notificationId)
         {
-            Notifications notifications = _notificationDBContext.Notifications.Find(notificationId);
+            Notification notifications = _notificationDBContext.Notification.Find(notificationId);
             try
             {
-                _notificationDBContext.Notifications.Remove(notifications);
+                _notificationDBContext.Notification.Remove(notifications);
                 var notification = await _notificationDBContext.SaveChangesAsync();
                 if (notification > 0)
                 {
@@ -55,22 +55,22 @@ namespace NotificationManagement
             }
 
         }
-        public async  Task<List<Notifications>> GetAllNotifications(int userId)
+        public async  Task<List<Notification>> GetAllNotifications(int userId)
         {
             try
             {
-                return await _notificationDBContext.Notifications.Where(i => i.UserId == userId).ToListAsync();
+                return await _notificationDBContext.Notification.Where(i => i.UserId == userId).ToListAsync();
             }
             catch
             {
                 throw;
             }
         }
-        public async Task<bool> UpdateNotification(Notifications notifications)
+        public async Task<bool> UpdateNotification(Notification notifications)
         {
             try
             {
-                _notificationDBContext.Notifications.Update(notifications);
+                _notificationDBContext.Notification.Update(notifications);
                 var notification = await _notificationDBContext.SaveChangesAsync();
                 if (notification > 0)
                 {

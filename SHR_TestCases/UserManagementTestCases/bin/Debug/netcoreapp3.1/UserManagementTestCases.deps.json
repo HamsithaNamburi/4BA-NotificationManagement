@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "UserManagementTestCases/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.Logging": "3.1.3",
           "Microsoft.NET.Test.Sdk": "16.4.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.2",
           "NUnit3TestAdapter": "3.15.1",
@@ -1770,6 +1771,7 @@
       "NotificationManagementDBEntity/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.3",
+          "Microsoft.Extensions.Logging": "3.1.3",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.2",
           "SHR_Model": "1.0.0"
         },
@@ -1779,6 +1781,7 @@
       },
       "SHR_Model/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.Logging": "3.1.3",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.2"
         },
         "runtime": {
