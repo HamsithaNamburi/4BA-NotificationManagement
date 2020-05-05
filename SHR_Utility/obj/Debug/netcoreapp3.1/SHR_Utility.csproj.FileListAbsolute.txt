@@ -1,0 +1,5 @@
+C:\Notify1\4BA-NotificationManagement\SHR_Utility\SHR_Utility\bin\Debug\netcoreapp3.1\log4net.config
+C:\Notify1\4BA-NotificationManagement\SHR_Utility\SHR_Utility\bin\Debug\netcoreapp3.1\SHR_Utility.deps.json
+C:\Notify1\4BA-NotificationManagement\SHR_Utility\SHR_Utility\bin\Debug\netcoreapp3.1\SHR_Utility.dll
+C:\Notify1\4BA-NotificationManagement\SHR_Utility\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.AssemblyInfoInputs.cache
+C:\Notify1\4BA-NotificationManagement\SHR_Utility\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.AssemblyInfo.cs

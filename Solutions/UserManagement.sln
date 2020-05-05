@@ -7,11 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagement", "..\SVC_Us
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotificationManagementDBEntity", "..\SHR_DBEntity\NotificationManagementDBEntity.csproj", "{709CF1CD-F11C-4876-B2C0-6196B8171AAE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagementTestCases", "..\SHR_TestCases\UserManagementTestCases\UserManagementTestCases.csproj", "{1C2A63EF-AF4B-450F-8D9A-C86F72BDCAB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagementTestCases", "..\TST_UserManagement\UserManagementTestCases.csproj", "{1C2A63EF-AF4B-450F-8D9A-C86F72BDCAB2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SHR_Model", "..\SHR_Model\SHR_Model.csproj", "{5FA156F8-5752-46B5-B42C-62A6F44BAB09}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{02F78D0D-988F-4969-891A-FC7DE75F8382}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHR_Utility", "..\SHR_Utility\SHR_Utility.csproj", "{13983F28-BC93-4124-AE18-2A737A543266}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{5FA156F8-5752-46B5-B42C-62A6F44BAB09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FA156F8-5752-46B5-B42C-62A6F44BAB09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FA156F8-5752-46B5-B42C-62A6F44BAB09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13983F28-BC93-4124-AE18-2A737A543266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13983F28-BC93-4124-AE18-2A737A543266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13983F28-BC93-4124-AE18-2A737A543266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13983F28-BC93-4124-AE18-2A737A543266}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

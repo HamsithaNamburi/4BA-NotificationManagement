@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagementUI", "../SVC_UserManagementUI/UserManagementUI.csproj", "{4FC6EB47-705A-4B37-AB7D-DDAA6D1B4BFC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagementUI", "../Web_UserManagement/UserManagementUI.csproj", "{4FC6EB47-705A-4B37-AB7D-DDAA6D1B4BFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

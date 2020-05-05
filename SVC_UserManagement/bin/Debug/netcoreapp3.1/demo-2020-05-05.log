@@ -7,3 +7,5 @@
 2020-05-05 07:39:39.1267||INFO|UserManagement.UserController|Login was called.. 
 2020-05-05 07:40:26.6109||INFO|UserManagement.UserController|Login was called.. 
 2020-05-05 07:40:43.9809||INFO|UserManagement.UserController|Login was called.. 
+2020-05-05 12:40:39.0039||DEBUG|UserManagement.Program|init main function 
+2020-05-05 12:43:27.6928||DEBUG|UserManagement.Program|init main function 
