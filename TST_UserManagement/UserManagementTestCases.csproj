@@ -15,11 +15,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SHR_DBEntity\NotificationManagementDBEntity.csproj" />
+    <Folder Include="Helper\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Helper\" />
+    <ProjectReference Include="..\SHR_DBEntity\NotificationManagementDBEntity.csproj" />
+    <ProjectReference Include="..\SHR_Model\SHR_Model.csproj" />
+    <ProjectReference Include="..\SHR_Utility\SHR_Utility.csproj" />
+    <ProjectReference Include="..\SVC_UserManagement\UserManagement.csproj" />
   </ItemGroup>
 
 </Project>

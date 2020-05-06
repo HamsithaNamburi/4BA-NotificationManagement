@@ -47,16 +47,16 @@ namespace NotificationManagementDBEntity.Models
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.Notification)
                     .HasForeignKey(d => d.UserId)
-                    .HasConstraintName("FK__Notificat__UserI__267ABA7A");
+                    .HasConstraintName("FK__Notificat__UserI__398D8EEE");
             });
 
             modelBuilder.Entity<UserDetails>(entity =>
             {
                 entity.HasKey(e => e.UserId)
-                    .HasName("PK__UserDeta__1788CC4CF2FF6269");
+                    .HasName("PK__UserDeta__1788CC4C256D853A");
 
                 entity.HasIndex(e => e.UserName)
-                    .HasName("UQ__UserDeta__C9F284568DB0AFFB")
+                    .HasName("UQ__UserDeta__C9F28456FB82B50A")
                     .IsUnique();
 
                 entity.Property(e => e.CreateDate).HasColumnType("datetime");

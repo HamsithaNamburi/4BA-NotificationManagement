@@ -32,6 +32,7 @@
           "NLog.Web.AspNetCore": "4.9.2",
           "NotificationManagementDBEntity": "1.0.0",
           "SHR_Model": "1.0.0",
+          "SHR_Utility": "1.0.0",
           "Swashbuckle.AspNetCore": "5.4.1",
           "log4net": "2.0.8",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
@@ -2432,6 +2433,17 @@
         },
         "compile": {
           "SHR_Model.dll": {}
+        }
+      },
+      "SHR_Utility/1.0.0": {
+        "dependencies": {
+          "log4net": "2.0.8"
+        },
+        "runtime": {
+          "SHR_Utility.dll": {}
+        },
+        "compile": {
+          "SHR_Utility.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -5292,6 +5304,11 @@
       "sha512": ""
     },
     "SHR_Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SHR_Utility/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
