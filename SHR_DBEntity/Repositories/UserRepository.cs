@@ -21,13 +21,13 @@ namespace UserManagement.Helper
         {
             try
             {
-                UserDetails userDetails = await _notificationDBContext.UserDetails.FindAsync(userId);
-                if (userDetails == null)
-                    return null;
-                else
-                    return userDetails;
+                //UserDetails userDetails = await _notificationDBContext.UserDetails.FindAsync(userId);
+                //if (userDetails == null)
+                //    return null;
+                //else
+                    return await _notificationDBContext.UserDetails.FindAsync(userId);
             }
-            catch
+            catch(Exception )
             {
                 throw;
             }
@@ -56,7 +56,8 @@ namespace UserManagement.Helper
             try
             {
                 _notificationDBContext.UserDetails.Add(userDetails);
-                var userId = await _notificationDBContext.SaveChangesAsync();
+               var userId = await _notificationDBContext.SaveChangesAsync();
+                await _notificationDBContext.SaveChangesAsync();
                 if (userId > 0)
                     return true;
                 else

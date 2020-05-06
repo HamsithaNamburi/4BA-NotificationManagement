@@ -8,9 +8,9 @@ namespace NotificationManagement.Helper
 {
 	public interface INotificationManagementHelper
 	{
-		Task<List<Notifications>> GetAllNotifications(int userId);
-		Task<bool> AddNotification(Notifications notifications);
-		Task<bool> UpdateNotification(Notifications notifications);
+		Task<List<Notification>> GetAllNotifications(int userId);
+		Task<bool> AddNotification(Notification notifications);
+		Task<bool> UpdateNotification(Notification notifications);
 		Task<bool> DeleteNotification(int notificationId);
 	}
 	public class NotificationMangementHelper : INotificationManagementHelper
@@ -20,7 +20,7 @@ namespace NotificationManagement.Helper
 		{
 			_iNotificationManagementHelper = inotificationManagementHelper;
 		}
-		public async Task<bool> AddNotification(Notifications notifications)
+		public async Task<bool> AddNotification(Notification notifications)
 		{
 			try
 			{
@@ -45,11 +45,11 @@ namespace NotificationManagement.Helper
 				throw;
 			}
 		}
-		public async Task<List<Notifications>> GetAllNotifications(int userId)
+		public async Task<List<Notification>> GetAllNotifications(int userId)
 		{
 			try
 			{
-				List<Notifications> notifications = await _iNotificationManagementHelper.GetAllNotifications(userId);
+				List<Notification> notifications = await _iNotificationManagementHelper.GetAllNotifications(userId);
 				if (notifications != null)
 				{
 					return notifications;
@@ -62,7 +62,7 @@ namespace NotificationManagement.Helper
 				throw;
 			}
 		}
-		public async Task<bool> UpdateNotification(Notifications notifications)
+		public async Task<bool> UpdateNotification(Notification notifications)
 		{
 			try
 			{

@@ -17,6 +17,10 @@ namespace UserManagement
     [ApiController]
 	public class UserController : Controller
 	{
+        public UserController()
+        {
+
+        }
         private readonly IUserManagementHelper _iUserManagementHelper;
         private readonly ILogger<UserController> _logger;
         public UserController(IUserManagementHelper iUserManagementHelper,ILogger<UserController> logger)

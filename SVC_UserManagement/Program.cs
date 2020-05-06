@@ -33,15 +33,27 @@ namespace UserManagement
 
 
         }
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-        WebHost.CreateDefaultBuilder(args)
-          .UseStartup<Startup>()
-          .ConfigureLogging(logging =>
-          {
-              logging.ClearProviders();
-              logging.SetMinimumLevel(LogLevel.Information);
-          })
-          .UseNLog();
+        public static IHostBuilder CreateWebHostBuilder(string[] args) =>
+        //WebHost.CreateDefaultBuilder(args)
+        //  .UseStartup<Startup>()
+        //  .ConfigureLogging(logging =>
+        //  {
+        //      logging.ClearProviders();
+        //      logging.SetMinimumLevel(LogLevel.Information);
+        //  })
+        //  .UseNLog();
+
+
+        Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+            webBuilder.UseStartup<Startup>()
+            .ConfigureLogging((hostingContext, logging) =>
+            {
+                logging.AddLog4Net();
+                logging.SetMinimumLevel(LogLevel.Debug);
+            });
+        });
 
     }
 }

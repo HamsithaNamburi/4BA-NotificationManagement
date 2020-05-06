@@ -37,17 +37,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Notifications"
+                "$ref": "#/components/schemas/Notification"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Notifications"
+                "$ref": "#/components/schemas/Notification"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Notifications"
+                "$ref": "#/components/schemas/Notification"
               }
             }
           }
@@ -68,17 +68,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Notifications"
+                "$ref": "#/components/schemas/Notification"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Notifications"
+                "$ref": "#/components/schemas/Notification"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Notifications"
+                "$ref": "#/components/schemas/Notification"
               }
             }
           }
@@ -127,10 +127,6 @@
             "type": "string",
             "nullable": true
           },
-          "userPassword": {
-            "type": "string",
-            "nullable": true
-          },
           "firstName": {
             "type": "string",
             "nullable": true
@@ -139,18 +135,21 @@
             "type": "string",
             "nullable": true
           },
+          "userPassword": {
+            "type": "string",
+            "nullable": true
+          },
           "emailAddr": {
             "type": "string",
             "nullable": true
           },
-          "contactNumber": {
+          "phoneNumber": {
             "type": "string",
             "nullable": true
           },
-          "registeredDatetime": {
+          "createDate": {
             "type": "string",
-            "format": "date-time",
-            "nullable": true
+            "format": "date-time"
           },
           "updatedDate": {
             "type": "string",
@@ -161,17 +160,17 @@
             "type": "string",
             "nullable": true
           },
-          "notifications": {
+          "notification": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Notifications"
+              "$ref": "#/components/schemas/Notification"
             },
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "Notifications": {
+      "Notification": {
         "type": "object",
         "properties": {
           "notificationId": {
@@ -182,16 +181,16 @@
             "type": "string",
             "nullable": true
           },
-          "description": {
+          "notificationDesc": {
             "type": "string",
             "nullable": true
           },
-          "createdDatetime": {
+          "createDate": {
             "type": "string",
             "format": "date-time",
             "nullable": true
           },
-          "updateDate": {
+          "updatedDate": {
             "type": "string",
             "format": "date-time",
             "nullable": true

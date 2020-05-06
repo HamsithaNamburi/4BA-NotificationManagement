@@ -244,3 +244,4 @@ E:\NotificationManagement\4BA-NotificationManagement\NunitUserTest\NuitUserTestT
 E:\NotificationManagement\4BA-NotificationManagement\NunitUserTest\NuitUserTestTests\obj\Debug\netcoreapp3.1\NuitUserTestTests.dll
 E:\NotificationManagement\4BA-NotificationManagement\NunitUserTest\NuitUserTestTests\obj\Debug\netcoreapp3.1\NuitUserTestTests.pdb
 E:\NotificationManagement\4BA-NotificationManagement\NunitUserTest\NuitUserTestTests\obj\Debug\netcoreapp3.1\NuitUserTestTests.genruntimeconfig.cache
+E:\NotificationManagement\4BA-NotificationManagement\NunitUserTest\NuitUserTestTests\obj\Debug\netcoreapp3.1\NuitUserTestTests.csproj.CoreCompileInputs.cache
