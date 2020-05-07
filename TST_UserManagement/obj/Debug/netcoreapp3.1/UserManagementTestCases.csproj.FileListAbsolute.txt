@@ -789,4 +789,6 @@ E:\NotificationManagement\4BA-NotificationManagement\TST_UserManagement\bin\Debu
 E:\NotificationManagement\4BA-NotificationManagement\TST_UserManagement\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
 E:\NotificationManagement\4BA-NotificationManagement\TST_UserManagement\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
 E:\NotificationManagement\4BA-NotificationManagement\TST_UserManagement\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
+E:\NotificationManagement\4BA-NotificationManagement\TST_UserManagement\bin\Debug\netcoreapp3.1\Castle.Core.dll
+E:\NotificationManagement\4BA-NotificationManagement\TST_UserManagement\bin\Debug\netcoreapp3.1\Moq.dll
 E:\NotificationManagement\4BA-NotificationManagement\TST_UserManagement\obj\Debug\netcoreapp3.1\UserManagementTestCases.csproj.CoreCompileInputs.cache

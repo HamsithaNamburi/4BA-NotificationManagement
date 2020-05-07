@@ -43,7 +43,7 @@ namespace UserManagementTestCases.Repository
 
             var getUserById = await userRepository.RegisterUser(new UserDetails()
             {
-                UserId = 12,
+               // UserId = 12,
                 FirstName = "sai",
                 LastName = "manu",
                 UserName = "sri",
@@ -55,8 +55,9 @@ namespace UserManagementTestCases.Repository
                 UserAddress = "chennai"
 
             });
+            bool b = true;
             Assert.That(getUserById, Is.Not.Null);
-            Assert.That(getUserById, Is.EqualTo("true"));
+            Assert.That(getUserById, Is.EqualTo(b));
 
         }
 
@@ -74,6 +75,19 @@ namespace UserManagementTestCases.Repository
 
         }
 
+
+        [Test]
+        public async Task UpdateUser_Valid_Returns(UserDetails user)
+
+        {
+            mockNotificationManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
+            await mockNotificationManagementContext.SaveChangesAsync();
+            var getUserById = await userRepository.GetUser(10);
+            user.EmailAddr = "dev@67.com";
+            var updateUser = await userRepository.UpdateUser(user);
+            UserDetails user1 = await userRepository.GetUser(10);
+            Assert.AreSame(user, user1);
+        }
 
 
 
