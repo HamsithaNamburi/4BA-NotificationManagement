@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "E:\\NotificationManagement\\4BA-NotificationManagement\\Web_UserManagement\\UserManagementUI.csproj": {}
+    "C:\\notify7\\4BA-NotificationManagement\\Web_UserManagement\\UserManagementUI.csproj": {}
   },
   "projects": {
-    "E:\\NotificationManagement\\4BA-NotificationManagement\\Web_UserManagement\\UserManagementUI.csproj": {
+    "C:\\notify7\\4BA-NotificationManagement\\Web_UserManagement\\UserManagementUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\NotificationManagement\\4BA-NotificationManagement\\Web_UserManagement\\UserManagementUI.csproj",
+        "projectUniqueName": "C:\\notify7\\4BA-NotificationManagement\\Web_UserManagement\\UserManagementUI.csproj",
         "projectName": "UserManagementUI",
-        "projectPath": "E:\\NotificationManagement\\4BA-NotificationManagement\\Web_UserManagement\\UserManagementUI.csproj",
-        "packagesPath": "C:\\Users\\Devika\\.nuget\\packages\\",
-        "outputPath": "E:\\NotificationManagement\\4BA-NotificationManagement\\Web_UserManagement\\obj\\",
+        "projectPath": "C:\\notify7\\4BA-NotificationManagement\\Web_UserManagement\\UserManagementUI.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\notify7\\4BA-NotificationManagement\\Web_UserManagement\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Devika\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
