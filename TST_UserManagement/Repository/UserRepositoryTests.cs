@@ -49,8 +49,8 @@ namespace UserManagementTestCases.Repository
                 UserName = "sri",
                 UserPassword = "1234",
                 EmailAddr = "manu@gmail.com",
-                PhoneNumber = "9988712345",
-                CreateDate = DateTime.Now,
+                ContactNumber = "9988712345",
+                RegisteredDatetime = DateTime.Now,
                 UpdatedDate = DateTime.Now,
                 UserAddress = "chennai"
 

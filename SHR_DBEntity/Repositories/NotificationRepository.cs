@@ -15,11 +15,11 @@ namespace NotificationManagement
         {
             _notificationDBContext = notificationDBContext;
         }
-        public async Task<bool> AddNotification(Notification notifications)
+        public async Task<bool> AddNotification(Notifications notifications)
         {
             try
             {
-                _notificationDBContext.Notification.Add(notifications);
+                _notificationDBContext.Notifications.Add(notifications);
                 var notification = await _notificationDBContext.SaveChangesAsync();
                 if (notification > 0)
                     return true;
@@ -35,10 +35,10 @@ namespace NotificationManagement
 
         public async Task<bool> DeleteNotification(int notificationId)
         {
-            Notification notifications = _notificationDBContext.Notification.Find(notificationId);
+            Notifications notifications = _notificationDBContext.Notifications.Find(notificationId);
             try
             {
-                _notificationDBContext.Notification.Remove(notifications);
+                _notificationDBContext.Notifications.Remove(notifications);
                 var notification = await _notificationDBContext.SaveChangesAsync();
                 if (notification > 0)
                 {
@@ -55,22 +55,22 @@ namespace NotificationManagement
             }
 
         }
-        public async  Task<List<Notification>> GetAllNotifications(int userId)
+        public async  Task<List<Notifications>> GetAllNotifications(int userId)
         {
             try
             {
-                return await _notificationDBContext.Notification.Where(i => i.UserId == userId).ToListAsync();
+                return await _notificationDBContext.Notifications.Where(i => i.UserId == userId).ToListAsync();
             }
             catch
             {
                 throw;
             }
         }
-        public async Task<bool> UpdateNotification(Notification notifications)
+        public async Task<bool> UpdateNotification(Notifications notifications)
         {
             try
             {
-                _notificationDBContext.Notification.Update(notifications);
+                _notificationDBContext.Notifications.Update(notifications);
                 var notification = await _notificationDBContext.SaveChangesAsync();
                 if (notification > 0)
                 {

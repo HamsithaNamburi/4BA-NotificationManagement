@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Moq;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -11,6 +12,8 @@ namespace UserManagementTestCases.Controller
     [TestFixture]
     class userControllerTests
     {
-       
+        private UserController userController;
+        private Mock
+
     }
 }

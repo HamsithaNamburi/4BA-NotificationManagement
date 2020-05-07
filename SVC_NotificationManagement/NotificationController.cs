@@ -44,7 +44,7 @@ namespace NotificationManagement
         /// <returns></returns>
         [HttpPost]
         [Route("AddNotification")]
-        public async Task<IActionResult> AddNotification(Notification notifications)
+        public async Task<IActionResult> AddNotification(Notifications notifications)
         {
             try
             {
@@ -63,7 +63,7 @@ namespace NotificationManagement
         /// <returns></returns>
         [HttpPut]
         [Route("UpdateNotification")]
-        public async Task<IActionResult> UpdateNotification(Notification notifications)
+        public async Task<IActionResult> UpdateNotification(Notifications notifications)
         {
             try
             {

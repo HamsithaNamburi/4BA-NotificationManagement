@@ -8,9 +8,9 @@ namespace NotificationManagementDBEntity.Repositories
 {
 	public interface INotificationRepository
 	{
-		Task<List<Notification>> GetAllNotifications(int userId);
-		Task<bool> AddNotification(Notification notifications);
-		Task<bool> UpdateNotification(Notification notifications);
+		Task<List<Notifications>> GetAllNotifications(int userId);
+		Task<bool> AddNotification(Notifications notifications);
+		Task<bool> UpdateNotification(Notifications notifications);
 		Task<bool> DeleteNotification(int notificationId);
 	}
 }

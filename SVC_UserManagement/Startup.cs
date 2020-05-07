@@ -25,9 +25,9 @@ namespace UserManagement
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddSingleton<NotificationDBContext>();
-            services.AddSingleton<IUserManagementHelper,UserManagementHelper>();
-            services.AddSingleton<IUserRepository,UserRepository>();
+            services.AddScoped<NotificationDBContext>();
+            services.AddScoped<IUserManagementHelper,UserManagementHelper>();
+            services.AddScoped<IUserRepository,UserRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

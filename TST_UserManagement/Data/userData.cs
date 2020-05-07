@@ -11,7 +11,7 @@ namespace UserManagementTestCases.Data
         public userData()
         {
             userDetails = new List<UserDetails>(){new  UserDetails() { UserId = 10,UserName = "hello", EmailAddr = "hello@gmail.com",UserPassword ="hello",
-            UserAddress="tnl",CreateDate=DateTime.Now,UpdatedDate=DateTime.Now,PhoneNumber="6583920836",FirstName ="hello",LastName="hello"
+            UserAddress="tnl",RegisteredDatetime=DateTime.Now,UpdatedDate=DateTime.Now,ContactNumber="6583920836",FirstName ="hello",LastName="hello"
            },
 
            new UserDetails()
@@ -21,9 +21,9 @@ namespace UserManagementTestCases.Data
                 EmailAddr = "hello@gmail.com",
                 UserPassword = "hello1",
                 UserAddress = "tnl",
-                CreateDate = DateTime.Now,
+                RegisteredDatetime = DateTime.Now,
                 UpdatedDate = DateTime.Now,
-                PhoneNumber = "6583920836",
+                ContactNumber = "6583920836",
                 FirstName = "hello1",
                 LastName = "hello1"
 

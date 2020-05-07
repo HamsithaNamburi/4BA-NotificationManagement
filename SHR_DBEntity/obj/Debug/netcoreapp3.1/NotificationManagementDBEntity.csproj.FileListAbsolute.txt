@@ -56,7 +56,6 @@ E:\NotificationManagement\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netc
 E:\NotificationManagement\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\SHR_Model.dll
 E:\NotificationManagement\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\SHR_Model.pdb
 E:\NotificationManagement\4BA-NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.csprojAssemblyReference.cache
-E:\NotificationManagement\4BA-NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.csproj.CoreCompileInputs.cache
 E:\NotificationManagement\4BA-NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.AssemblyInfoInputs.cache
 E:\NotificationManagement\4BA-NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.AssemblyInfo.cs
 E:\NotificationManagement\4BA-NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.csproj.CopyComplete
