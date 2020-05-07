@@ -1,4 +1,5 @@
 ﻿using NotificationManagementDBEntity.Models;
+using NotificationManagementDBEntity.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,16 +16,16 @@ namespace NotificationManagement.Helper
 	}
 	public class NotificationMangementHelper : INotificationManagementHelper
 	{
-		private readonly INotificationManagementHelper _iNotificationManagementHelper;
-		public NotificationMangementHelper(INotificationManagementHelper inotificationManagementHelper)
+		private readonly INotificationRepository _iNotificationRepository;
+		public NotificationMangementHelper(INotificationRepository inotificationRepository)
 		{
-			_iNotificationManagementHelper = inotificationManagementHelper;
+			_iNotificationRepository = inotificationRepository;
 		}
 		public async Task<bool> AddNotification(Notification notifications)
 		{
 			try
 			{
-				bool notification = await _iNotificationManagementHelper.AddNotification(notifications);
+				bool notification = await _iNotificationRepository.AddNotification(notifications);
 				return notification;
 			}
 			catch
@@ -37,7 +38,7 @@ namespace NotificationManagement.Helper
 		{
 			try
 			{
-				bool notification = await _iNotificationManagementHelper.DeleteNotification(notificationId);
+				bool notification = await _iNotificationRepository.DeleteNotification(notificationId);
 				return notification;
 			}
 			catch
@@ -49,7 +50,7 @@ namespace NotificationManagement.Helper
 		{
 			try
 			{
-				List<Notification> notifications = await _iNotificationManagementHelper.GetAllNotifications(userId);
+				List<Notification> notifications = await _iNotificationRepository.GetAllNotifications(userId);
 				if (notifications != null)
 				{
 					return notifications;
@@ -66,7 +67,7 @@ namespace NotificationManagement.Helper
 		{
 			try
 			{
-				bool notification = await _iNotificationManagementHelper.UpdateNotification(notifications);
+				bool notification = await _iNotificationRepository.UpdateNotification(notifications);
 				return notification;
 			}
 			catch
