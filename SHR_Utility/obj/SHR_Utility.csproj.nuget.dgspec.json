@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\updatedCode\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj": {}
+    "F:\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj": {}
   },
   "projects": {
-    "D:\\updatedCode\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj": {
+    "F:\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\updatedCode\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj",
+        "projectUniqueName": "F:\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj",
         "projectName": "SHR_Utility",
-        "projectPath": "D:\\updatedCode\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj",
-        "packagesPath": "C:\\Users\\pandu\\.nuget\\packages\\",
-        "outputPath": "D:\\updatedCode\\4BA-NotificationManagement\\SHR_Utility\\obj\\",
+        "projectPath": "F:\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "F:\\4BA-NotificationManagement\\SHR_Utility\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\pandu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

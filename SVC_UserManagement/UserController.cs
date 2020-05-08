@@ -19,11 +19,10 @@ namespace UserManagement
 	{
         
         private readonly IUserManagementHelper _iUserManagementHelper;
-        private readonly ILogger<UserController> _logger;
-        public UserController(IUserManagementHelper iUserManagementHelper,ILogger<UserController> logger)
+        //private readonly ILogger<UserController> _logger;
+        public UserController(IUserManagementHelper iUserManagementHelper)
         {
             _iUserManagementHelper = iUserManagementHelper;
-            _logger = logger;
         }
         /// <summary>
         /// 
@@ -68,7 +67,7 @@ namespace UserManagement
             try
             {
                 UserDetails userDetails= await _iUserManagementHelper.UserLogin(userLogin);
-                _logger.LogInformation("Login was called..");
+                //_logger.LogInformation("Login was called..");
                 if (userDetails == null)
                     return Ok("Invalid User");
                 else

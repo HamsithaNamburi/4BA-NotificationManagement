@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\updatedCode\\4BA-NotificationManagement\\SVC_NotificationManagement\\NotificationManagement.csproj": {}
+    "F:\\4BA-NotificationManagement\\SVC_NotificationManagement\\NotificationManagement.csproj": {}
   },
   "projects": {
-    "D:\\updatedCode\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj": {
+    "F:\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\updatedCode\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj",
+        "projectUniqueName": "F:\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj",
         "projectName": "NotificationManagementDBEntity",
-        "projectPath": "D:\\updatedCode\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj",
-        "packagesPath": "C:\\Users\\pandu\\.nuget\\packages\\",
-        "outputPath": "D:\\updatedCode\\4BA-NotificationManagement\\SHR_DBEntity\\obj\\",
+        "projectPath": "F:\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "F:\\4BA-NotificationManagement\\SHR_DBEntity\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\pandu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\updatedCode\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
-                "projectPath": "D:\\updatedCode\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj"
+              "F:\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
+                "projectPath": "F:\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj"
               }
             }
           }
@@ -90,21 +93,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\updatedCode\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
+    "F:\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\updatedCode\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj",
+        "projectUniqueName": "F:\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj",
         "projectName": "SHR_Model",
-        "projectPath": "D:\\updatedCode\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj",
-        "packagesPath": "C:\\Users\\pandu\\.nuget\\packages\\",
-        "outputPath": "D:\\updatedCode\\4BA-NotificationManagement\\SHR_Model\\obj\\",
+        "projectPath": "F:\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "F:\\4BA-NotificationManagement\\SHR_Model\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\pandu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -152,21 +158,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\updatedCode\\4BA-NotificationManagement\\SVC_NotificationManagement\\NotificationManagement.csproj": {
+    "F:\\4BA-NotificationManagement\\SVC_NotificationManagement\\NotificationManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\updatedCode\\4BA-NotificationManagement\\SVC_NotificationManagement\\NotificationManagement.csproj",
+        "projectUniqueName": "F:\\4BA-NotificationManagement\\SVC_NotificationManagement\\NotificationManagement.csproj",
         "projectName": "NotificationManagement",
-        "projectPath": "D:\\updatedCode\\4BA-NotificationManagement\\SVC_NotificationManagement\\NotificationManagement.csproj",
-        "packagesPath": "C:\\Users\\pandu\\.nuget\\packages\\",
-        "outputPath": "D:\\updatedCode\\4BA-NotificationManagement\\SVC_NotificationManagement\\obj\\",
+        "projectPath": "F:\\4BA-NotificationManagement\\SVC_NotificationManagement\\NotificationManagement.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "F:\\4BA-NotificationManagement\\SVC_NotificationManagement\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\pandu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -179,8 +188,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\updatedCode\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj": {
-                "projectPath": "D:\\updatedCode\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj"
+              "F:\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj": {
+                "projectPath": "F:\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj"
               }
             }
           }
@@ -194,10 +203,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "Swashbhuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.0.0-rc3, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.0.0-rc3, )"
@@ -221,7 +226,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
