@@ -78,16 +78,15 @@ namespace UserManagementTestCases.Repository
 
         [Test]
         public async Task UpdateUser_Valid_Returns(UserDetails user)
-
         {
             mockNotificationManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
             await mockNotificationManagementContext.SaveChangesAsync();
             var getUserById = await userRepository.GetUser(10);
-            user.EmailAddr = "dev@67.com";
+            user.EmailAddr = "ma@gmail.com";
             var updateUser = await userRepository.UpdateUser(user);
             UserDetails user1 = await userRepository.GetUser(10);
-            Assert.AreSame(user, user1);
-        }
+            Assert.AreSame(updateUser, user1);
+                    }
 
 
 

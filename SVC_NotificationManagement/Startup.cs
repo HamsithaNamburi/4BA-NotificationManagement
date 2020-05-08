@@ -11,6 +11,7 @@ using NotificationManagement.Helper;
 using NotificationManagementDBEntity.Models;
 using NotificationManagementDBEntity.Repositories;
 using Microsoft.OpenApi.Models;
+using Microsoft.Extensions.Logging;
 
 namespace NotificationManagement
 {
@@ -32,12 +33,13 @@ namespace NotificationManagement
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+            loggerFactory.AddLog4Net();
             app.UseRouting();
             app.UseEndpoints(endpoints =>
             {

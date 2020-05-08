@@ -25,7 +25,7 @@ namespace NotificationManagement
         /// <param name="userId"></param>
         /// <returns></returns>
         [HttpGet]
-        [Route("GetAllNotifications/{UserId}")]
+        [Route("GetAllNotifications/{userId}")]
         public async Task<IActionResult> GetAllNotifications(int userId)
         {
             try
@@ -81,7 +81,7 @@ namespace NotificationManagement
         /// <param name="notificationId"></param>
         /// <returns></returns>
         [HttpDelete]
-        [Route("DeleteNotification/{NotificationId}")]
+        [Route("DeleteNotification/{notificationId}")]
         public async Task<IActionResult> DeleteNotification(int notificationId)
         {
             try

@@ -13,14 +13,30 @@ namespace NotificationManagement
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            CreateWebHostBuilder(args).Build().Run();
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
+        public static IHostBuilder CreateWebHostBuilder(string[] args) =>
+        //WebHost.CreateDefaultBuilder(args)
+        //  .UseStartup<Startup>()
+        //  .ConfigureLogging(logging =>
+        //  {
+        //      logging.ClearProviders();
+        //      logging.SetMinimumLevel(LogLevel.Information);
+        //  })
+        //  .UseNLog();
+
+
+        Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseStartup<Startup>()
+                    .ConfigureLogging((hostingContext, logging) =>
+                    {
+                        logging.AddLog4Net();
+                        logging.SetMinimumLevel(LogLevel.Debug);
+                    });
                 });
+
     }
 }

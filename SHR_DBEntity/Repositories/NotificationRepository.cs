@@ -35,9 +35,10 @@ namespace NotificationManagement
 
         public async Task<bool> DeleteNotification(int notificationId)
         {
-            Notifications notifications = _notificationDBContext.Notifications.Find(notificationId);
+            
             try
             {
+                Notifications notifications = _notificationDBContext.Notifications.Find(notificationId);
                 _notificationDBContext.Notifications.Remove(notifications);
                 var notification = await _notificationDBContext.SaveChangesAsync();
                 if (notification > 0)

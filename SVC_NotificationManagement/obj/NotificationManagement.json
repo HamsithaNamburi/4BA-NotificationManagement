@@ -5,7 +5,7 @@
     "version": "v1"
   },
   "paths": {
-    "/api/v1/GetAllNotifications/{UserId}": {
+    "/api/v1/GetAllNotifications/{userId}": {
       "get": {
         "tags": [
           "Notification"
@@ -90,7 +90,7 @@
         }
       }
     },
-    "/api/v1/DeleteNotification/{NotificationId}": {
+    "/api/v1/DeleteNotification/{notificationId}": {
       "delete": {
         "tags": [
           "Notification"
