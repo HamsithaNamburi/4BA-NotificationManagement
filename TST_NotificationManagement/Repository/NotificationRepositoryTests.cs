@@ -32,9 +32,9 @@ namespace NotificationManagementTestCases.Repository
                 await mockNotificationManagementContext.SaveChangesAsync();
             var getUserById = await notificationRepository.GetAllNotifications(UserId);
             Assert.That(getUserById, Is.Not.Null);
-            Assert.That(getUserById, Is.EqualTo(10));
+           //// Assert.That(getUserById, Is.EqualTo(10));
 
-        }
+             }
 
 
             [Test]
@@ -51,12 +51,12 @@ namespace NotificationManagementTestCases.Repository
                     Description = "hello hiii hiii",
                     CreatedDatetime = DateTime.Now,
                     UpdatedDate = DateTime.Now,
-                    UserId = 23,
+                    UserId = 1,
 
                 });
-                bool b = true;
+               // bool b = true;
                 Assert.That(getUserById, Is.Not.Null);
-                Assert.That(getUserById, Is.EqualTo(b));
+                Assert.That(getUserById, Is.EqualTo(true));
 
             }
 

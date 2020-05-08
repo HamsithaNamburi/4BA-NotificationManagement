@@ -74,18 +74,15 @@ namespace UserManagement.Helper
             try
             {
                 _notificationDBContext.UserDetails.Update(userDetails);
-                var user = await _notificationDBContext.SaveChangesAsync();
-                if (user > 0)
-                {
+                var productId = await _notificationDBContext.SaveChangesAsync();
+                if (productId > 0)
                     return true;
-                }
                 else
-                {
                     return false;
-                }
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
+                // To Do Log
                 throw;
             }
         }
@@ -95,6 +92,7 @@ namespace UserManagement.Helper
             try
             {
                 List<UserDetails> userDetails = await _notificationDBContext.UserDetails.ToListAsync();
+               await _notificationDBContext.SaveChangesAsync();
                 return userDetails;
             }
             catch

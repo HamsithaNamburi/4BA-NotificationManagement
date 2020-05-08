@@ -17,12 +17,12 @@ namespace NotificationManagementTestCases.Data
            new Notifications()
             {
                
-                NotificationId= 130,
+               
                 NotificationName = "NTYRE",
                 Description = "hello hiii",
                 CreatedDatetime = DateTime.Now,
                 UpdatedDate = DateTime.Now,
-                 UserId = 18,
+                 UserId = 1,
 
 
            }};

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace NotificationManagementDBEntity.Models
 {
@@ -9,7 +10,7 @@ namespace NotificationManagementDBEntity.Models
         {
             Notifications = new HashSet<Notifications>();
         }
-
+        [Key]
         public int UserId { get; set; }
         public string UserName { get; set; }
         public string UserPassword { get; set; }

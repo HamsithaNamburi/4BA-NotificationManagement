@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "F:\\4BA-NotificationManagement\\TST_NotificationManagement\\NotificationManagementTestCases.csproj": {}
+    "E:\\Notify1\\4BA-NotificationManagement\\TST_NotificationManagement\\NotificationManagementTestCases.csproj": {}
   },
   "projects": {
-    "F:\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj": {
+    "E:\\Notify1\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj",
+        "projectUniqueName": "E:\\Notify1\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj",
         "projectName": "NotificationManagementDBEntity",
-        "projectPath": "F:\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "F:\\4BA-NotificationManagement\\SHR_DBEntity\\obj\\",
+        "projectPath": "E:\\Notify1\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj",
+        "packagesPath": "C:\\Users\\Devika\\.nuget\\packages\\",
+        "outputPath": "E:\\Notify1\\4BA-NotificationManagement\\SHR_DBEntity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Devika\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -30,8 +31,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "F:\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
-                "projectPath": "F:\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj"
+              "E:\\Notify1\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
+                "projectPath": "E:\\Notify1\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj"
               }
             }
           }
@@ -97,21 +98,22 @@
         }
       }
     },
-    "F:\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
+    "E:\\Notify1\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj",
+        "projectUniqueName": "E:\\Notify1\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj",
         "projectName": "SHR_Model",
-        "projectPath": "F:\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "F:\\4BA-NotificationManagement\\SHR_Model\\obj\\",
+        "projectPath": "E:\\Notify1\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj",
+        "packagesPath": "C:\\Users\\Devika\\.nuget\\packages\\",
+        "outputPath": "E:\\Notify1\\4BA-NotificationManagement\\SHR_Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Devika\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -162,21 +164,84 @@
         }
       }
     },
-    "F:\\4BA-NotificationManagement\\TST_NotificationManagement\\NotificationManagementTestCases.csproj": {
+    "E:\\Notify1\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\4BA-NotificationManagement\\TST_NotificationManagement\\NotificationManagementTestCases.csproj",
-        "projectName": "NotificationManagementTestCases",
-        "projectPath": "F:\\4BA-NotificationManagement\\TST_NotificationManagement\\NotificationManagementTestCases.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "F:\\4BA-NotificationManagement\\TST_NotificationManagement\\obj\\",
+        "projectUniqueName": "E:\\Notify1\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj",
+        "projectName": "SHR_Utility",
+        "projectPath": "E:\\Notify1\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj",
+        "packagesPath": "C:\\Users\\Devika\\.nuget\\packages\\",
+        "outputPath": "E:\\Notify1\\4BA-NotificationManagement\\SHR_Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Devika\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Notify1\\4BA-NotificationManagement\\SVC_NotificationManagement\\NotificationManagement.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Notify1\\4BA-NotificationManagement\\SVC_NotificationManagement\\NotificationManagement.csproj",
+        "projectName": "NotificationManagement",
+        "projectPath": "E:\\Notify1\\4BA-NotificationManagement\\SVC_NotificationManagement\\NotificationManagement.csproj",
+        "packagesPath": "C:\\Users\\Devika\\.nuget\\packages\\",
+        "outputPath": "E:\\Notify1\\4BA-NotificationManagement\\SVC_NotificationManagement\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Devika\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -188,8 +253,87 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "F:\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj": {
-                "projectPath": "F:\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj"
+              "E:\\Notify1\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj": {
+                "projectPath": "E:\\Notify1\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Log4Net.AspNetCore": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0-rc3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Notify1\\4BA-NotificationManagement\\TST_NotificationManagement\\NotificationManagementTestCases.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Notify1\\4BA-NotificationManagement\\TST_NotificationManagement\\NotificationManagementTestCases.csproj",
+        "projectName": "NotificationManagementTestCases",
+        "projectPath": "E:\\Notify1\\4BA-NotificationManagement\\TST_NotificationManagement\\NotificationManagementTestCases.csproj",
+        "packagesPath": "C:\\Users\\Devika\\.nuget\\packages\\",
+        "outputPath": "E:\\Notify1\\4BA-NotificationManagement\\TST_NotificationManagement\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Devika\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\Notify1\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj": {
+                "projectPath": "E:\\Notify1\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj"
+              },
+              "E:\\Notify1\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj": {
+                "projectPath": "E:\\Notify1\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj"
+              },
+              "E:\\Notify1\\4BA-NotificationManagement\\SVC_NotificationManagement\\NotificationManagement.csproj": {
+                "projectPath": "E:\\Notify1\\4BA-NotificationManagement\\SVC_NotificationManagement\\NotificationManagement.csproj"
               }
             }
           }
@@ -247,6 +391,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

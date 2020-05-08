@@ -24,6 +24,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SHR_DBEntity\NotificationManagementDBEntity.csproj" />
+    <ProjectReference Include="..\SHR_Utility\SHR_Utility.csproj" />
+    <ProjectReference Include="..\SVC_NotificationManagement\NotificationManagement.csproj" />
   </ItemGroup>
 
 </Project>

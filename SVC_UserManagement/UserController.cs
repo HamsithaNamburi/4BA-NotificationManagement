@@ -29,14 +29,17 @@ namespace UserManagement
         /// </summary>
         /// <param name="username"></param>
         /// <returns></returns>
+
         [HttpGet]
         [Route("GetUser/{userId}")]
+
         public async Task<IActionResult> GetUser(int userId)
         {
             try
             {
-                return Ok( await _iUserManagementHelper.GetUser(userId));
+                return Ok(await _iUserManagementHelper.GetUser(userId));
             }
+
             catch (Exception ex)
             {
                 return NotFound(ex.Message);
@@ -80,17 +83,20 @@ namespace UserManagement
                 return NotFound(ex.Message);
             }
         }
-        [HttpPost]
         [Route("RegisterUser")]
+        [HttpPost]
         public async Task<IActionResult> RegisterUser(UserDetails userDetails)
         {
             try
             {
-                return Ok(await _iUserManagementHelper.RegisterUser(userDetails));
+                await _iUserManagementHelper.RegisterUser(userDetails);
+                return Ok();
             }
+
             catch (Exception ex)
             {
                 return NotFound(ex.InnerException.Message);
+
             }
         }
         /// <summary>
@@ -98,8 +104,8 @@ namespace UserManagement
         /// </summary>
         /// <param name="userDetails"></param>
         /// <returns></returns>
-        [HttpPut]
         [Route("UpdateUser")]
+        [HttpPut]
         public async Task<IActionResult> UpdateUser(UserDetails userDetails)
         {
             try
@@ -107,9 +113,10 @@ namespace UserManagement
                 await _iUserManagementHelper.UpdateUser(userDetails);
                 return Ok();
             }
+
             catch (Exception ex)
             {
-                return NotFound(ex.Message);
+                return NotFound(ex.InnerException.Message);
             }
         }
     }

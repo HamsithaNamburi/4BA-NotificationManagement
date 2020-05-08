@@ -2133,7 +2133,7 @@
       ]
     },
     "Microsoft.Extensions.Configuration/3.1.3": {
-      "sha512": "GybRRqNMtanDsC+6iOfwsXbjjkupNzN0nOS5Z3UyeMRgwRYctSzxKS2lvly2AO29P0SDasPRKG/squdN5BtGQA==",
+      "sha512": "nTr4JgTSJScDBD3lahIh1jUBH8A43oG1cqID1qLoHSZhtegslpIyTYxmnehtUKi6xdY5j9R0oWeeGEP+JTcmAg==",
       "type": "package",
       "path": "microsoft.extensions.configuration/3.1.3",
       "files": [
@@ -2149,7 +2149,7 @@
       ]
     },
     "Microsoft.Extensions.Configuration.Abstractions/3.1.3": {
-      "sha512": "UrTn9HGGTwhyJU1d3MH/vwu6ms9W6xwMLEh+mXgiBQWV3s3vy7CzBCgjwyMPI+JWSrgM2aMIu57MuaTd4jJjzg==",
+      "sha512": "d3vpIJdw+hRtkW1WoNTXhCczakVVId30Tj58li5GbJxz6MVGi8gy4+7JdLBb/wuHFd4+25cZe+Z0WPi207rBbQ==",
       "type": "package",
       "path": "microsoft.extensions.configuration.abstractions/3.1.3",
       "files": [
@@ -2165,7 +2165,7 @@
       ]
     },
     "Microsoft.Extensions.Configuration.Binder/3.1.3": {
-      "sha512": "bC7hWNCa32qyyU26XUkhNqo9/cLChjEXqvXqnQSyVZFWzYDCU2rMVp57AcEUIyg0EKleGEIE39UeGWRdKv9UCQ==",
+      "sha512": "GouLlU6JOffNNudJpC+eGtGMe9o5ds2oH9dsJUEH1QS13eLl60eNX9rHicaE40c252e7Aixn3sS7yregDfpQ8g==",
       "type": "package",
       "path": "microsoft.extensions.configuration.binder/3.1.3",
       "files": [
@@ -2181,7 +2181,7 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection/3.1.3": {
-      "sha512": "r74AWh3QEph8Hxu/7JNigcwZc7W0rmG2E8mGXZBki0xbBFiDw25wVUuUSaAlN1H64yJdfBmTRSpkVnKdHmgsew==",
+      "sha512": "H/d/jt4Pdp2iYx28shLkxfgQpk9S7cCCTEjtS/61PbZcFAT/mc4cemmOlBdED7+CqmEAIDg8X4Fo0KtADaNizg==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection/3.1.3",
       "files": [
@@ -2201,7 +2201,7 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.3": {
-      "sha512": "uAbQZo6SCXID1ErLetktRlEcJYrdxTmz/fAcM5gryRlkNWWASa6hXFloAE461wVYBEJL4z0xMYxzeXBZ+dcSNw==",
+      "sha512": "woeS5XeBChU76EmtFCwGHKgBfsYIn76u3myDq4zNY2ZrcwzBMNEViK2FRgXDgF11PBNbGdKCXsWFFZDtqPW0nQ==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.3",
       "files": [
@@ -2215,7 +2215,7 @@
       ]
     },
     "Microsoft.Extensions.Logging/3.1.3": {
-      "sha512": "5wF0h0kC0rk10i3onAeFBhQB5qBN10QphD3q3WzHQ2OgndgDx4Oz/pz4TK3Z4NqxN/um7NghhrEOo28ohRtHfQ==",
+      "sha512": "mAuOMhgB73dgVYeJzrksGU6BUBr7vIruFJyxssYK1nmDS+ude0kShILrXPq2iGHOvYNacczW4VSa6zcssUh4iQ==",
       "type": "package",
       "path": "microsoft.extensions.logging/3.1.3",
       "files": [
@@ -2231,7 +2231,7 @@
       ]
     },
     "Microsoft.Extensions.Logging.Abstractions/3.1.3": {
-      "sha512": "s1OhUaSk1XA5YqgoeSrPVvvlknaxIsq3AZY87Ybj8lL8xT2th+3YQPHGVBDTstBP//7gQoCtCgXNL9Uepdm2fg==",
+      "sha512": "j6r0E+OVinD4s13CIZASYJLLLApStb1yh5Vig7moB2FE1UsMRj4TYJ/xioDjreVA0dyOFpbWny1/n2iSJMbmNg==",
       "type": "package",
       "path": "microsoft.extensions.logging.abstractions/3.1.3",
       "files": [
@@ -2245,7 +2245,7 @@
       ]
     },
     "Microsoft.Extensions.Options/3.1.3": {
-      "sha512": "L5nqDWNSZBYERI9cd0ZrBC6IbJ93S55BQnyK+fQ8JPaIzRLudV2fweOuD0f7PhmXxOP4NXDf6gy3OWgD4HWbiw==",
+      "sha512": "RyOSOg/kHW3AXojWGSdOs3BXJJnE9Sc6RVvP4LhnY5oaC2Da4k8CWfIw7I+QThxV8HTCPjzmON9c+QO+JZggNg==",
       "type": "package",
       "path": "microsoft.extensions.options/3.1.3",
       "files": [
@@ -2261,7 +2261,7 @@
       ]
     },
     "Microsoft.Extensions.Primitives/3.1.3": {
-      "sha512": "B18LEN7dEVNHC0qrQDG5tiM2/IzD+fW1kGYPPtHpocibPRhXnyLwURBnqG+8lfCf2qFZrNSnCaap9t2FQCvPGA==",
+      "sha512": "5gK6qeq9CBCHBfB3Tim3jCJTLafT9FXFBAZZq39rC8adz8mxcjVAuQSw3jGgHqoRk0jwtXKFhXJUVur8vfeuFg==",
       "type": "package",
       "path": "microsoft.extensions.primitives/3.1.3",
       "files": [
@@ -6264,24 +6264,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Devika\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj",
+      "projectUniqueName": "E:\\Notify1\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj",
       "projectName": "SHR_Model",
-      "projectPath": "F:\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "F:\\4BA-NotificationManagement\\SHR_Model\\obj\\",
+      "projectPath": "E:\\Notify1\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj",
+      "packagesPath": "C:\\Users\\Devika\\.nuget\\packages\\",
+      "outputPath": "E:\\Notify1\\4BA-NotificationManagement\\SHR_Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Devika\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

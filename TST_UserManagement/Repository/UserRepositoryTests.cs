@@ -77,16 +77,28 @@ namespace UserManagementTestCases.Repository
 
 
         [Test]
-        public async Task UpdateUser_Valid_Returns(UserDetails user)
+        public async Task UpdateUser_valid_Returns()
         {
             mockNotificationManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
             await mockNotificationManagementContext.SaveChangesAsync();
-            var getUserById = await userRepository.GetUser(10);
-            user.EmailAddr = "ma@gmail.com";
-            var updateUser = await userRepository.UpdateUser(user);
-            UserDetails user1 = await userRepository.GetUser(10);
-            Assert.AreSame(updateUser, user1);
-                    }
+            var getUserById = await userRepository.UpdateUser(
+                new UserDetails()
+                {
+                    UserId = 1,
+                    UserName = "Abc1",
+                    EmailAddr = "Abc1@gmail.com",
+                    UserPassword = "4545",
+                    UserAddress = "Ap",
+                    RegisteredDatetime = DateTime.Now,
+                    UpdatedDate = DateTime.Now,
+                    ContactNumber = "9874563210",
+                    FirstName = "Abc1",
+                    LastName = "Xyz"
+
+                });
+            Assert.That(getUserById, Is.Not.Null);
+            Assert.That(getUserById, Is.EqualTo(true));
+        }
 
 
 

@@ -26,8 +26,8 @@ namespace UserManagement
         {
             services.AddMvc();
             services.AddScoped<NotificationDBContext>();
-            services.AddScoped<IUserManagementHelper,UserManagementHelper>();
-            services.AddScoped<IUserRepository,UserRepository>();
+            services.AddSingleton<IUserManagementHelper,UserManagementHelper>();
+            services.AddSingleton<IUserRepository,UserRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -44,12 +44,7 @@ namespace UserManagement
             }
             loggerFactory.AddLog4Net();
             app.UseRouting();
-            app.UseSwagger();
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-                //c.RoutePrefix = string.Empty;
-            });
+
             app.UseEndpoints(endpoints =>
             {
                 //endpoints.MapControllerRoute(
@@ -61,6 +56,13 @@ namespace UserManagement
                 //    await context.Response.WriteAsync("Hello World!");
                 //});
             });
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.RoutePrefix = string.Empty;
+            });
+          
         }
     }
 }
