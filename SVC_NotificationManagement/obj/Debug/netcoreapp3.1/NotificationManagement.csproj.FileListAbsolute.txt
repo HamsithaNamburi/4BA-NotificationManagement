@@ -758,3 +758,7 @@ E:\Notify1\4BA-NotificationManagement\SVC_NotificationManagement\obj\Debug\netco
 E:\Notify1\4BA-NotificationManagement\SVC_NotificationManagement\obj\Debug\netcoreapp3.1\NotificationManagement.csproj.CoreCompileInputs.cache
 E:\Notify1\4BA-NotificationManagement\SVC_NotificationManagement\obj\Debug\netcoreapp3.1\NotificationManagement.MvcApplicationPartsAssemblyInfo.cs
 E:\Notify1\4BA-NotificationManagement\SVC_NotificationManagement\obj\Debug\netcoreapp3.1\NotificationManagement.MvcApplicationPartsAssemblyInfo.cache
+E:\Notify1\4BA-NotificationManagement\SVC_NotificationManagement\bin\Debug\netcoreapp3.1\log4net.config
+E:\Notify1\4BA-NotificationManagement\SVC_NotificationManagement\bin\Debug\netcoreapp3.1\bin\Debug\netcoreapp3.1\log4net.config
+E:\Notify1\4BA-NotificationManagement\SVC_NotificationManagement\bin\Debug\netcoreapp3.1\SHR_Utility.dll
+E:\Notify1\4BA-NotificationManagement\SVC_NotificationManagement\bin\Debug\netcoreapp3.1\SHR_Utility.pdb

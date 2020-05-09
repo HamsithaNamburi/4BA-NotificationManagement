@@ -62,7 +62,7 @@ namespace UserManagementUI.Controllers
                 using (var response = await httpClient.GetAsync("http://localhost:62518/api/v1/GetUser/" + id))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
-                    userDetails = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
+                   userDetails = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
                 }
             }
             return View(userDetails);
@@ -91,7 +91,7 @@ namespace UserManagementUI.Controllers
                         Console.WriteLine("Invalid Credentials");
                         return RedirectToAction("UserLogin");
                     }
-                    //userDetails1 = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
+                    userDetails1 = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
                 }
 
             }
@@ -114,7 +114,7 @@ namespace UserManagementUI.Controllers
         public async Task<IActionResult> Update(UserDetails userdetails)
         {
             UserDetails user = new UserDetails();
-            int  userid = user.UserId;
+            int userid = user.UserId;
             using (var httpClient = new HttpClient())
             {
                 var content = new MultipartFormDataContent();

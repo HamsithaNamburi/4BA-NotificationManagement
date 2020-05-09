@@ -21,7 +21,9 @@ namespace NotificationManagement
             {
                 _notificationDBContext.Notifications.Add(notifications);
                 var notification = await _notificationDBContext.SaveChangesAsync();
-                if (notification > 0)
+                await _notificationDBContext.SaveChangesAsync();
+
+                    if (notification > 0)
                     return true;
                 else
                     return false;
@@ -60,7 +62,11 @@ namespace NotificationManagement
         {
             try
             {
-                return await _notificationDBContext.Notifications.Where(i => i.UserId == userId).ToListAsync();
+                
+
+                List<Notifications> userDetails =await _notificationDBContext.Notifications.Where(i => i.UserId == userId).ToListAsync();
+                await _notificationDBContext.SaveChangesAsync();
+                return userDetails;
             }
             catch
             {

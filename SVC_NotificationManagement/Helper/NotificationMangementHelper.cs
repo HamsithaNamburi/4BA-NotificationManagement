@@ -21,6 +21,11 @@ namespace NotificationManagement.Helper
 		{
 			_iNotificationRepository = inotificationRepository;
 		}
+		/// <summary>
+		/// To add a notification
+		/// </summary>
+		/// <param name="notifications"></param>
+		/// <returns></returns>
 		public async Task<bool> AddNotification(Notifications notifications)
 		{
 			try
@@ -33,19 +38,31 @@ namespace NotificationManagement.Helper
 				throw;
 			}
 		}
-
+		/// <summary>
+		/// to delete a notification
+		/// </summary>
+		/// <param name="notificationId"></param>
+		/// <returns></returns>
 		public async Task<bool> DeleteNotification(int notificationId)
 		{
 			try
 			{
-				bool notification = await _iNotificationRepository.DeleteNotification(notificationId);
-				return notification;
+				bool result = await _iNotificationRepository.DeleteNotification(notificationId);
+				if (result == true)
+					return true;
+				else
+					return false;
 			}
 			catch
 			{
 				throw;
 			}
 		}
+		/// <summary>
+		/// To view all notifications
+		/// </summary>
+		/// <param name="userId"></param>
+		/// <returns></returns>
 		public async Task<List<Notifications>> GetAllNotifications(int userId)
 		{
 			try
@@ -63,12 +80,21 @@ namespace NotificationManagement.Helper
 				throw;
 			}
 		}
+		/// <summary>
+		/// To update a notification
+		/// </summary>
+		/// <param name="notifications"></param>
+		/// <returns></returns>
+	
 		public async Task<bool> UpdateNotification(Notifications notifications)
 		{
 			try
 			{
-				bool notification = await _iNotificationRepository.UpdateNotification(notifications);
-				return notification;
+				bool result = await _iNotificationRepository.UpdateNotification(notifications);
+				if (result == true)
+					return true;
+				else
+					return false;
 			}
 			catch
 			{

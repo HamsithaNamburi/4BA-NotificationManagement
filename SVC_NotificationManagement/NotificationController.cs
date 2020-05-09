@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using NotificationManagement.Helper;
 using NotificationManagementDBEntity.Models;
 using NotificationManagementDBEntity.Repositories;
 
@@ -14,13 +15,13 @@ namespace NotificationManagement
 	[ApiController]
 	public class NotificationController : Controller
 	{
-        private readonly INotificationRepository _notificationRepository;
-        public NotificationController(INotificationRepository notificationRepository)
+        private readonly INotificationManagementHelper _inotificationManagementHelper;
+        public NotificationController(INotificationManagementHelper iNotificationManagementHelper)
         {
-            _notificationRepository = notificationRepository;
+            _inotificationManagementHelper = iNotificationManagementHelper;
         }
         /// <summary>
-        /// 
+        /// To get all the notifications
         /// </summary>
         /// <param name="userId"></param>
         /// <returns></returns>
@@ -30,7 +31,7 @@ namespace NotificationManagement
         {
             try
             {
-                return Ok(await _notificationRepository.GetAllNotifications(userId));
+                return Ok(await _inotificationManagementHelper.GetAllNotifications(userId));
             }
             catch (Exception ex)
             {
@@ -38,7 +39,7 @@ namespace NotificationManagement
             }
         }
         /// <summary>
-        /// 
+        /// to add a notification using post method
         /// </summary>
         /// <param name="notifications"></param>
         /// <returns></returns>
@@ -48,16 +49,16 @@ namespace NotificationManagement
         {
             try
             {
-                await _notificationRepository.AddNotification(notifications);
+                await _inotificationManagementHelper.AddNotification(notifications);
                 return Ok();
             }
             catch (Exception ex)
             {
-                return NotFound(ex.Message);
+                return NotFound(ex.InnerException.Message);
             }
         }
         /// <summary>
-        /// 
+        /// To update a notification using Put method
         /// </summary>
         /// <param name="notifications"></param>
         /// <returns></returns>
@@ -67,8 +68,8 @@ namespace NotificationManagement
         {
             try
             {
-               await _notificationRepository.UpdateNotification(notifications);
-                return Ok();
+              return Ok( await _inotificationManagementHelper.UpdateNotification(notifications));
+                
             }
             catch (Exception ex)
             {
@@ -76,7 +77,7 @@ namespace NotificationManagement
             }
         }
         /// <summary>
-        /// 
+        /// to delete a notification using Delete method
         /// </summary>
         /// <param name="notificationId"></param>
         /// <returns></returns>
@@ -86,7 +87,7 @@ namespace NotificationManagement
         {
             try
             {
-                await _notificationRepository.DeleteNotification(notificationId);
+                await _inotificationManagementHelper.DeleteNotification(notificationId);
                 return Ok();
             }
             catch (Exception ex)

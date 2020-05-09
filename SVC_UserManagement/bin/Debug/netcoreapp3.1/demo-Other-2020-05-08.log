@@ -3,3 +3,42 @@
 2020-05-08 14:28:27.9700||DEBUG|UserManagement.Program|init main function |url: |action: 
 2020-05-08 14:37:52.5527||DEBUG|UserManagement.Program|init main function |url: |action: 
 2020-05-08 14:42:00.1504||DEBUG|UserManagement.Program|init main function |url: |action: 
+2020-05-08 20:36:28.1546||DEBUG|UserManagement.Program|init main function |url: |action: 
+2020-05-08 20:36:38.3440||ERROR|UserManagement.Program|Error in init System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: UserManagement.Helper.IUserManagementHelper Lifetime: Singleton ImplementationType: UserManagement.Helper.UserManagementHelper': Cannot consume scoped service 'NotificationManagementDBEntity.Models.NotificationDBContext' from singleton 'NotificationManagementDBEntity.Repositories.IUserRepository'.) (Error while validating the service descriptor 'ServiceType: NotificationManagementDBEntity.Repositories.IUserRepository Lifetime: Singleton ImplementationType: UserManagement.Helper.UserRepository': Cannot consume scoped service 'NotificationManagementDBEntity.Models.NotificationDBContext' from singleton 'NotificationManagementDBEntity.Repositories.IUserRepository'.) (Error while validating the service descriptor 'ServiceType: UserManagement.Helper.IUserManagementHelper Lifetime: Singleton ImplementationType: UserManagement.Helper.UserManagementHelper': Cannot consume scoped service 'NotificationManagementDBEntity.Models.NotificationDBContext' from singleton 'NotificationManagementDBEntity.Repositories.IUserRepository'.) (Error while validating the service descriptor 'ServiceType: NotificationManagementDBEntity.Repositories.IUserRepository Lifetime: Singleton ImplementationType: UserManagement.Helper.UserRepository': Cannot consume scoped service 'NotificationManagementDBEntity.Models.NotificationDBContext' from singleton 'NotificationManagementDBEntity.Repositories.IUserRepository'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: UserManagement.Helper.IUserManagementHelper Lifetime: Singleton ImplementationType: UserManagement.Helper.UserManagementHelper': Cannot consume scoped service 'NotificationManagementDBEntity.Models.NotificationDBContext' from singleton 'NotificationManagementDBEntity.Repositories.IUserRepository'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'NotificationManagementDBEntity.Models.NotificationDBContext' from singleton 'NotificationManagementDBEntity.Repositories.IUserRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.Microsoft.Extensions.DependencyInjection.ServiceLookup.IServiceProviderEngineCallback.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: NotificationManagementDBEntity.Repositories.IUserRepository Lifetime: Singleton ImplementationType: UserManagement.Helper.UserRepository': Cannot consume scoped service 'NotificationManagementDBEntity.Models.NotificationDBContext' from singleton 'NotificationManagementDBEntity.Repositories.IUserRepository'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'NotificationManagementDBEntity.Models.NotificationDBContext' from singleton 'NotificationManagementDBEntity.Repositories.IUserRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.Microsoft.Extensions.DependencyInjection.ServiceLookup.IServiceProviderEngineCallback.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
+|url: |action: 
+2020-05-08 20:39:55.8866||DEBUG|UserManagement.Program|init main function |url: |action: 
+2020-05-08 20:56:18.9391||DEBUG|UserManagement.Program|init main function |url: |action: 
+2020-05-08 21:20:21.3763||DEBUG|UserManagement.Program|init main function |url: |action: 

@@ -2588,6 +2588,7 @@
           "Microsoft.Extensions.Logging.Log4Net.AspNetCore": "3.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.2",
           "SHR_Model": "1.0.0",
+          "SHR_Utility": "1.0.0",
           "System.ComponentModel.Annotations": "4.7.0"
         },
         "runtime": {
@@ -2607,6 +2608,17 @@
         },
         "compile": {
           "SHR_Model.dll": {}
+        }
+      },
+      "SHR_Utility/1.0.0": {
+        "dependencies": {
+          "log4net": "2.0.8"
+        },
+        "runtime": {
+          "SHR_Utility.dll": {}
+        },
+        "compile": {
+          "SHR_Utility.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -5621,6 +5633,11 @@
       "sha512": ""
     },
     "SHR_Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SHR_Utility/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

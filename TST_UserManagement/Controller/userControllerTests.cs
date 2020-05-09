@@ -1,4 +1,5 @@
-﻿using Moq;
+﻿using Microsoft.AspNetCore.Mvc;
+using Moq;
 using NotificationManagementDBEntity.Models;
 using NUnit.Framework;
 using System;
@@ -51,17 +52,39 @@ namespace UserManagementTestCases.Controller
 
 
 
+        /// <summary>
+        /// To get details of a particular user by using userId
+        /// </summary>
+
+        /// <returns></returns>
+        [Test]
+        public async Task GetUser_Valid_Returns()
+        {
+            mockUserManagementHelper.Setup(d => d.GetUser(It.IsAny<int>()));
+            var result = await userController.GetUser(10);
+            Assert.That(result, Is.Not.Null);
+
+        }
+        /// <summary>
+        /// To test for an exception while getting user details
+        /// </summary>
+        /// <returns></returns>
         [Test]
         public async Task GetUser_InValid_ReturnsNull()
         {
             mockUserManagementHelper.Setup(d => d.GetUser(It.IsAny<int>())).ReturnsAsync((UserDetails)(null));
-            var result = await userController.GetUser(1);
+            var result = await userController.GetUser(56) as OkResult;
             Assert.That(result, Is.Null);
+            Assert.That(result.StatusCode, Is.EqualTo(200));
         }
+        /// <summary>
+        /// For a new user to register
+        /// </summary>
+        /// <returns></returns>
         [Test]
         public async Task RegisterUser_valid_Returns()
         {
-            mockUserManagementHelper.Setup(d => d.RegisterUser(It.IsAny<UserDetails>())).ReturnsAsync(true);
+            mockUserManagementHelper.Setup(d => d.RegisterUser(It.IsAny<UserDetails>())).ReturnsAsync(new bool());
             var result = await userController.RegisterUser(new UserDetails()
             {
                 UserId = 67,
@@ -69,34 +92,43 @@ namespace UserManagementTestCases.Controller
                 EmailAddr = "Abc@gmail.com",
                 UserPassword = "4545",
                 UserAddress = "Ap",
-               RegisteredDatetime= DateTime.Now,
+                RegisteredDatetime = DateTime.Now,
                 UpdatedDate = DateTime.Now,
-               ContactNumber = "9874563210",
+                ContactNumber = "9874563210",
                 FirstName = "Abc",
                 LastName = "Xyz"
-            });
+            }) as OkResult;
             Assert.That(result, Is.Not.Null);
-            Assert.That(result.ToString(), Is.EqualTo(true));
+            //   IActionResult actionResult = result.ExecuteResultAsync();
+            // Assert.That(result., Is.Not.Null);
+
+            Assert.That(result.StatusCode, Is.EqualTo(200));
         }
+
+
+
+
         [Test]
         public async Task UpdateUser_valid_Returns()
         {
-            mockUserManagementHelper.Setup(d => d.UpdateUser(It.IsAny<UserDetails>())).ReturnsAsync(true);
+            mockUserManagementHelper.Setup(d => d.UpdateUser(It.IsAny<UserDetails>())).ReturnsAsync(new bool());
             var result = await userController.UpdateUser(new UserDetails()
             {
                 UserId = 10,
                 UserName = "Abc1",
                 EmailAddr = "Abc1@gmail.com",
                 UserPassword = "4545",
-                UserAddress = "Ap",
+                UserAddress = "Apppp",
                 RegisteredDatetime = DateTime.Now,
                 UpdatedDate = DateTime.Now,
                 ContactNumber = "9874563210",
                 FirstName = "Abc1",
                 LastName = "Xyz"
-            });
+            }) as OkResult;
             Assert.That(result, Is.Not.Null);
-            Assert.That(result, Is.EqualTo(true));
+            //Assert.That(result, Is.Not.Null);
+            //Assert.That(result, Is.EqualTo(true));
+            Assert.That(result.StatusCode, Is.EqualTo(200));
         }
     }
 }

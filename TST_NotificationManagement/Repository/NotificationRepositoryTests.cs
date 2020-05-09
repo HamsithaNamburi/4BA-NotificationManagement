@@ -26,11 +26,11 @@ namespace NotificationManagementTestCases.Repository
                 mockUserDatas = new NotificationData();
             }
             [Test]
-            public async Task GetAllNotifications_Valid_Returns(int UserId)
+            public async Task GetAllNotifications_Valid_Returns()
             {
                 mockNotificationManagementContext.Notifications.AddRange(mockUserDatas.notification);
                 await mockNotificationManagementContext.SaveChangesAsync();
-            var getUserById = await notificationRepository.GetAllNotifications(UserId);
+            var getUserById = await notificationRepository.GetAllNotifications(1);
             Assert.That(getUserById, Is.Not.Null);
            //// Assert.That(getUserById, Is.EqualTo(10));
 

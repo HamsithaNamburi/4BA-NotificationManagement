@@ -33,6 +33,9 @@
             "projectReferences": {
               "E:\\Notify1\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
                 "projectPath": "E:\\Notify1\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj"
+              },
+              "E:\\Notify1\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj": {
+                "projectPath": "E:\\Notify1\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj"
               }
             }
           }

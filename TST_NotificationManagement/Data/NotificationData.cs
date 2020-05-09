@@ -20,7 +20,7 @@ namespace NotificationManagementTestCases.Data
                
                 NotificationName = "NTYRE",
                 Description = "hello hiii",
-                CreatedDatetime = DateTime.Now,
+                CreatedDatetime =DateTime.Now,
                 UpdatedDate = DateTime.Now,
                  UserId = 1,
 

@@ -3243,6 +3243,7 @@
           "Microsoft.Extensions.Logging.Log4Net.AspNetCore": "3.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.2",
           "SHR_Model": "1.0.0",
+          "SHR_Utility": "1.0.0",
           "System.ComponentModel.Annotations": "4.7.0"
         },
         "compile": {
@@ -3264,6 +3265,19 @@
         },
         "runtime": {
           "bin/placeholder/SHR_Model.dll": {}
+        }
+      },
+      "SHR_Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "log4net": "2.0.8"
+        },
+        "compile": {
+          "bin/placeholder/SHR_Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SHR_Utility.dll": {}
         }
       }
     }
@@ -9973,6 +9987,11 @@
       "type": "project",
       "path": "../SHR_Model/SHR_Model.csproj",
       "msbuildProject": "../SHR_Model/SHR_Model.csproj"
+    },
+    "SHR_Utility/1.0.0": {
+      "type": "project",
+      "path": "../SHR_Utility/SHR_Utility.csproj",
+      "msbuildProject": "../SHR_Utility/SHR_Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {

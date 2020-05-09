@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SHR_Model\SHR_Model.csproj" />
+    <ProjectReference Include="..\SHR_Utility\SHR_Utility.csproj" />
   </ItemGroup>
 
 </Project>

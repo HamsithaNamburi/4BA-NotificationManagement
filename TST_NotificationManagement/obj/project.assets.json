@@ -3747,6 +3747,7 @@
           "Microsoft.Extensions.Logging.Log4Net.AspNetCore": "3.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.2",
           "SHR_Model": "1.0.0",
+          "SHR_Utility": "1.0.0",
           "System.ComponentModel.Annotations": "4.7.0"
         },
         "compile": {

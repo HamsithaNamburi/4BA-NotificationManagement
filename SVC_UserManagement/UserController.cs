@@ -104,8 +104,8 @@ namespace UserManagement
         /// </summary>
         /// <param name="userDetails"></param>
         /// <returns></returns>
-        [Route("UpdateUser")]
         [HttpPut]
+        [Route("UpdateUser")]
         public async Task<IActionResult> UpdateUser(UserDetails userDetails)
         {
             try
@@ -113,10 +113,9 @@ namespace UserManagement
                 await _iUserManagementHelper.UpdateUser(userDetails);
                 return Ok();
             }
-
             catch (Exception ex)
             {
-                return NotFound(ex.InnerException.Message);
+                return NotFound(ex.Message);
             }
         }
     }

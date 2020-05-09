@@ -135,3 +135,7 @@ E:\Notify1\4BA-NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\Notif
 E:\Notify1\4BA-NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.dll
 E:\Notify1\4BA-NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.pdb
 E:\Notify1\4BA-NotificationManagement\SHR_DBEntity\obj\Debug\netcoreapp3.1\NotificationManagementDBEntity.genruntimeconfig.cache
+E:\Notify1\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\bin\Debug\netcoreapp3.1\log4net.config
+E:\Notify1\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\log4net.config
+E:\Notify1\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\SHR_Utility.dll
+E:\Notify1\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\SHR_Utility.pdb
