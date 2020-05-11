@@ -20,6 +20,19 @@ namespace NotificationManagement
         {
             _inotificationManagementHelper = iNotificationManagementHelper;
         }
+        [HttpGet]
+        [Route("GetNotification/{notificationId}")]
+        public async Task<IActionResult> GetNotification(int notificationId)
+        {
+            try
+            {
+                return Ok(await _inotificationManagementHelper.GetNotification(notificationId));
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
         /// <summary>
         /// To get all the notifications
         /// </summary>

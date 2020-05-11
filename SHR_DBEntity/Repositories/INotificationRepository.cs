@@ -12,5 +12,6 @@ namespace NotificationManagementDBEntity.Repositories
 		Task<bool> AddNotification(Notifications notifications);
 		Task<bool> UpdateNotification(Notifications notifications);
 		Task<bool> DeleteNotification(int notificationId);
+		Task<Notifications> GetNotification(int notificationId);
 	}
 }

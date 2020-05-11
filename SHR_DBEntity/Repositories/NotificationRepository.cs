@@ -15,6 +15,18 @@ namespace NotificationManagement
         {
             _notificationDBContext = notificationDBContext;
         }
+        public async Task<Notifications> GetNotification(int notificationId)
+        {
+            try
+            {
+                return await _notificationDBContext.Notifications.FindAsync(notificationId);
+            }
+            catch(Exception e)
+            {
+                throw;
+            }
+
+        }
         public async Task<bool> AddNotification(Notifications notifications)
         {
             try

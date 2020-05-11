@@ -22,8 +22,8 @@ namespace NotificationManagementDBEntity.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=DESKTOP-FA0USB5\\SQLEXPRESS;Database=NotificationDB;User Id=sa; Password=158x1a0530;");
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+                optionsBuilder.UseSqlServer("Server=LAPTOP-NCJ1L16F\\SQLEXPRESS;Database=NotificationDB;User Id=sa; Password=pass@word1;");
             }
         }
 
@@ -32,7 +32,7 @@ namespace NotificationManagementDBEntity.Models
             modelBuilder.Entity<Notifications>(entity =>
             {
                 entity.HasKey(e => e.NotificationId)
-                    .HasName("PK__Notifica__20CF2E128AA0585B");
+                    .HasName("PK__Notifica__20CF2E1225509F09");
 
                 entity.Property(e => e.CreatedDatetime)
                     .HasColumnType("datetime")
@@ -52,16 +52,16 @@ namespace NotificationManagementDBEntity.Models
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.Notifications)
                     .HasForeignKey(d => d.UserId)
-                    .HasConstraintName("FK__Notificat__UserI__4E88ABD4");
+                    .HasConstraintName("FK__Notificat__UserI__4AB81AF0");
             });
 
             modelBuilder.Entity<UserDetails>(entity =>
             {
                 entity.HasKey(e => e.UserId)
-                    .HasName("PK__UserDeta__1788CC4CDF3BB4FD");
+                    .HasName("PK__UserDeta__1788CC4C8F57EDD6");
 
                 entity.HasIndex(e => e.UserName)
-                    .HasName("UQ__UserDeta__C9F28456DBC470D3")
+                    .HasName("UQ__UserDeta__C9F2845619A714C7")
                     .IsUnique();
 
                 entity.Property(e => e.ContactNumber)

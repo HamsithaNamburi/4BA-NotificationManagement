@@ -1812,3 +1812,4 @@ E:\Notify1\4BA-NotificationManagement\TST_UserManagement\obj\Debug\netcoreapp3.1
 E:\Notify1\4BA-NotificationManagement\TST_UserManagement\obj\Debug\netcoreapp3.1\UserManagementTestCases.pdb
 E:\Notify1\4BA-NotificationManagement\TST_UserManagement\obj\Debug\netcoreapp3.1\UserManagementTestCases.genruntimeconfig.cache
 E:\Notify1\4BA-NotificationManagement\TST_UserManagement\bin\Debug\netcoreapp3.1\bin\Debug\netcoreapp3.1\log4net.config
+F:\4BA-NotificationManagement\TST_UserManagement\bin\Debug\netcoreapp3.1\bin\Debug\netcoreapp3.1\log4net.config

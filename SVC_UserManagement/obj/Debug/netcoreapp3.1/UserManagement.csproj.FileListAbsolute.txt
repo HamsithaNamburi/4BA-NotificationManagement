@@ -1349,3 +1349,4 @@ E:\Notify1\4BA-NotificationManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1
 E:\Notify1\4BA-NotificationManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.pdb
 E:\Notify1\4BA-NotificationManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.genruntimeconfig.cache
 E:\Notify1\4BA-NotificationManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\bin\Debug\netcoreapp3.1\log4net.config
+F:\4BA-NotificationManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\bin\Debug\netcoreapp3.1\log4net.config

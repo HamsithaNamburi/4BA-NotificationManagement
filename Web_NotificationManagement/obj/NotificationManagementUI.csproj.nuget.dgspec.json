@@ -1,25 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Notify1\\4BA-NotificationManagement\\Web_NotificationManagement\\NotificationManagementUI.csproj": {}
+    "F:\\4BA-NotificationManagement\\Web_NotificationManagement\\NotificationManagementUI.csproj": {}
   },
   "projects": {
-    "E:\\Notify1\\4BA-NotificationManagement\\Web_NotificationManagement\\NotificationManagementUI.csproj": {
+    "F:\\4BA-NotificationManagement\\Web_NotificationManagement\\NotificationManagementUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Notify1\\4BA-NotificationManagement\\Web_NotificationManagement\\NotificationManagementUI.csproj",
+        "projectUniqueName": "F:\\4BA-NotificationManagement\\Web_NotificationManagement\\NotificationManagementUI.csproj",
         "projectName": "NotificationManagementUI",
-        "projectPath": "E:\\Notify1\\4BA-NotificationManagement\\Web_NotificationManagement\\NotificationManagementUI.csproj",
-        "packagesPath": "C:\\Users\\Devika\\.nuget\\packages\\",
-        "outputPath": "E:\\Notify1\\4BA-NotificationManagement\\Web_NotificationManagement\\obj\\",
+        "projectPath": "F:\\4BA-NotificationManagement\\Web_NotificationManagement\\NotificationManagementUI.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "F:\\4BA-NotificationManagement\\Web_NotificationManagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Devika\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

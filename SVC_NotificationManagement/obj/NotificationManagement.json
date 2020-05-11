@@ -5,6 +5,29 @@
     "version": "v1"
   },
   "paths": {
+    "/api/v1/GetNotification/{notificationId}": {
+      "get": {
+        "tags": [
+          "Notification"
+        ],
+        "parameters": [
+          {
+            "name": "notificationId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/v1/GetAllNotifications/{userId}": {
       "get": {
         "tags": [

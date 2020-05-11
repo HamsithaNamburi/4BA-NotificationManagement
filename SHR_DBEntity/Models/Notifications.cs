@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 
 namespace NotificationManagementDBEntity.Models
 {
     public partial class Notifications
-    { 
-        [Key]
+    {
         public int NotificationId { get; set; }
         public string NotificationName { get; set; }
         public string Description { get; set; }

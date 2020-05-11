@@ -139,3 +139,7 @@ E:\Notify1\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\bin\D
 E:\Notify1\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\log4net.config
 E:\Notify1\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\SHR_Utility.dll
 E:\Notify1\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\SHR_Utility.pdb
+F:\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\bin\Debug\netcoreapp3.1\log4net.config
+F:\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\log4net.config
+F:\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\SHR_Utility.dll
+F:\4BA-NotificationManagement\SHR_DBEntity\bin\Debug\netcoreapp3.1\SHR_Utility.pdb

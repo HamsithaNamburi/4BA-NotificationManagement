@@ -53,3 +53,4 @@ E:\Notify1\4BA-NotificationManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Ut
 E:\Notify1\4BA-NotificationManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.dll
 E:\Notify1\4BA-NotificationManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.pdb
 E:\Notify1\4BA-NotificationManagement\SHR_Utility\bin\Debug\netcoreapp3.1\bin\Debug\netcoreapp3.1\log4net.config
+F:\4BA-NotificationManagement\SHR_Utility\bin\Debug\netcoreapp3.1\bin\Debug\netcoreapp3.1\log4net.config

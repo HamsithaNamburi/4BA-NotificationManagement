@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v3.1": {
       "UserManagementUI/1.0.0": {
         "dependencies": {
+          "EO.WebBrowser": "20.1.31",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.2",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -313,6 +314,27 @@
         },
         "compile": {
           "UserManagementUI.dll": {}
+        }
+      },
+      "EO.WebBrowser/20.1.31": {
+        "runtime": {
+          "lib/EO.Base.dll": {
+            "assemblyVersion": "20.1.31.0",
+            "fileVersion": "20.1.31.0"
+          },
+          "lib/EO.WebBrowser.dll": {
+            "assemblyVersion": "20.1.31.0",
+            "fileVersion": "20.1.31.0"
+          },
+          "lib/EO.WebEngine.dll": {
+            "assemblyVersion": "20.1.31.0",
+            "fileVersion": "20.1.31.0"
+          }
+        },
+        "compile": {
+          "lib/EO.Base.dll": {},
+          "lib/EO.WebBrowser.dll": {},
+          "lib/EO.WebEngine.dll": {}
         }
       },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
@@ -3234,6 +3256,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "EO.WebBrowser/20.1.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Er6dl2DAUODvlZjhu7yiJ/HxJYsMQ5lEpP0qUSBagxJ1wtCbRoJXss5KCSR6anoUcvuL6sY+aNYl7bIaDoQReQ==",
+      "path": "eo.webbrowser/20.1.31",
+      "hashPath": "eo.webbrowser.20.1.31.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
       "type": "package",

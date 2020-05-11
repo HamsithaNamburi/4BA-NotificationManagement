@@ -13,6 +13,7 @@ namespace NotificationManagement.Helper
 		Task<bool> AddNotification(Notifications notifications);
 		Task<bool> UpdateNotification(Notifications notifications);
 		Task<bool> DeleteNotification(int notificationId);
+		Task<Notifications> GetNotification(int notificationId);
 	}
 	public class NotificationMangementHelper : INotificationManagementHelper
 	{
@@ -20,6 +21,25 @@ namespace NotificationManagement.Helper
 		public NotificationMangementHelper(INotificationRepository inotificationRepository)
 		{
 			_iNotificationRepository = inotificationRepository;
+		}
+		public async Task<Notifications> GetNotification(int notificationId)
+		{
+			try
+			{
+				Notifications notifications = await _iNotificationRepository.GetNotification(notificationId);
+				if(notifications != null)
+				{
+					return notifications;
+				}
+				else
+				{
+					return null;
+				}
+			}
+			catch(Exception ex)
+			{
+				throw;
+			}
 		}
 		/// <summary>
 		/// To add a notification
