@@ -20,6 +20,11 @@ namespace NotificationManagement
         {
             _inotificationManagementHelper = iNotificationManagementHelper;
         }
+        /// <summary>
+        /// Find the notification based on notificationId
+        /// </summary>
+        /// <param name="notificationId"></param>
+        /// <returns></returns>
         [HttpGet]
         [Route("GetNotification/{notificationId}")]
         public async Task<IActionResult> GetNotification(int notificationId)

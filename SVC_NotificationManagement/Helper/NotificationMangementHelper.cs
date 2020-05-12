@@ -22,6 +22,11 @@ namespace NotificationManagement.Helper
 		{
 			_iNotificationRepository = inotificationRepository;
 		}
+		/// <summary>
+		/// Get Notifications By Notification Id
+		/// </summary>
+		/// <param name="notificationId"></param>
+		/// <returns></returns>
 		public async Task<Notifications> GetNotification(int notificationId)
 		{
 			try

@@ -15,6 +15,11 @@ namespace NotificationManagement
         {
             _notificationDBContext = notificationDBContext;
         }
+        /// <summary>
+        /// Get Notification by Notification Id
+        /// </summary>
+        /// <param name="notificationId"></param>
+        /// <returns></returns>
         public async Task<Notifications> GetNotification(int notificationId)
         {
             try
@@ -27,6 +32,11 @@ namespace NotificationManagement
             }
 
         }
+        /// <summary>
+        /// Add new Notification
+        /// </summary>
+        /// <param name="notifications"></param>
+        /// <returns></returns>
         public async Task<bool> AddNotification(Notifications notifications)
         {
             try
@@ -46,7 +56,11 @@ namespace NotificationManagement
                 throw;
             }
         }
-
+        /// <summary>
+        /// To Delete an  exsisting Notification
+        /// </summary>
+        /// <param name="notificationId"></param>
+        /// <returns></returns>
         public async Task<bool> DeleteNotification(int notificationId)
         {
             
@@ -70,6 +84,11 @@ namespace NotificationManagement
             }
 
         }
+        /// <summary>
+        /// Get All Notifications By UserId
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         public async  Task<List<Notifications>> GetAllNotifications(int userId)
         {
             try
@@ -85,6 +104,11 @@ namespace NotificationManagement
                 throw;
             }
         }
+        /// <summary>
+        /// Update an Exsisting User
+        /// </summary>
+        /// <param name="notifications"></param>
+        /// <returns></returns>
         public async Task<bool> UpdateNotification(Notifications notifications)
         {
             try

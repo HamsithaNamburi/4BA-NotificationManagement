@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NotificationManagement</name>
+    </assembly>
+    <members>
+        <member name="M:NotificationManagement.Helper.NotificationMangementHelper.GetNotification(System.Int32)">
+            <summary>
+            Get Notifications By Notification Id
+            </summary>
+            <param name="notificationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NotificationManagement.Helper.NotificationMangementHelper.AddNotification(NotificationManagementDBEntity.Models.Notifications)">
+            <summary>
+            To add a notification
+            </summary>
+            <param name="notifications"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NotificationManagement.Helper.NotificationMangementHelper.DeleteNotification(System.Int32)">
+            <summary>
+            to delete a notification
+            </summary>
+            <param name="notificationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NotificationManagement.Helper.NotificationMangementHelper.GetAllNotifications(System.Int32)">
+            <summary>
+            To view all notifications
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NotificationManagement.Helper.NotificationMangementHelper.UpdateNotification(NotificationManagementDBEntity.Models.Notifications)">
+            <summary>
+            To update a notification
+            </summary>
+            <param name="notifications"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NotificationManagement.NotificationController.GetNotification(System.Int32)">
+            <summary>
+            Find the notification based on notificationId
+            </summary>
+            <param name="notificationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NotificationManagement.NotificationController.GetAllNotifications(System.Int32)">
+            <summary>
+            To get all the notifications
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NotificationManagement.NotificationController.AddNotification(NotificationManagementDBEntity.Models.Notifications)">
+            <summary>
+            to add a notification using post method
+            </summary>
+            <param name="notifications"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NotificationManagement.NotificationController.UpdateNotification(NotificationManagementDBEntity.Models.Notifications)">
+            <summary>
+            To update a notification using Put method
+            </summary>
+            <param name="notifications"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NotificationManagement.NotificationController.DeleteNotification(System.Int32)">
+            <summary>
+            to delete a notification using Delete method
+            </summary>
+            <param name="notificationId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -76,6 +76,7 @@ namespace UserManagementUI.Controllers
         public async Task<IActionResult> UserLogin(UserDetails userDetails)
         {
             UserDetails user = userDetails;
+            string apiResponse;
             UserDetails userDetails1 = new UserDetails();
             using (var httpClient = new HttpClient())
             {
@@ -85,18 +86,19 @@ namespace UserManagementUI.Controllers
                 {
                     Console.WriteLine(response);
                     //UserDetails user = JsonConvert.DeserializeObject<UserDetails>(response);
-                    string apiResponse = await response.Content.ReadAsStringAsync();
-                    Console.WriteLine(apiResponse);
-                    if (apiResponse != null)
+                     apiResponse = await response.Content.ReadAsStringAsync();
+                    // Console.WriteLine(apiResponse);
+                    if (apiResponse == "Invalid User")
                     {
-                        return RedirectToAction("GetAllNotifications","Notification",new {id=1});
+                        ViewBag.ErrorMessage = "Invalid Credentials";
                     }
                     else
                     {
-                        Console.WriteLine("Invalid Credentials");
-                        return RedirectToAction("UserLogin");
+                        userDetails1 = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
+                        TempData["UserId"] = userDetails1.UserId;
                     }
-                    //userDetails1 = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
+                    return RedirectToAction("GetAllNotifications", "Notification", new { id = userDetails1.UserId });
+                    
                 }
             }
         }

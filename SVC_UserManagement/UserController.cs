@@ -25,7 +25,7 @@ namespace UserManagement
             _iUserManagementHelper = iUserManagementHelper;
         }
         /// <summary>
-        /// 
+        /// Find a User by  userid
         /// </summary>
         /// <param name="username"></param>
         /// <returns></returns>
@@ -45,6 +45,10 @@ namespace UserManagement
                 return NotFound(ex.Message);
             }
         }
+        /// <summary>
+        /// Get all Users in a List
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [Route("GetAllUsers")]
         public async Task<IActionResult> GetAllUsers()
@@ -59,7 +63,7 @@ namespace UserManagement
             }
         }
         /// <summary>
-        /// 
+        /// Login with username and password
         /// </summary>
         /// <param name="userDetails1"></param>
         /// <returns></returns>
@@ -83,6 +87,11 @@ namespace UserManagement
                 return NotFound(ex.Message);
             }
         }
+        /// <summary>
+        /// Add a new User to a List.
+        /// </summary>
+        /// <param name="userDetails"></param>
+        /// <returns></returns>
         [Route("RegisterUser")]
         [HttpPost]
         public async Task<IActionResult> RegisterUser(UserDetails userDetails)
@@ -100,7 +109,7 @@ namespace UserManagement
             }
         }
         /// <summary>
-        /// 
+        /// Update a new user to a List 
         /// </summary>
         /// <param name="userDetails"></param>
         /// <returns></returns>
