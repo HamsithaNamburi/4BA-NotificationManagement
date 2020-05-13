@@ -27,6 +27,9 @@ namespace NotificationManagement
         /// <returns></returns>
         [HttpGet]
         [Route("GetNotification/{notificationId}")]
+
+        [ProducesResponseType(200, Type = typeof(Notifications))]
+        [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> GetNotification(int notificationId)
         {
             try
@@ -45,6 +48,8 @@ namespace NotificationManagement
         /// <returns></returns>
         [HttpGet]
         [Route("GetAllNotifications/{userId}")]
+        [ProducesResponseType(200, Type = typeof(Notifications))]
+        [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> GetAllNotifications(int userId)
         {
             try
@@ -63,6 +68,8 @@ namespace NotificationManagement
         /// <returns></returns>
         [HttpPost]
         [Route("AddNotification")]
+        [ProducesResponseType(200, Type = typeof(bool))]
+        [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> AddNotification(Notifications notifications)
         {
             try
@@ -82,6 +89,8 @@ namespace NotificationManagement
         /// <returns></returns>
         [HttpPut]
         [Route("UpdateNotification")]
+        [ProducesResponseType(200, Type = typeof(bool))]
+        [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> UpdateNotification(Notifications notifications)
         {
             try
@@ -101,6 +110,8 @@ namespace NotificationManagement
         /// <returns></returns>
         [HttpDelete]
         [Route("DeleteNotification/{notificationId}")]
+        [ProducesResponseType(200, Type = typeof(bool))]
+        [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> DeleteNotification(int notificationId)
         {
             try

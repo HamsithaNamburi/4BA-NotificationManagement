@@ -63,7 +63,9 @@
         </form>
     </div>
 </div>
-
+<div>
+    @Html.ActionLink("Back to List", "GetAllNotifications", "Notification", new { id = TempData["id"] })
+</div>
 <div>
     <a asp-action="Index">Back to List</a>
 </div>

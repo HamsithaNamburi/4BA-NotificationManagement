@@ -27,12 +27,13 @@ namespace UserManagement
         /// <summary>
         /// Find a User by  userid
         /// </summary>
-        /// <param name="username"></param>
+        /// <param name="userId"></param>
         /// <returns></returns>
 
         [HttpGet]
         [Route("GetUser/{userId}")]
-
+        [ProducesResponseType(200, Type = typeof(UserDetails))]
+        [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> GetUser(int userId)
         {
             try
@@ -51,6 +52,8 @@ namespace UserManagement
         /// <returns></returns>
         [HttpGet]
         [Route("GetAllUsers")]
+        [ProducesResponseType(200, Type = typeof(List<UserDetails>))]
+        [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> GetAllUsers()
         {
             try
@@ -65,10 +68,12 @@ namespace UserManagement
         /// <summary>
         /// Login with username and password
         /// </summary>
-        /// <param name="userDetails1"></param>
+        /// <param name="userLogin"></param>
         /// <returns></returns>
         [HttpPost]
         [Route("UserLogin")]
+        [ProducesResponseType(200, Type = typeof(UserDetails))]
+        [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> UserLogin(Login userLogin)
         {
             try
@@ -94,6 +99,8 @@ namespace UserManagement
         /// <returns></returns>
         [Route("RegisterUser")]
         [HttpPost]
+        [ProducesResponseType(200, Type = typeof(bool))]
+        [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> RegisterUser(UserDetails userDetails)
         {
             try
@@ -115,6 +122,8 @@ namespace UserManagement
         /// <returns></returns>
         [HttpPut]
         [Route("UpdateUser")]
+        [ProducesResponseType(200, Type = typeof(bool))]
+        [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> UpdateUser(UserDetails userDetails)
         {
             try

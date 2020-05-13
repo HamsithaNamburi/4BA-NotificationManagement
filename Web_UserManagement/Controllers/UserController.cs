@@ -65,15 +65,16 @@ namespace UserManagementUI.Controllers
         public async Task<IActionResult> GetUser(int id)
         {
             UserDetails userDetails = new UserDetails();
-            int userId = Convert.ToInt32(TempData["UserId"]);
+           // int userId = Convert.ToInt32(TempData["id"]);
             using (var httpClient = new HttpClient())
             {
-                using (var response = await httpClient.GetAsync("http://localhost:62518/api/v1/GetUser/" + userId))
+                using (var response = await httpClient.GetAsync("http://localhost:62518/api/v1/GetUser/" +id))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
                     userDetails = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
                 }
             }
+            TempData["id"] = id;
             return View(userDetails);
         }
         public async Task<IActionResult> UserLogin()
@@ -111,7 +112,7 @@ namespace UserManagementUI.Controllers
         public async Task<IActionResult> UpdateUser(int id)
         {
             UserDetails user = new UserDetails();
-            int userId = Convert.ToInt32(TempData["UserId"]);
+            //int userId = Convert.ToInt32(TempData["id"]);
             using (var httpClient = new HttpClient())
             {
                 using (var response = await httpClient.GetAsync("http://localhost:62518/api/v1/GetUser/" + id))
@@ -120,11 +121,14 @@ namespace UserManagementUI.Controllers
                     user = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
                 }
             }
+           /// TempData["id"] = id;
             return View(user);
         }
         [HttpPost]
         public async Task<IActionResult> UpdateUser(UserDetails userDetails)
         {
+            UserDetails userDetails1 = new UserDetails();
+            userDetails.UpdatedDate = DateTime.Now;
             string apiResponse;
             using (var httpClient = new HttpClient())
             {

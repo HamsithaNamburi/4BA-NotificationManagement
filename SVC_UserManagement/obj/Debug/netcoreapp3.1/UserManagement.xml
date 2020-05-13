@@ -42,7 +42,7 @@
             <summary>
             Find a User by  userid
             </summary>
-            <param name="username"></param>
+            <param name="userId"></param>
             <returns></returns>
         </member>
         <member name="M:UserManagement.UserController.GetAllUsers">
@@ -55,7 +55,7 @@
             <summary>
             Login with username and password
             </summary>
-            <param name="userDetails1"></param>
+            <param name="userLogin"></param>
             <returns></returns>
         </member>
         <member name="M:UserManagement.UserController.RegisterUser(NotificationManagementDBEntity.Models.UserDetails)">

@@ -44,6 +44,21 @@
                     @Html.ActionLink("Delete", "DeleteNotification", new { id = item.NotificationId })
                 </td>
             </tr>
+
+
+            @*<td>
+                    @Html.ActionLink("Edit", "UpdateProduct", new { id = item.ProductId }) |
+                    @Html.ActionLink("Details", "GetProductById", new { id = item.ProductId }) |
+                    @Html.ActionLink("Delete", "DeleteProduct", new { id = item.ProductId })
+                </td>
+                </tr>
+            }
+            *@
         }
+
+        <tr>
+            @Html.ActionLink("View Profile", "GetUser", "User", new { id = TempData["id"] }) |
+            @Html.ActionLink("Edit Profile", "UpdateUser", "User", new { id = TempData["id"] }) |
+        </tr>
     </tbody>
-</table>
+    </table>

@@ -10812,20 +10812,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
+    "C:\\Users\\Devika\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\notify2\\4BA-NotificationManagement\\TST_UserManagement\\UserManagementTestCases.csproj",
+      "projectUniqueName": "E:\\Notication1\\4BA-NotificationManagement\\TST_UserManagement\\UserManagementTestCases.csproj",
       "projectName": "UserManagementTestCases",
-      "projectPath": "C:\\notify2\\4BA-NotificationManagement\\TST_UserManagement\\UserManagementTestCases.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\notify2\\4BA-NotificationManagement\\TST_UserManagement\\obj\\",
+      "projectPath": "E:\\Notication1\\4BA-NotificationManagement\\TST_UserManagement\\UserManagementTestCases.csproj",
+      "packagesPath": "C:\\Users\\Devika\\.nuget\\packages\\",
+      "outputPath": "E:\\Notication1\\4BA-NotificationManagement\\TST_UserManagement\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Devika\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -10837,17 +10842,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\notify2\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj": {
-              "projectPath": "C:\\notify2\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj"
+            "E:\\Notication1\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj": {
+              "projectPath": "E:\\Notication1\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj"
             },
-            "C:\\notify2\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
-              "projectPath": "C:\\notify2\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj"
+            "E:\\Notication1\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
+              "projectPath": "E:\\Notication1\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj"
             },
-            "C:\\notify2\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj": {
-              "projectPath": "C:\\notify2\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj"
+            "E:\\Notication1\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj": {
+              "projectPath": "E:\\Notication1\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj"
             },
-            "C:\\notify2\\4BA-NotificationManagement\\SVC_UserManagement\\UserManagement.csproj": {
-              "projectPath": "C:\\notify2\\4BA-NotificationManagement\\SVC_UserManagement\\UserManagement.csproj"
+            "E:\\Notication1\\4BA-NotificationManagement\\SVC_UserManagement\\UserManagement.csproj": {
+              "projectPath": "E:\\Notication1\\4BA-NotificationManagement\\SVC_UserManagement\\UserManagement.csproj"
             }
           }
         }

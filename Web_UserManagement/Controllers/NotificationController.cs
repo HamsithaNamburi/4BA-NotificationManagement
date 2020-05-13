@@ -32,6 +32,8 @@ namespace UserManagementUI.Controllers
                     notificationDetails = JsonConvert.DeserializeObject<List<Notifications>>(apiResponse);
                 }
             }
+            TempData["id"] = id;
+           //n View(productList);
             return View(notificationDetails);
         }
 
@@ -63,7 +65,7 @@ namespace UserManagementUI.Controllers
                 using (var response = await httpClient.PostAsync("http://localhost:62545/api/v1/AddNotification/", content))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
-                    notifiy = JsonConvert.DeserializeObject<Notifications>(apiResponse);
+                    //notifiy = JsonConvert.DeserializeObject<Notifications>(apiResponse);
                 }
             }
             return RedirectToAction("GetAllNotifications", new { id = userId });
@@ -80,6 +82,7 @@ namespace UserManagementUI.Controllers
                     notify = JsonConvert.DeserializeObject<Notifications>(apiResponse);
                 }
             }
+            TempData["id"] = notify.UserId;
             return View(notify);
         }
         [HttpPost]
