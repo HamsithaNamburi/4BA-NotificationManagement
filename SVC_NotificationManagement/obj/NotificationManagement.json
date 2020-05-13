@@ -1,7 +1,18 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "My NotificationManagement API",
+    "title": "ToDo API",
+    "description": "A simple example ASP.NET Core Web API",
+    "termsOfService": "https://example.com/terms",
+    "contact": {
+      "name": "Shayne Boyer",
+      "url": "https://twitter.com/spboyer",
+      "email": ""
+    },
+    "license": {
+      "name": "Use under LICX",
+      "url": "https://example.com/license"
+    },
     "version": "v1"
   },
   "paths": {
@@ -10,10 +21,12 @@
         "tags": [
           "Notification"
         ],
+        "summary": "Find the notification based on notificationId",
         "parameters": [
           {
             "name": "notificationId",
             "in": "path",
+            "description": "",
             "required": true,
             "schema": {
               "type": "integer",
@@ -33,10 +46,12 @@
         "tags": [
           "Notification"
         ],
+        "summary": "To get all the notifications",
         "parameters": [
           {
             "name": "userId",
             "in": "path",
+            "description": "",
             "required": true,
             "schema": {
               "type": "integer",
@@ -56,7 +71,9 @@
         "tags": [
           "Notification"
         ],
+        "summary": "to add a notification using post method",
         "requestBody": {
+          "description": "",
           "content": {
             "application/json": {
               "schema": {
@@ -87,7 +104,9 @@
         "tags": [
           "Notification"
         ],
+        "summary": "To update a notification using Put method",
         "requestBody": {
+          "description": "",
           "content": {
             "application/json": {
               "schema": {
@@ -118,10 +137,12 @@
         "tags": [
           "Notification"
         ],
+        "summary": "to delete a notification using Delete method",
         "parameters": [
           {
             "name": "notificationId",
             "in": "path",
+            "description": "",
             "required": true,
             "schema": {
               "type": "integer",

@@ -7,8 +7,8 @@
 <h1>GetAllNotifications</h1>
 
 <p>
-    <a asp-action="AddNotification">Add New Notification</a>
-    <a asp-action="GetUser">View Details</a>
+    <a asp-action="AddNotification">Add New Notification</a>&nbsp;&nbsp;
+    <a asp-action="GetUser" asp-controller="User">View User Details</a>
 </p>
 <table class="table">
     <thead>
@@ -22,45 +22,28 @@
             <th>
                 @Html.DisplayNameFor(model => model.Description)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatedDatetime)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UpdatedDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UserId)
-            </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.NotificationId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NotificationName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedDatetime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UpdatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UserId)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "UpdateNotification", new { id=item.NotificationId }) |
-                @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
-                @Html.ActionLink("Delete", "DeleteNotification", new {  id=item.NotificationId })
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NotificationId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NotificationName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "UpdateNotification", new { id = item.NotificationId }) |
+                    @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+                    @Html.ActionLink("Delete", "DeleteNotification", new { id = item.NotificationId })
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

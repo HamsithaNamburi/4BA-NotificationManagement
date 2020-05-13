@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace NotificationManagementTestCases.Helper
 {
-    class NotificationMangamentHelperTests
+    public class NotificationManagementHelperTests
     {
         private NotificationMangementHelper notificationManagementHelper;
         private Mock<INotificationRepository> mockNotificationRepository;
@@ -24,6 +24,10 @@ namespace NotificationManagementTestCases.Helper
             notificationManagementHelper = new NotificationMangementHelper(mockNotificationRepository.Object);
 
         }
+        /// <summary>
+        /// To Test Getallnotifications
+        /// </summary>
+        /// <returns></returns>
         [Test]
         public async Task GetAllNotifications_Valid_Returns()
         {
@@ -34,6 +38,10 @@ namespace NotificationManagementTestCases.Helper
             Assert.That(result.Count, Is.GreaterThan(0));
             Assert.That(result.Count, Is.EqualTo(2));
         }
+        /// <summary>
+        /// To test the exception of GetAllNotifications
+        /// </summary>
+        /// <returns></returns>
         [Test]
         public async Task GetAll_InValid_ReturnsNull()
         {
@@ -41,6 +49,10 @@ namespace NotificationManagementTestCases.Helper
             var result = await notificationManagementHelper.GetAllNotifications(1);
             Assert.That(result, Is.Null);
         }
+        /// <summary>
+        /// To test the AddNotification
+        /// </summary>
+        /// <returns></returns>
         [Test]
         public async Task AddNotification_valid_Returns()
         {
@@ -56,6 +68,10 @@ namespace NotificationManagementTestCases.Helper
             Assert.That(result, Is.Not.Null);
             Assert.That(result, Is.EqualTo(true));
         }
+        /// <summary>
+        /// To test the UpdateNotification
+        /// </summary>
+        /// <returns></returns>
         [Test]
         public async Task UpdateNotification_valid_Returns()
         {
@@ -72,6 +88,10 @@ namespace NotificationManagementTestCases.Helper
             Assert.That(result, Is.Not.Null);
             Assert.That(result, Is.EqualTo(true));
         }
+        /// <summary>
+        /// To test deleteNotification
+        /// </summary>
+        /// <returns></returns>
         [Test]
         public async Task DeleteNotification_Valid_Return()
         {
@@ -80,8 +100,5 @@ namespace NotificationManagementTestCases.Helper
             Assert.That(result, Is.Not.Null);
             Assert.That(result, Is.EqualTo(true));
         }
-
-
-       
     }
 }

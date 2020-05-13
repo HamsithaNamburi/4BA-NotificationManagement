@@ -1,10 +1,9 @@
-﻿ using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using EO.WebBrowser.DOM;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -16,6 +15,10 @@ namespace UserManagementUI.Controllers
     {
         public static string url = "https://localhost:62518/api/v1/";
         // GET: User
+        /// <summary>
+        /// To Get All Users
+        /// </summary>
+        /// <returns></returns>
         public async Task<IActionResult> Index()
         {
             List<UserDetails> userList = new List<UserDetails>();
@@ -34,6 +37,11 @@ namespace UserManagementUI.Controllers
         {
             return View();
         }
+        /// <summary>
+        /// To Register a user
+        /// </summary>
+        /// <param name="userDetails"></param>
+        /// <returns></returns>
         // POST: User/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -47,10 +55,9 @@ namespace UserManagementUI.Controllers
                 using (var response = await httpClient.PostAsync("http://localhost:62518/api/v1/RegisterUser/", content))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
-                    //userDetails1 = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
                 }
             }
-            return RedirectToAction("Index");
+            return RedirectToAction("UserLogin");
         }
         public ViewResult GetUser() => View();
 
@@ -58,12 +65,13 @@ namespace UserManagementUI.Controllers
         public async Task<IActionResult> GetUser(int id)
         {
             UserDetails userDetails = new UserDetails();
+            int userId = Convert.ToInt32(TempData["UserId"]);
             using (var httpClient = new HttpClient())
             {
-                using (var response = await httpClient.GetAsync("http://localhost:62518/api/v1/GetUser/" + id))
+                using (var response = await httpClient.GetAsync("http://localhost:62518/api/v1/GetUser/" + userId))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
-                   userDetails = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
+                    userDetails = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
                 }
             }
             return View(userDetails);
@@ -84,21 +92,18 @@ namespace UserManagementUI.Controllers
 
                 using (var response = await httpClient.PostAsync("http://localhost:62518/api/v1/UserLogin/", content))
                 {
-                    Console.WriteLine(response);
-                    //UserDetails user = JsonConvert.DeserializeObject<UserDetails>(response);
-                     apiResponse = await response.Content.ReadAsStringAsync();
-                    // Console.WriteLine(apiResponse);
+                    apiResponse = await response.Content.ReadAsStringAsync();
                     if (apiResponse == "Invalid User")
                     {
                         ViewBag.ErrorMessage = "Invalid Credentials";
+                        return View();
                     }
                     else
                     {
                         userDetails1 = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
                         TempData["UserId"] = userDetails1.UserId;
+                        return RedirectToAction("GetAllNotifications", "Notification", new { id = userDetails1.UserId });
                     }
-                    return RedirectToAction("GetAllNotifications", "Notification", new { id = userDetails1.UserId });
-                    
                 }
             }
         }
@@ -106,9 +111,10 @@ namespace UserManagementUI.Controllers
         public async Task<IActionResult> UpdateUser(int id)
         {
             UserDetails user = new UserDetails();
+            int userId = Convert.ToInt32(TempData["UserId"]);
             using (var httpClient = new HttpClient())
             {
-                using (var response = await httpClient.GetAsync("http://localhost:62518/api/v1/GetUser/"+id))
+                using (var response = await httpClient.GetAsync("http://localhost:62518/api/v1/GetUser/" + id))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
                     user = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
@@ -119,20 +125,16 @@ namespace UserManagementUI.Controllers
         [HttpPost]
         public async Task<IActionResult> UpdateUser(UserDetails userDetails)
         {
-            UserDetails user = userDetails;
-            user.UpdatedDate = DateTime.Now;
             string apiResponse;
             using (var httpClient = new HttpClient())
             {
-                StringContent stringContent = new StringContent(JsonConvert.SerializeObject(user), System.Text.Encoding.UTF8, "application/json");
+                StringContent stringContent = new StringContent(JsonConvert.SerializeObject(userDetails), System.Text.Encoding.UTF8, "application/json");
                 using (var response = await httpClient.PutAsync("http://localhost:62518/api/v1/UpdateUser/", stringContent))
                 {
                     apiResponse = await response.Content.ReadAsStringAsync();
-                    //ViewBag.Result = "Success";
-                    //user = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
                 }
             }
-            return RedirectToAction("Index");
+            return RedirectToAction("GetAllNotifications", "Notification", new { id = userDetails.UserId });
         }
     }
 }

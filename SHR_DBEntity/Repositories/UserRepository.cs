@@ -18,7 +18,7 @@ namespace UserManagement.Helper
             _notificationDBContext = notificationDBContext;
         }
         /// <summary>
-        /// Get the User By Id
+        /// To view the existing user based on userId
         /// </summary>
         /// <param name="userId"></param>
         /// <returns></returns>
@@ -26,19 +26,15 @@ namespace UserManagement.Helper
         {
             try
             {
-                //UserDetails userDetails = await _notificationDBContext.UserDetails.FindAsync(userId);
-                //if (userDetails == null)
-                //    return null;
-                //else
-                    return await _notificationDBContext.UserDetails.FindAsync(userId);
+                return await _notificationDBContext.UserDetails.FindAsync(userId);
             }
-            catch(Exception )
+            catch (Exception)
             {
                 throw;
             }
         }
         /// <summary>
-        /// Login in to the page with username and password
+        /// To authenticate the user 
         /// </summary>
         /// <param name="userLogin"></param>
         /// <returns></returns>
@@ -56,13 +52,13 @@ namespace UserManagement.Helper
                     return userDetails;
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw;
             }
         }
         /// <summary>
-        /// Add new User
+        /// To Add/ Register a new user 
         /// </summary>
         /// <param name="userDetails"></param>
         /// <returns></returns>
@@ -71,7 +67,7 @@ namespace UserManagement.Helper
             try
             {
                 _notificationDBContext.UserDetails.Add(userDetails);
-               var userId = await _notificationDBContext.SaveChangesAsync();
+                var userId = await _notificationDBContext.SaveChangesAsync();
                 await _notificationDBContext.SaveChangesAsync();
                 if (userId > 0)
                     return true;
@@ -85,15 +81,17 @@ namespace UserManagement.Helper
             }
         }
         /// <summary>
-        /// Upadte the Exsisting
+        /// To update  the existing user 
         /// </summary>
         /// <param name="userDetails"></param>
         /// <returns></returns>
         public async Task<bool> UpdateUser(UserDetails userDetails)
         {
+            UserDetails userDetails1 = userDetails;
+            userDetails1.UpdatedDate = DateTime.Now;
             try
             {
-                _notificationDBContext.UserDetails.Update(userDetails);
+                _notificationDBContext.UserDetails.Update(userDetails1);
                 var productId = await _notificationDBContext.SaveChangesAsync();
                 if (productId > 0)
                     return true;
@@ -107,7 +105,7 @@ namespace UserManagement.Helper
             }
         }
         /// <summary>
-        /// Get all users in a list
+        /// To view all the users 
         /// </summary>
         /// <returns></returns>
 
@@ -116,7 +114,7 @@ namespace UserManagement.Helper
             try
             {
                 List<UserDetails> userDetails = await _notificationDBContext.UserDetails.ToListAsync();
-               await _notificationDBContext.SaveChangesAsync();
+                await _notificationDBContext.SaveChangesAsync();
                 return userDetails;
             }
             catch

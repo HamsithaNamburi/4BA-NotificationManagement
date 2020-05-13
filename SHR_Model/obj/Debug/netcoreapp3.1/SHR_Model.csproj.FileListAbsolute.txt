@@ -84,3 +84,12 @@ D:\UpdatedCodewithUI\4BA-NotificationManagement\SHR_Model\obj\Debug\netcoreapp3.
 D:\UpdatedCodewithUI\4BA-NotificationManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.AssemblyInfo.cs
 D:\UpdatedCodewithUI\4BA-NotificationManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.dll
 D:\UpdatedCodewithUI\4BA-NotificationManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.pdb
+C:\notify2\4BA-NotificationManagement\SHR_Model\bin\Debug\netcoreapp3.1\SHR_Model.deps.json
+C:\notify2\4BA-NotificationManagement\SHR_Model\bin\Debug\netcoreapp3.1\SHR_Model.dll
+C:\notify2\4BA-NotificationManagement\SHR_Model\bin\Debug\netcoreapp3.1\SHR_Model.pdb
+C:\notify2\4BA-NotificationManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.csprojAssemblyReference.cache
+C:\notify2\4BA-NotificationManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.csproj.CoreCompileInputs.cache
+C:\notify2\4BA-NotificationManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.AssemblyInfoInputs.cache
+C:\notify2\4BA-NotificationManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.AssemblyInfo.cs
+C:\notify2\4BA-NotificationManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.dll
+C:\notify2\4BA-NotificationManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.pdb

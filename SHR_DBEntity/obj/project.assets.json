@@ -9086,19 +9086,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pandu\\.nuget\\packages\\": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\UpdatedCodewithUI\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj",
+      "projectUniqueName": "C:\\notify2\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj",
       "projectName": "NotificationManagementDBEntity",
-      "projectPath": "D:\\UpdatedCodewithUI\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj",
-      "packagesPath": "C:\\Users\\pandu\\.nuget\\packages\\",
-      "outputPath": "D:\\UpdatedCodewithUI\\4BA-NotificationManagement\\SHR_DBEntity\\obj\\",
+      "projectPath": "C:\\notify2\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "C:\\notify2\\4BA-NotificationManagement\\SHR_DBEntity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\pandu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9111,11 +9111,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\UpdatedCodewithUI\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
-              "projectPath": "D:\\UpdatedCodewithUI\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj"
+            "C:\\notify2\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
+              "projectPath": "C:\\notify2\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj"
             },
-            "D:\\UpdatedCodewithUI\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj": {
-              "projectPath": "D:\\UpdatedCodewithUI\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj"
+            "C:\\notify2\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj": {
+              "projectPath": "C:\\notify2\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj"
             }
           }
         }
@@ -9177,7 +9177,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

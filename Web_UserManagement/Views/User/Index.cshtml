@@ -34,56 +34,44 @@
                 @Html.DisplayNameFor(model => model.ContactNumber)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.RegisteredDatetime)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UpdatedDate)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.UserAddress)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.UserId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UserName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UserPassword)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EmailAddr)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ContactNumber)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RegisteredDatetime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UpdatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UserAddress)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "UpdateUser", new {  id=item.UserId}) |
-                @Html.ActionLink("Details", "GetUser", new {  id=item.UserId  }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.UserId })
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserPassword)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmailAddr)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ContactNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserAddress)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "UpdateUser", new { id = item.UserId }) |
+                    @Html.ActionLink("Details", "GetUser", new { id = item.UserId })
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

@@ -29,7 +29,7 @@ namespace UserManagementUI.Controllers
                 using (var response = await httpClient.GetAsync("http://localhost:62545/api/v1/GetAllNotifications/" + id))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
-                     notificationDetails = JsonConvert.DeserializeObject<List<Notifications>>(apiResponse);
+                    notificationDetails = JsonConvert.DeserializeObject<List<Notifications>>(apiResponse);
                 }
             }
             return View(notificationDetails);
@@ -52,10 +52,13 @@ namespace UserManagementUI.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddNotification(Notifications notifications)
         {
-            Notifications notifiy = new Notifications();
+            Notifications notifiy = notifications;
+            int userId = Convert.ToInt32(TempData["UserId"]);
+            notifiy.UserId = userId;
+            ViewBag.UserId = userId;
             using (var httpClient = new HttpClient())
             {
-                StringContent content = new StringContent(JsonConvert.SerializeObject(notifications), Encoding.UTF8, "application/json");
+                StringContent content = new StringContent(JsonConvert.SerializeObject(notifiy), Encoding.UTF8, "application/json");
 
                 using (var response = await httpClient.PostAsync("http://localhost:62545/api/v1/AddNotification/", content))
                 {
@@ -63,7 +66,7 @@ namespace UserManagementUI.Controllers
                     notifiy = JsonConvert.DeserializeObject<Notifications>(apiResponse);
                 }
             }
-            return RedirectToAction("GetAllNotifications",new { id = 1 });
+            return RedirectToAction("GetAllNotifications", new { id = userId });
         }
         [HttpGet]
         public async Task<IActionResult> UpdateNotification(int id)
@@ -83,6 +86,7 @@ namespace UserManagementUI.Controllers
         public async Task<IActionResult> UpdateNotification(Notifications notifications)
         {
             Notifications notify = notifications;
+            int userId = Convert.ToInt32(TempData["UserId"]);
             notifications.UpdatedDate = DateTime.Now;
             using (var httpClient = new HttpClient())
             {
@@ -90,11 +94,9 @@ namespace UserManagementUI.Controllers
                 using (var response = await httpClient.PutAsync("http://localhost:62545/api/v1/UpdateNotification/", stringContent))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
-                    //ViewBag.Result = "Success";
-                    //notify = JsonConvert.DeserializeObject<Notifications>(apiResponse);
                 }
             }
-            return RedirectToAction("GetAllNotifications",new { id = notify.UserId });
+            return RedirectToAction("GetAllNotifications", new { id = userId });
         }
         [HttpGet]
         public async Task<IActionResult> DeleteNotification(int? id)
@@ -115,16 +117,16 @@ namespace UserManagementUI.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteNotification(int id)
         {
-            //int notificationid = notifications.NotificationId;
+            int userId = Convert.ToInt32(TempData["UserId"]);
             using (var httpClient = new HttpClient())
             {
                 using (var response = await httpClient.DeleteAsync("http://localhost:62545/api/v1/DeleteNotification/" + id))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
-                    
+
                 }
             }
-            return RedirectToAction("GetAllNotifications",new { id = 1 });
+            return RedirectToAction("GetAllNotifications", new { id = userId });
         }
     }
 }
