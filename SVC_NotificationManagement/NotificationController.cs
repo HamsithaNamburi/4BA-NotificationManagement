@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using log4net;
+using log4net.Config;
 using Microsoft.AspNetCore.Mvc;
 using NotificationManagement.Helper;
 using NotificationManagementDBEntity.Models;
@@ -15,10 +19,13 @@ namespace NotificationManagement
 	[ApiController]
 	public class NotificationController : Controller
 	{
+        private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         private readonly INotificationManagementHelper _inotificationManagementHelper;
         public NotificationController(INotificationManagementHelper iNotificationManagementHelper)
         {
             _inotificationManagementHelper = iNotificationManagementHelper;
+            var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
+            XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
         }
 
         /// <summary>
@@ -37,6 +44,7 @@ namespace NotificationManagement
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> GetNotification(int notificationId)
         {
+            log.Info("In NotificationController :  GetNotification(int notificationId)");
             try
             {
                 //Returns a notification if the entered notificationId exists if not it will throws exception
@@ -44,6 +52,7 @@ namespace NotificationManagement
             }
             catch (Exception ex)
             {
+                log.Error("Exception NotificationController :  GetNotification(int notificationId)" + ex.Message);
                 return NotFound(ex.Message);
             }
         }
@@ -63,6 +72,7 @@ namespace NotificationManagement
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> GetAllNotifications(int userId)
         {
+            log.Info("In NotificationController :   GetAllNotifications(int userId)");
             try
             {
                 //Returns all notifications which exists on the entered userId, else if entered the invalid userId throws an exception 
@@ -70,6 +80,7 @@ namespace NotificationManagement
             }
             catch (Exception ex)
             {
+                log.Error("Exception NotificationController : GetAllNotifications(int userId)" + ex.Message);
                 return NotFound(ex.Message);
             }
         }
@@ -89,6 +100,7 @@ namespace NotificationManagement
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> AddNotification(Notifications notifications)
         {
+            log.Info("In NotificationController :   AddNotification(Notifications notifications)");
             try
             {
                 //Returns the bool value if the notification added , or else if the passed object is wrong then it will throws an exception
@@ -97,6 +109,7 @@ namespace NotificationManagement
             }
             catch (Exception ex)
             {
+                log.Error("Exception NotificationController :  AddNotification(Notifications notifications)" + ex.Message);
                 return NotFound(ex.InnerException.Message);
             }
         }
@@ -116,6 +129,7 @@ namespace NotificationManagement
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> UpdateNotification(Notifications notifications)
         {
+            log.Info("In NotificationController :   UpdateNotification(Notifications notifications)");
             try
             {
                 //Returns true if notification is updated else it throws an exception
@@ -124,6 +138,7 @@ namespace NotificationManagement
             }
             catch (Exception ex)
             {
+                log.Error("Exception NotificationController : UpdateNotification(Notifications notifications)" + ex.Message);
                 return NotFound(ex.Message);
             }
         }
@@ -143,6 +158,7 @@ namespace NotificationManagement
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> DeleteNotification(int notificationId)
         {
+            log.Info("In NotificationController :  DeleteNotification(int notificationId)");
             try
             {
                 //Delete a notification if the entered notificationId exists else throws an exception
@@ -151,6 +167,7 @@ namespace NotificationManagement
             }
             catch (Exception ex)
             {
+                log.Error("Exception NotificationController :  DeleteNotification(int notificationId)" + ex.Message);
                 return NotFound(ex.Message);
             }
         }

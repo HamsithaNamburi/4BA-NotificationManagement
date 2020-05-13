@@ -63,19 +63,14 @@ namespace UserManagement
             {
                 app.UseDeveloperExceptionPage();
             }
-            loggerFactory.AddLog4Net();
+            //loggerFactory.AddLog4Net();
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {
-                //endpoints.MapControllerRoute(
-                //    name: "swagger",
-                //    pattern: "{controller=v1}");
+                
                 endpoints.MapControllers();
-                //endpoints.MapGet("/", async context =>
-                //{
-                //    await context.Response.WriteAsync("Hello World!");
-                //});
+              
             });
             app.UseSwagger();
             app.UseSwaggerUI(c =>

@@ -1,9 +1,13 @@
-﻿using NotificationManagementDBEntity.Models;
+﻿using log4net;
+using log4net.Config;
+using NotificationManagementDBEntity.Models;
 using NotificationManagementDBEntity.Repositories;
 using SHR_Model;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace UserManagement.Helper
@@ -18,9 +22,12 @@ namespace UserManagement.Helper
 	}
 	public class UserManagementHelper : IUserManagementHelper
 	{
+		private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 		private readonly IUserRepository _iUserRepository;
 		public UserManagementHelper(IUserRepository iUserRepository)
 		{
+			var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
+			XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
 			_iUserRepository = iUserRepository;
 		}
 		/// <summary>
@@ -30,14 +37,16 @@ namespace UserManagement.Helper
 		/// <returns></returns>
 		public async Task<bool> RegisterUser(UserDetails userDetails)
 		{
+			log.Info("In UserManagementHelper :   RegisterUser(UserDetails userDetails)");
 			try
 			{
 				//Input for this is userDetails if valid then registration will be successfull else thrwos an exception
 				bool userId = await _iUserRepository.RegisterUser(userDetails);
 				return userId;
 			}
-			catch
+			catch(Exception e)
 			{
+				log.Error("Exception UserManagementHelper:  RegisterUser(UserDetails userDetails)" + e.Message);
 				throw;
 			}
 		}
@@ -48,6 +57,7 @@ namespace UserManagement.Helper
 		/// <returns></returns>
 		public async Task<UserDetails> GetUser(int userId)
 		{
+			log.Info("In UserManagementHelper :  GetUser(int userId)");
 			try
 			{
 				//Input for this method is userId if valid userId then returns userDetails else throws exception
@@ -59,8 +69,9 @@ namespace UserManagement.Helper
 				else
 					return null;
 			}
-			catch
+			catch(Exception e)
 			{
+				log.Error("Exception UserManagementHelper:GetUser(int userId)" + e.Message);
 				throw;
 			}
 		}
@@ -81,6 +92,7 @@ namespace UserManagement.Helper
 		/// <returns></returns>
 		public async Task<bool> UpdateUser(UserDetails userDetails)
 		{
+			log.Info("In UserManagementHelper :  UpdateUser(UserDetails userDetails)");
 			try
 			{
 				//Input for this update method is userDetails if passed values are correct it will update else it throws an exception
@@ -91,8 +103,9 @@ namespace UserManagement.Helper
 				//else
 				//	return 0;
 			}
-			catch
+			catch(Exception e)
 			{
+				log.Error("Exception UserManagementHelper: UpdateUser(UserDetails userDetails)" + e.Message);
 				throw;
 			}
 		}
@@ -102,14 +115,16 @@ namespace UserManagement.Helper
 		/// <returns></returns>
 		public async Task<List<UserDetails>> GetAllUsers()
 		{
+			log.Info("In UserManagementHelper :   GetAllUsers()");
 			try
 			{
 				//Returns Users list present in the database else if nothing exists it will returns exception
 				List<UserDetails> userDetails = await _iUserRepository.GetAllUsers();
 				return userDetails;	
 			}
-			catch
+			catch(Exception e)
 			{
+				log.Error("Exception UserManagementHelper: GetAllUsers()" + e.Message);
 				throw;
 			}
 		}

@@ -1,19 +1,26 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using log4net;
+using log4net.Config;
+using Microsoft.EntityFrameworkCore;
 using NotificationManagementDBEntity.Models;
 using NotificationManagementDBEntity.Repositories;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace NotificationManagement
 {
     public class NotificationRepository : INotificationRepository
     {
+        private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         private readonly NotificationDBContext _notificationDBContext;
         public NotificationRepository(NotificationDBContext notificationDBContext)
         {
             _notificationDBContext = notificationDBContext;
+            var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
+            XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
         }
         /// <summary>
         /// To view the notification based on notificationId
@@ -22,6 +29,7 @@ namespace NotificationManagement
         /// <returns></returns>
         public async Task<Notifications> GetNotification(int notificationId)
         {
+            log.Info("In NotificationRepository :  GetNotification(int notificationId)");
             try
             {
                 //Returns a notification if the entered notificationId exists if not it will throws exception
@@ -29,6 +37,7 @@ namespace NotificationManagement
             }
             catch (Exception e)
             {
+                log.Error("Exception NotificationRepository:  GetNotification(int notificationId)" + e.Message);
                 throw;
             }
 
@@ -40,6 +49,7 @@ namespace NotificationManagement
         /// <returns></returns>
         public async Task<bool> AddNotification(Notifications notifications)
         {
+            log.Info("In NotificationRepository :   AddNotification(Notifications notifications)");
             try
             {
                 //Returns the bool value if the notification added , or else if the passed object is wrong then it will throws an exception
@@ -54,6 +64,8 @@ namespace NotificationManagement
             }
             catch (Exception e)
             {
+                log.Error("Exception NotificationRepository:  AddNotification(Notifications notifications)" + e.Message);
+                throw;
                 // To Do Log
                 throw;
             }
@@ -65,7 +77,7 @@ namespace NotificationManagement
         /// <returns></returns>
         public async Task<bool> DeleteNotification(int notificationId)
         {
-
+            log.Info("In NotificationRepository :   DeleteNotification(int notificationId)");
             try
             {
                 //Delete a notification if the entered notificationId exists else throws an exception
@@ -83,6 +95,7 @@ namespace NotificationManagement
             }
             catch (Exception ex)
             {
+                log.Error("Exception NotificationRepository:  DeleteNotification(int notificationId)" + ex.Message);
                 throw;
             }
 
@@ -94,6 +107,7 @@ namespace NotificationManagement
         /// <returns></returns>
         public async Task<List<Notifications>> GetAllNotifications(int userId)
         {
+            log.Info("In NotificationRepository :   GetAllNotifications(int userId)");
             try
             {
 
@@ -102,8 +116,9 @@ namespace NotificationManagement
                 await _notificationDBContext.SaveChangesAsync();
                 return userDetails;
             }
-            catch
+            catch(Exception e)
             {
+                log.Error("Exception NotificationRepository:  GetAllNotifications(int userId)" + e.Message);
                 throw;
             }
         }
@@ -114,6 +129,7 @@ namespace NotificationManagement
         /// <returns></returns>
         public async Task<bool> UpdateNotification(Notifications notifications)
         {
+            log.Info("In NotificationRepository :  UpdateNotification(Notifications notifications)");
             Notifications notifications1 = notifications;
             notifications1.UpdatedDate = DateTime.Now;
             try
@@ -132,6 +148,7 @@ namespace NotificationManagement
             }
             catch (Exception ex)
             {
+                log.Error("Exception NotificationRepository:  UpdateNotification(Notifications notifications)" + ex.Message);
                 throw;
             }
         }

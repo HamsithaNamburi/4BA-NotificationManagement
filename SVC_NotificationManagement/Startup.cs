@@ -59,7 +59,7 @@ namespace NotificationManagement
             {
                 app.UseDeveloperExceptionPage();
             }
-            loggerFactory.AddLog4Net();
+            //loggerFactory.AddLog4Net();
             app.UseRouting();
             app.UseEndpoints(endpoints =>
             {

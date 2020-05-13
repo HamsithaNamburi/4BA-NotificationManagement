@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using log4net;
+using log4net.Config;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using NotificationManagementDBEntity.Models;
@@ -17,11 +21,13 @@ namespace UserManagement
     [ApiController]
 	public class UserController : Controller
 	{
-        
+        private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         private readonly IUserManagementHelper _iUserManagementHelper;
         //private readonly ILogger<UserController> _logger;
         public UserController(IUserManagementHelper iUserManagementHelper)
         {
+            var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
+            XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
             _iUserManagementHelper = iUserManagementHelper;
         }
         /// <summary>
@@ -39,6 +45,7 @@ namespace UserManagement
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> GetUser(int userId)
         {
+            log.Info("In UserController : GetUser(int userId)");
             try
             {
                 //Input for this method is userId which is of integer datatatype
@@ -48,6 +55,7 @@ namespace UserManagement
 
             catch (Exception ex)
             {
+                log.Error("Exception UserController: GetUser(int userId)" + ex.Message);
                 return NotFound(ex.Message);
             }
         }
@@ -65,6 +73,7 @@ namespace UserManagement
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> GetAllUsers()
         {
+            log.Info("In UserController :  GetAllUsers()");
             try
             {
                 //Returns Users list present in the database else if nothing exists it will returns exception
@@ -72,6 +81,7 @@ namespace UserManagement
             }
             catch (Exception ex)
             {
+                log.Error("Exception UserController: GetAllUsers()" + ex.Message);
                 return NotFound(ex.Message);
             }
         }
@@ -90,6 +100,7 @@ namespace UserManagement
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> UserLogin(Login userLogin)
         {
+            log.Info("In UserController : UserLogin(Login userLogin)");
             try
             {
                 //Input is userName and userPassword 
@@ -105,6 +116,7 @@ namespace UserManagement
             }
             catch (Exception ex)
             {
+                log.Error("Exception UserController: UserLogin(Login userLogin)" + ex.Message);
                 return NotFound(ex.InnerException.Message);
             }
         }
@@ -123,6 +135,7 @@ namespace UserManagement
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> RegisterUser(UserDetails userDetails)
         {
+            log.Info("In UserController :  RegisterUser(UserDetails userDetails)");
             try
             {
                 //Input for this Register i userDetails if passed values are correct the user registration is successfull else it throws an exception
@@ -132,6 +145,7 @@ namespace UserManagement
 
             catch (Exception ex)
             {
+                log.Error("Exception UserController: RegisterUser(UserDetails userDetails)" + ex.Message);
                 return NotFound(ex.InnerException.Message);
 
             }
@@ -151,6 +165,7 @@ namespace UserManagement
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> UpdateUser(UserDetails userDetails)
         {
+            log.Info("In UserController : UpdateUser(UserDetails userDetails)");
             try
             {
                 //Input for this update method is userDetails if passed values are correct it will update else it throws an exception
@@ -159,6 +174,7 @@ namespace UserManagement
             }
             catch (Exception ex)
             {
+                log.Error("Exception UserController:UpdateUser(UserDetails userDetails)" + ex.Message);
                 return NotFound(ex.InnerException.Message);
             }
         }

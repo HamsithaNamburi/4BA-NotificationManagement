@@ -1,8 +1,13 @@
-﻿using NotificationManagementDBEntity.Models;
+﻿using log4net;
+using log4net.Config;
+using NotificationManagementDBEntity.Models;
 using NotificationManagementDBEntity.Repositories;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.InteropServices.ComTypes;
 using System.Threading.Tasks;
 
 namespace NotificationManagement.Helper
@@ -17,10 +22,14 @@ namespace NotificationManagement.Helper
 	}
 	public class NotificationMangementHelper : INotificationManagementHelper
 	{
+		private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 		private readonly INotificationRepository _iNotificationRepository;
 		public NotificationMangementHelper(INotificationRepository inotificationRepository)
 		{
+
 			_iNotificationRepository = inotificationRepository;
+			var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
+			XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
 		}
 		/// <summary>
 		/// Get Notifications By Notification Id
@@ -29,6 +38,7 @@ namespace NotificationManagement.Helper
 		/// <returns></returns>
 		public async Task<Notifications> GetNotification(int notificationId)
 		{
+			log.Info("In NotificationMangementHelper :    GetNotification(int notificationId)");
 			try
 			{
 				//checking the notifications , if exists it will return list of notifications else it will return null
@@ -44,6 +54,7 @@ namespace NotificationManagement.Helper
 			}
 			catch(Exception ex)
 			{
+				log.Error("Exception NotificationMangementHelper:   GetNotification(int notificationId)" + ex.Message);
 				throw;
 			}
 		}
@@ -54,14 +65,16 @@ namespace NotificationManagement.Helper
 		/// <returns></returns>
 		public async Task<bool> AddNotification(Notifications notifications)
 		{
+			log.Info("In NotificationMangementHelper :   AddNotification(Notifications notifications)");
 			try
 			{
 				//It will add the notification and returns bool value if added else throws an exception 
 				bool notification = await _iNotificationRepository.AddNotification(notifications);
 				return notification;
 			}
-			catch
+			catch(Exception ex)
 			{
+				log.Error("Exception NotificationMangementHelper:  AddNotification(Notifications notifications)" + ex.Message);
 				throw;
 			}
 		}
@@ -72,6 +85,7 @@ namespace NotificationManagement.Helper
 		/// <returns></returns>
 		public async Task<bool> DeleteNotification(int notificationId)
 		{
+			log.Info("In NotificationMangementHelper :  DeleteNotification(int notificationId)");
 			try
 			{
 				//It will delete the notification if the notificationId exists else throws an exception
@@ -81,8 +95,9 @@ namespace NotificationManagement.Helper
 				else
 					return false;
 			}
-			catch
+			catch(Exception ex)
 			{
+				log.Error("Exception NotificationMangementHelper:  DeleteNotification(int notificationId)" + ex.Message);
 				throw;
 			}
 		}
@@ -93,9 +108,10 @@ namespace NotificationManagement.Helper
 		/// <returns></returns>
 		public async Task<List<Notifications>> GetAllNotifications(int userId)
 		{
+			log.Info("In NotificationMangementHelper : GetAllNotifications(int userId)");
 			try
 			{
-				//Retuens all the notifications which exists on the particular UserId profile, 
+				//Returns all the notifications which exists on the particular UserId profile, 
 				//If exists returns list of notifications else throws exception
 				List<Notifications> notifications = await _iNotificationRepository.GetAllNotifications(userId);
 				if (notifications != null)
@@ -105,9 +121,11 @@ namespace NotificationManagement.Helper
 				else
 					return null;
 			}
-			catch
+			catch(Exception ex)
 			{
+				log.Error("Exception NotificationMangementHelper:  GetAllNotifications(int userId)" + ex.Message);
 				throw;
+				
 			}
 		}
 		/// <summary>
@@ -118,6 +136,7 @@ namespace NotificationManagement.Helper
 	
 		public async Task<bool> UpdateNotification(Notifications notifications)
 		{
+			log.Info("In NotificationMangementHelper :  UpdateNotification(Notifications notifications)");
 			try
 			{
 				//It will Update the existing notification and returns true if updates else throws an exception
@@ -127,8 +146,9 @@ namespace NotificationManagement.Helper
 				else
 					return false;
 			}
-			catch
+			catch(Exception ex)
 			{
+				log.Error("Exception NotificationMangementHelper:  UpdateNotification(Notifications notifications)" + ex.Message);
 				throw;
 			}
 		}
