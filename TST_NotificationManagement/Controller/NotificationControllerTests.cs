@@ -44,25 +44,6 @@ namespace NotificationManagementTestCases.Controller
 
         }
 
-        [Test]
-        public async Task UpdateUser_valid_Returns()
-        {
-            mockNotificationManagementHelper.Setup(d => d.UpdateNotification(It.IsAny<Notifications>())).ReturnsAsync(new bool());
-            var result = await notificationsController.UpdateNotification(new Notifications()
-            {
-                NotificationId = 203,
-                NotificationName = "NTYRE",
-                Description = "hello hiii",
-                CreatedDatetime = DateTime.Now,
-                UpdatedDate = DateTime.Now,
-                UserId = 1,
-            }) as OkResult;
-            Assert.That(result, Is.Not.Null);
-            //Assert.That(result, Is.Not.Null);
-            //Assert.That(result, Is.EqualTo(true));
-            Assert.That(result.StatusCode, Is.EqualTo(200));
-        }
-
 
         [Test]
         public async Task AddNotification_valid_Returns()
@@ -82,7 +63,35 @@ namespace NotificationManagementTestCases.Controller
             Assert.That(result.StatusCode, Is.EqualTo(200));
 
         }
+        [Test]
+        public async Task UpdateNotification_valid_Returns()
+        {
+            mockNotificationManagementHelper.Setup(d => d.UpdateNotification(It.IsAny<Notifications>())).ReturnsAsync(new bool());
+            var result = await notificationsController.UpdateNotification(new Notifications()
+            {
+                NotificationId = 203,
+                NotificationName = "NTYRE",
+                Description = "hello hiii",
+                CreatedDatetime = DateTime.Now,
+                UpdatedDate = DateTime.Now,
+                UserId = 1,
+            }) as OkResult;
+            Assert.That(result, Is.Not.Null);
+            
+            Assert.That(result.StatusCode, Is.EqualTo(200));
+        }
+        [Test]
+        public async Task DeleteNotification_Valid_Return()
+        {
+            mockNotificationManagementHelper.Setup(d => d.GetAllNotifications(It.IsAny<int>())).ReturnsAsync(mockNotificationData.notification);
+            var result = await notificationsController.DeleteNotification(100) as OkResult;
+            Assert.That(result, Is.Not.Null);
 
+            Assert.That(result.StatusCode, Is.EqualTo(200));
+
+        }
 
     }
 }
+
+    

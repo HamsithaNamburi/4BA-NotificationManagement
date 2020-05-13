@@ -1,17 +1,12 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "ToDo API",
-    "description": "A simple example ASP.NET Core Web API",
-    "termsOfService": "https://example.com/terms",
+    "title": "UserManagementAPI",
+    "description": "APS.NET core UserManagement WebApi",
     "contact": {
-      "name": "Shayne Boyer",
-      "url": "https://twitter.com/spboyer",
+      "name": "4BA-Batch",
+      "url": "https://github.com/HamsithaNamburi/4BA-NotificationManagement.git",
       "email": ""
-    },
-    "license": {
-      "name": "Use under LICX",
-      "url": "https://example.com/license"
     },
     "version": "v1"
   },
@@ -36,7 +31,50 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Successful operation",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Notifications"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Notifications"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Notifications"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Requested Resouce  not found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request/Request Invalid"
+          },
+          "500": {
+            "description": "Internal server Error"
           }
         }
       }
@@ -61,7 +99,50 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Successful operation",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Notifications"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Notifications"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Notifications"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Requested Resouce  not found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request/Request Invalid"
+          },
+          "500": {
+            "description": "Internal server Error"
           }
         }
       }
@@ -94,7 +175,50 @@
         },
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Successful operation",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Requested Resouce  not found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request/Request Invalid"
+          },
+          "500": {
+            "description": "Internal server Error"
           }
         }
       }
@@ -127,7 +251,50 @@
         },
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Successful operation",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Requested Resouce  not found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request/Request Invalid"
+          },
+          "500": {
+            "description": "Internal server Error"
           }
         }
       }
@@ -152,7 +319,50 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Successful operation",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Requested Resouce  not found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request/Request Invalid"
+          },
+          "500": {
+            "description": "Internal server Error"
           }
         }
       }

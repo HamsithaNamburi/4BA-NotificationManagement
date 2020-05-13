@@ -51,7 +51,7 @@
 
     <form asp-action="DeleteNotification">
         <input type="submit" value="Delete" class="btn btn-danger" /> |
-        @*<a asp-action="GetAllNotifications">Back to List</a>*@
+      
         @Html.ActionLink("Back to List", "GetAllNotifications", "Notification", new { id = TempData["id"] }) |
     </form>
 </div>

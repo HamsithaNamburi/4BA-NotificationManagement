@@ -84,16 +84,16 @@ namespace UserManagementTestCases.Repository
             var getUserById = await userRepository.UpdateUser(
                 new UserDetails()
                 {
-                    UserId = 1,
-                    UserName = "Abc1",
-                    EmailAddr = "Abc1@gmail.com",
-                    UserPassword = "4545",
-                    UserAddress = "Ap",
+                    //UserId = 18,
+                    UserName = "hello11123",
+                    EmailAddr = "hello@gmail.com",
+                    UserPassword = "hello1",
+                    UserAddress = "tnllll",
                     RegisteredDatetime = DateTime.Now,
                     UpdatedDate = DateTime.Now,
-                    ContactNumber = "9874563210",
-                    FirstName = "Abc1",
-                    LastName = "Xyz"
+                    ContactNumber = "6583920836",
+                    FirstName = "hello1",
+                    LastName = "hello1"
 
                 });
             Assert.That(getUserById, Is.Not.Null);

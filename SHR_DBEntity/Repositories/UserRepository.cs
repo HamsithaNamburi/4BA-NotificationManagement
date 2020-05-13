@@ -26,6 +26,7 @@ namespace UserManagement.Helper
         {
             try
             {
+                //Returns an userDetails if the entered userId exists else throws an exception
                 return await _notificationDBContext.UserDetails.FindAsync(userId);
             }
             catch (Exception)
@@ -42,6 +43,7 @@ namespace UserManagement.Helper
         {
             try
             {
+                //Returns the userDetails if the entered credentials are valid else it throws an exception
                 UserDetails userDetails = _notificationDBContext.UserDetails.SingleOrDefault(i => i.UserName == userLogin.userName && i.UserPassword == userLogin.userPassword);
                 if (userDetails == null)
                 {
@@ -66,6 +68,7 @@ namespace UserManagement.Helper
         {
             try
             {
+                //Returns true if the passed userDetails are inserted else returns error 
                 _notificationDBContext.UserDetails.Add(userDetails);
                 var userId = await _notificationDBContext.SaveChangesAsync();
                 await _notificationDBContext.SaveChangesAsync();
@@ -91,6 +94,7 @@ namespace UserManagement.Helper
             userDetails1.UpdatedDate = DateTime.Now;
             try
             {
+                //Returns the boolean value if the userDetails are updated else throws an exception
                 _notificationDBContext.UserDetails.Update(userDetails1);
                 var productId = await _notificationDBContext.SaveChangesAsync();
                 if (productId > 0)
@@ -113,6 +117,7 @@ namespace UserManagement.Helper
         {
             try
             {
+                //Returns the list of Users exists in the database
                 List<UserDetails> userDetails = await _notificationDBContext.UserDetails.ToListAsync();
                 await _notificationDBContext.SaveChangesAsync();
                 return userDetails;

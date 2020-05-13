@@ -32,6 +32,7 @@ namespace UserManagement.Helper
 		{
 			try
 			{
+				//Input for this is userDetails if valid then registration will be successfull else thrwos an exception
 				bool userId = await _iUserRepository.RegisterUser(userDetails);
 				return userId;
 			}
@@ -49,6 +50,7 @@ namespace UserManagement.Helper
 		{
 			try
 			{
+				//Input for this method is userId if valid userId then returns userDetails else throws exception
 				UserDetails userDetails = await _iUserRepository.GetUser(userId);
 				if (userDetails != null)
 				{
@@ -69,6 +71,7 @@ namespace UserManagement.Helper
 		/// <returns></returns>
 		public async Task<UserDetails> UserLogin(Login userLogin)
 		{
+			//Input is userName and userPassword
 			return  await _iUserRepository.UserLogin(userLogin);
 		}
 		/// <summary>
@@ -80,6 +83,7 @@ namespace UserManagement.Helper
 		{
 			try
 			{
+				//Input for this update method is userDetails if passed values are correct it will update else it throws an exception
 				bool userId = await _iUserRepository.UpdateUser(userDetails);
 				return userId;	
 				//if (userId == true)
@@ -100,6 +104,7 @@ namespace UserManagement.Helper
 		{
 			try
 			{
+				//Returns Users list present in the database else if nothing exists it will returns exception
 				List<UserDetails> userDetails = await _iUserRepository.GetAllUsers();
 				return userDetails;	
 			}

@@ -66,9 +66,9 @@
 <div>
     @Html.ActionLink("Back to List", "GetAllNotifications", "Notification", new { id = TempData["id"] })
 </div>
-<div>
+@*<div>
     <a asp-action="Index">Back to List</a>
-</div>
+</div>*@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

@@ -42,21 +42,33 @@
             <summary>
             Find a User by  userid
             </summary>
-            <param name="username"></param>
+            <param name="userId"></param>
             <returns></returns>
+            <response code="200">Successful operation</response>
+            <response code="400">Bad Request/Request Invalid </response>
+            <response code="404">Requested Resouce  not found</response>
+            <response code="500">Internal server Error</response>
         </member>
         <member name="M:UserManagement.UserController.GetAllUsers">
             <summary>
             Get all Users in a List
             </summary>
             <returns></returns>
+            /// <response code="200">Successful operation</response>
+            <response code="400">Bad Request/Request Invalid </response>
+            <response code="404">Requested Resouce  not found</response>
+            <response code="500">Internal server Error</response>
         </member>
         <member name="M:UserManagement.UserController.UserLogin(SHR_Model.Login)">
             <summary>
             Login with username and password
             </summary>
-            <param name="userDetails1"></param>
+            <param name="userLogin"></param>
             <returns></returns>
+            /// <response code="200">Successful operation</response>
+            <response code="400">Bad Request/Request Invalid </response>
+            <response code="404">Requested Resouce  not found</response>
+            <response code="500">Internal server Error</response>
         </member>
         <member name="M:UserManagement.UserController.RegisterUser(NotificationManagementDBEntity.Models.UserDetails)">
             <summary>
@@ -64,6 +76,10 @@
             </summary>
             <param name="userDetails"></param>
             <returns></returns>
+            /// <response code="200">Successful operation</response>
+            <response code="400">Bad Request/Request Invalid </response>
+            <response code="404">Requested Resouce  not found</response>
+            <response code="500">Internal server Error</response>
         </member>
         <member name="M:UserManagement.UserController.UpdateUser(NotificationManagementDBEntity.Models.UserDetails)">
             <summary>
@@ -71,6 +87,10 @@
             </summary>
             <param name="userDetails"></param>
             <returns></returns>
+            /// <response code="200">Successful operation</response>
+            <response code="400">Bad Request/Request Invalid </response>
+            <response code="404">Requested Resouce  not found</response>
+            <response code="500">Internal server Error</response>
         </member>
     </members>
 </doc>

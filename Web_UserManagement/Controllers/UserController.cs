@@ -121,7 +121,7 @@ namespace UserManagementUI.Controllers
                     user = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
                 }
             }
-           /// TempData["id"] = id;
+          
             return View(user);
         }
         [HttpPost]

@@ -29,15 +29,20 @@ namespace UserManagement
         /// </summary>
         /// <param name="userId"></param>
         /// <returns></returns>
-
+        /// <response code="200">Successful operation</response>
+        /// <response code="400">Bad Request/Request Invalid </response>
+        /// <response code="404">Requested Resouce  not found</response>
+        /// <response code="500">Internal server Error</response>
         [HttpGet]
         [Route("GetUser/{userId}")]
-        [ProducesResponseType(200, Type = typeof(UserDetails))]
+        [ProducesResponseType(200, Type = typeof(int))]
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> GetUser(int userId)
         {
             try
             {
+                //Input for this method is userId which is of integer datatatype
+                //Returns UserDetails if the entered userId is valid else it returns exception message 
                 return Ok(await _iUserManagementHelper.GetUser(userId));
             }
 
@@ -50,14 +55,19 @@ namespace UserManagement
         /// Get all Users in a List
         /// </summary>
         /// <returns></returns>
+        /// /// <response code="200">Successful operation</response>
+        /// <response code="400">Bad Request/Request Invalid </response>
+        /// <response code="404">Requested Resouce  not found</response>
+        /// <response code="500">Internal server Error</response>
         [HttpGet]
         [Route("GetAllUsers")]
-        [ProducesResponseType(200, Type = typeof(List<UserDetails>))]
+        [ProducesResponseType(200, Type = typeof(int))]
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> GetAllUsers()
         {
             try
             {
+                //Returns Users list present in the database else if nothing exists it will returns exception
                 return Ok(await _iUserManagementHelper.GetAllUsers());
             }
             catch (Exception ex)
@@ -70,6 +80,10 @@ namespace UserManagement
         /// </summary>
         /// <param name="userLogin"></param>
         /// <returns></returns>
+        /// /// <response code="200">Successful operation</response>
+        /// <response code="400">Bad Request/Request Invalid </response>
+        /// <response code="404">Requested Resouce  not found</response>
+        /// <response code="500">Internal server Error</response>
         [HttpPost]
         [Route("UserLogin")]
         [ProducesResponseType(200, Type = typeof(UserDetails))]
@@ -78,6 +92,8 @@ namespace UserManagement
         {
             try
             {
+                //Input is userName and userPassword 
+                //Returns  respected userDetails if the entered credentials are valid else it throws an exception message 
                 UserDetails userDetails= await _iUserManagementHelper.UserLogin(userLogin);
                 //_logger.LogInformation("Login was called..");
                 if (userDetails == null)
@@ -89,7 +105,7 @@ namespace UserManagement
             }
             catch (Exception ex)
             {
-                return NotFound(ex.Message);
+                return NotFound(ex.InnerException.Message);
             }
         }
         /// <summary>
@@ -97,6 +113,10 @@ namespace UserManagement
         /// </summary>
         /// <param name="userDetails"></param>
         /// <returns></returns>
+        /// /// <response code="200">Successful operation</response>
+        /// <response code="400">Bad Request/Request Invalid </response>
+        /// <response code="404">Requested Resouce  not found</response>
+        /// <response code="500">Internal server Error</response>
         [Route("RegisterUser")]
         [HttpPost]
         [ProducesResponseType(200, Type = typeof(bool))]
@@ -105,6 +125,7 @@ namespace UserManagement
         {
             try
             {
+                //Input for this Register i userDetails if passed values are correct the user registration is successfull else it throws an exception
                 await _iUserManagementHelper.RegisterUser(userDetails);
                 return Ok();
             }
@@ -120,6 +141,10 @@ namespace UserManagement
         /// </summary>
         /// <param name="userDetails"></param>
         /// <returns></returns>
+        /// /// <response code="200">Successful operation</response>
+        /// <response code="400">Bad Request/Request Invalid </response>
+        /// <response code="404">Requested Resouce  not found</response>
+        /// <response code="500">Internal server Error</response>
         [HttpPut]
         [Route("UpdateUser")]
         [ProducesResponseType(200, Type = typeof(bool))]
@@ -128,12 +153,13 @@ namespace UserManagement
         {
             try
             {
+                //Input for this update method is userDetails if passed values are correct it will update else it throws an exception
                 await _iUserManagementHelper.UpdateUser(userDetails);
                 return Ok();
             }
             catch (Exception ex)
             {
-                return NotFound(ex.Message);
+                return NotFound(ex.InnerException.Message);
             }
         }
     }

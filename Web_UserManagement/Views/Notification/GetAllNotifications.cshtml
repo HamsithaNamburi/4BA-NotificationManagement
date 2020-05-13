@@ -8,7 +8,7 @@
 
 <p>
     <a asp-action="AddNotification">Add New Notification</a>&nbsp;&nbsp;
-    <a asp-action="GetUser" asp-controller="User">View User Details</a>
+    @*<a asp-action="GetUser" asp-controller="User">View User Details</a>*@
 </p>
 <table class="table">
     <thead>
@@ -40,20 +40,13 @@
                 </td>
                 <td>
                     @Html.ActionLink("Edit", "UpdateNotification", new { id = item.NotificationId }) |
-                    @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+                   
                     @Html.ActionLink("Delete", "DeleteNotification", new { id = item.NotificationId })
                 </td>
             </tr>
 
 
-            @*<td>
-                    @Html.ActionLink("Edit", "UpdateProduct", new { id = item.ProductId }) |
-                    @Html.ActionLink("Details", "GetProductById", new { id = item.ProductId }) |
-                    @Html.ActionLink("Delete", "DeleteProduct", new { id = item.ProductId })
-                </td>
-                </tr>
-            }
-            *@
+          
         }
 
         <tr>

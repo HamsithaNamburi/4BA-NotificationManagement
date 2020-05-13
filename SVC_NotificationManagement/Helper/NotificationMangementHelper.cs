@@ -31,6 +31,7 @@ namespace NotificationManagement.Helper
 		{
 			try
 			{
+				//checking the notifications , if exists it will return list of notifications else it will return null
 				Notifications notifications = await _iNotificationRepository.GetNotification(notificationId);
 				if(notifications != null)
 				{
@@ -55,6 +56,7 @@ namespace NotificationManagement.Helper
 		{
 			try
 			{
+				//It will add the notification and returns bool value if added else throws an exception 
 				bool notification = await _iNotificationRepository.AddNotification(notifications);
 				return notification;
 			}
@@ -72,6 +74,7 @@ namespace NotificationManagement.Helper
 		{
 			try
 			{
+				//It will delete the notification if the notificationId exists else throws an exception
 				bool result = await _iNotificationRepository.DeleteNotification(notificationId);
 				if (result == true)
 					return true;
@@ -92,6 +95,8 @@ namespace NotificationManagement.Helper
 		{
 			try
 			{
+				//Retuens all the notifications which exists on the particular UserId profile, 
+				//If exists returns list of notifications else throws exception
 				List<Notifications> notifications = await _iNotificationRepository.GetAllNotifications(userId);
 				if (notifications != null)
 				{
@@ -115,6 +120,7 @@ namespace NotificationManagement.Helper
 		{
 			try
 			{
+				//It will Update the existing notification and returns true if updates else throws an exception
 				bool result = await _iNotificationRepository.UpdateNotification(notifications);
 				if (result == true)
 					return true;

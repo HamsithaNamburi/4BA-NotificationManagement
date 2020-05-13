@@ -4689,25 +4689,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Devika\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Notication1\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj",
+      "projectUniqueName": "C:\\notify3\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj",
       "projectName": "SHR_Utility",
-      "projectPath": "E:\\Notication1\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj",
-      "packagesPath": "C:\\Users\\Devika\\.nuget\\packages\\",
-      "outputPath": "E:\\Notication1\\4BA-NotificationManagement\\SHR_Utility\\obj\\",
+      "projectPath": "C:\\notify3\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "C:\\notify3\\4BA-NotificationManagement\\SHR_Utility\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Devika\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

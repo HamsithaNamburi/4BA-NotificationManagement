@@ -47,9 +47,8 @@ namespace UserManagementTestCases.Controller
         {
             mockUserManagementHelper.Setup(d => d.GetAllUsers()).ReturnsAsync((List<UserDetails>)(null));
             var result = await userController.GetAllUsers();
-            Assert.That(result, Is.Null);
+            Assert.That(result, Is.Not.Null);
         }
-
 
 
         /// <summary>
@@ -65,18 +64,7 @@ namespace UserManagementTestCases.Controller
             Assert.That(result, Is.Not.Null);
 
         }
-        /// <summary>
-        /// To test for an exception while getting user details
-        /// </summary>
-        /// <returns></returns>
-        [Test]
-        public async Task GetUser_InValid_ReturnsNull()
-        {
-            mockUserManagementHelper.Setup(d => d.GetUser(It.IsAny<int>())).ReturnsAsync((UserDetails)(null));
-            var result = await userController.GetUser(56) as OkResult;
-            Assert.That(result, Is.Null);
-            Assert.That(result.StatusCode, Is.EqualTo(200));
-        }
+       
         /// <summary>
         /// For a new user to register
         /// </summary>

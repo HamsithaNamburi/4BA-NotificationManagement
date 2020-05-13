@@ -45,6 +45,10 @@
             </summary>
             <param name="notificationId"></param>
             <returns></returns>
+            /// <response code="200">Successful operation</response>
+            <response code="400">Bad Request/Request Invalid </response>
+            <response code="404">Requested Resouce  not found</response>
+            <response code="500">Internal server Error</response>
         </member>
         <member name="M:NotificationManagement.NotificationController.GetAllNotifications(System.Int32)">
             <summary>
@@ -52,6 +56,10 @@
             </summary>
             <param name="userId"></param>
             <returns></returns>
+            /// <response code="200">Successful operation</response>
+            <response code="400">Bad Request/Request Invalid </response>
+            <response code="404">Requested Resouce  not found</response>
+            <response code="500">Internal server Error</response>
         </member>
         <member name="M:NotificationManagement.NotificationController.AddNotification(NotificationManagementDBEntity.Models.Notifications)">
             <summary>
@@ -59,6 +67,10 @@
             </summary>
             <param name="notifications"></param>
             <returns></returns>
+            /// <response code="200">Successful operation</response>
+            <response code="400">Bad Request/Request Invalid </response>
+            <response code="404">Requested Resouce  not found</response>
+            <response code="500">Internal server Error</response>
         </member>
         <member name="M:NotificationManagement.NotificationController.UpdateNotification(NotificationManagementDBEntity.Models.Notifications)">
             <summary>
@@ -66,6 +78,10 @@
             </summary>
             <param name="notifications"></param>
             <returns></returns>
+            /// <response code="200">Successful operation</response>
+            <response code="400">Bad Request/Request Invalid </response>
+            <response code="404">Requested Resouce  not found</response>
+            <response code="500">Internal server Error</response>
         </member>
         <member name="M:NotificationManagement.NotificationController.DeleteNotification(System.Int32)">
             <summary>
@@ -73,6 +89,10 @@
             </summary>
             <param name="notificationId"></param>
             <returns></returns>
+            /// <response code="200">Successful operation</response>
+            <response code="400">Bad Request/Request Invalid </response>
+            <response code="404">Requested Resouce  not found</response>
+            <response code="500">Internal server Error</response>
         </member>
     </members>
 </doc>

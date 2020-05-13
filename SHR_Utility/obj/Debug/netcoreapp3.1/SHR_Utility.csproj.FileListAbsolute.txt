@@ -86,3 +86,14 @@ E:\Notication1\4BA-NotificationManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SH
 E:\Notication1\4BA-NotificationManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.AssemblyInfo.cs
 E:\Notication1\4BA-NotificationManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.dll
 E:\Notication1\4BA-NotificationManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.pdb
+C:\notify3\4BA-NotificationManagement\SHR_Utility\bin\Debug\netcoreapp3.1\bin\Debug\netcoreapp3.1\log4net.config
+C:\notify3\4BA-NotificationManagement\SHR_Utility\bin\Debug\netcoreapp3.1\log4net.config
+C:\notify3\4BA-NotificationManagement\SHR_Utility\bin\Debug\netcoreapp3.1\SHR_Utility.deps.json
+C:\notify3\4BA-NotificationManagement\SHR_Utility\bin\Debug\netcoreapp3.1\SHR_Utility.dll
+C:\notify3\4BA-NotificationManagement\SHR_Utility\bin\Debug\netcoreapp3.1\SHR_Utility.pdb
+C:\notify3\4BA-NotificationManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.csprojAssemblyReference.cache
+C:\notify3\4BA-NotificationManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.csproj.CoreCompileInputs.cache
+C:\notify3\4BA-NotificationManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.AssemblyInfoInputs.cache
+C:\notify3\4BA-NotificationManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.AssemblyInfo.cs
+C:\notify3\4BA-NotificationManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.dll
+C:\notify3\4BA-NotificationManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.pdb
