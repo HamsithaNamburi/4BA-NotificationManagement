@@ -14,6 +14,7 @@ using NotificationManagementDBEntity.Models;
 using NotificationManagementDBEntity.Repositories;
 using Microsoft.OpenApi.Models;
 using Microsoft.Extensions.Logging;
+using NotificationManagement.Extensions;
 
 namespace NotificationManagement
 {
@@ -23,7 +24,16 @@ namespace NotificationManagement
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            
+            
+            services.AddMvcCore(
+             config =>
+             {
+
+                 config.Filters.Add(typeof(CustomExceptionFilter));
+
+             }
+           );
             services.AddDbContext<NotificationDBContext>();
             services.AddTransient<INotificationManagementHelper,NotificationMangementHelper>();
             services.AddTransient<INotificationRepository,NotificationRepository>();

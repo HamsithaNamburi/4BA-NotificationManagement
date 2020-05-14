@@ -17,6 +17,7 @@ using Microsoft.OpenApi.Models;
 using log4net;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
+using UserManagement.Extensions;
 
 namespace UserManagement
 {
@@ -26,7 +27,15 @@ namespace UserManagement
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            
+            services.AddMvcCore(
+              config =>
+              {
+
+                  config.Filters.Add(typeof(CustomExceptionFilter));
+
+              }
+            );
             services.AddDbContext<NotificationDBContext>();
             services.AddTransient<IUserManagementHelper,UserManagementHelper>();
             services.AddTransient<IUserRepository,UserRepository>();
@@ -63,7 +72,7 @@ namespace UserManagement
             {
                 app.UseDeveloperExceptionPage();
             }
-            //loggerFactory.AddLog4Net();
+            
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>

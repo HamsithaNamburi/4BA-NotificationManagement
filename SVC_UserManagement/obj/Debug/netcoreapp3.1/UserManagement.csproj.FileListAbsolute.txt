@@ -1947,9 +1947,6 @@ C:\notify3\4BA-NotificationManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1
 C:\notify3\4BA-NotificationManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\SHR_Model.pdb
 C:\notify3\4BA-NotificationManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\SHR_Utility.pdb
 C:\notify3\4BA-NotificationManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.csprojAssemblyReference.cache
-C:\notify3\4BA-NotificationManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.csproj.CoreCompileInputs.cache
-C:\notify3\4BA-NotificationManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.MvcApplicationPartsAssemblyInfo.cs
-C:\notify3\4BA-NotificationManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.MvcApplicationPartsAssemblyInfo.cache
 C:\notify3\4BA-NotificationManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.RazorAssemblyInfo.cache
 C:\notify3\4BA-NotificationManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.RazorAssemblyInfo.cs
 C:\notify3\4BA-NotificationManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.AssemblyInfoInputs.cache
@@ -1968,3 +1965,8 @@ C:\notify3\4BA-NotificationManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1
 C:\notify3\4BA-NotificationManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.xml
 C:\notify3\4BA-NotificationManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.pdb
 C:\notify3\4BA-NotificationManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.genruntimeconfig.cache
+C:\notify3\4BA-NotificationManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.csproj.CoreCompileInputs.cache
+C:\notify3\4BA-NotificationManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.MvcApplicationPartsAssemblyInfo.cs
+C:\notify3\4BA-NotificationManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.MvcApplicationPartsAssemblyInfo.cache
+C:\notify3\4BA-NotificationManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\SHR_Extensions.dll
+C:\notify3\4BA-NotificationManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\SHR_Extensions.pdb
