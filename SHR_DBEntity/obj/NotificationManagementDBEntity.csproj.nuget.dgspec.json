@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\notify3\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj": {}
+    "D:\\UpdatedCodeWithGlobalerrors\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj": {}
   },
   "projects": {
-    "C:\\notify3\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj": {
+    "D:\\UpdatedCodeWithGlobalerrors\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\notify3\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj",
+        "projectUniqueName": "D:\\UpdatedCodeWithGlobalerrors\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj",
         "projectName": "NotificationManagementDBEntity",
-        "projectPath": "C:\\notify3\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\notify3\\4BA-NotificationManagement\\SHR_DBEntity\\obj\\",
+        "projectPath": "D:\\UpdatedCodeWithGlobalerrors\\4BA-NotificationManagement\\SHR_DBEntity\\NotificationManagementDBEntity.csproj",
+        "packagesPath": "C:\\Users\\pandu\\.nuget\\packages\\",
+        "outputPath": "D:\\UpdatedCodeWithGlobalerrors\\4BA-NotificationManagement\\SHR_DBEntity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pandu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,11 +27,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\notify3\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
-                "projectPath": "C:\\notify3\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj"
+              "D:\\UpdatedCodeWithGlobalerrors\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
+                "projectPath": "D:\\UpdatedCodeWithGlobalerrors\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj"
               },
-              "C:\\notify3\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj": {
-                "projectPath": "C:\\notify3\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj"
+              "D:\\UpdatedCodeWithGlobalerrors\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj": {
+                "projectPath": "D:\\UpdatedCodeWithGlobalerrors\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj"
               }
             }
           }
@@ -93,21 +93,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\notify3\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
+    "D:\\UpdatedCodeWithGlobalerrors\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\notify3\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj",
+        "projectUniqueName": "D:\\UpdatedCodeWithGlobalerrors\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj",
         "projectName": "SHR_Model",
-        "projectPath": "C:\\notify3\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\notify3\\4BA-NotificationManagement\\SHR_Model\\obj\\",
+        "projectPath": "D:\\UpdatedCodeWithGlobalerrors\\4BA-NotificationManagement\\SHR_Model\\SHR_Model.csproj",
+        "packagesPath": "C:\\Users\\pandu\\.nuget\\packages\\",
+        "outputPath": "D:\\UpdatedCodeWithGlobalerrors\\4BA-NotificationManagement\\SHR_Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pandu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -155,21 +155,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\notify3\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj": {
+    "D:\\UpdatedCodeWithGlobalerrors\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\notify3\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj",
+        "projectUniqueName": "D:\\UpdatedCodeWithGlobalerrors\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj",
         "projectName": "SHR_Utility",
-        "projectPath": "C:\\notify3\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\notify3\\4BA-NotificationManagement\\SHR_Utility\\obj\\",
+        "projectPath": "D:\\UpdatedCodeWithGlobalerrors\\4BA-NotificationManagement\\SHR_Utility\\SHR_Utility.csproj",
+        "packagesPath": "C:\\Users\\pandu\\.nuget\\packages\\",
+        "outputPath": "D:\\UpdatedCodeWithGlobalerrors\\4BA-NotificationManagement\\SHR_Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pandu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -213,7 +213,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

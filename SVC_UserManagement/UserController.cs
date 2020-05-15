@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using log4net;
 using log4net.Config;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using NotificationManagementDBEntity.Models;
@@ -17,6 +18,7 @@ using UserManagement.Helper;
 
 namespace UserManagement
 {
+    [Authorize]
 	[Route("api/v1")]
     [ApiController]
 	public class UserController : Controller

@@ -23,7 +23,7 @@ namespace NotificationManagementDBEntity.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=DESKTOP-T40RCFR\\SQLEXPRESS;Database=NotificationDB;User Id=sa; Password=madhu;");
+                optionsBuilder.UseSqlServer("Server=LAPTOP-GFKKAA48\\SQLEXPRESS;Database=NotificationDB;User Id=sa; Password=hamsitha@28;");
             }
         }
 
@@ -32,7 +32,7 @@ namespace NotificationManagementDBEntity.Models
             modelBuilder.Entity<Notifications>(entity =>
             {
                 entity.HasKey(e => e.NotificationId)
-                    .HasName("PK__Notifica__20CF2E127DCA8DFE");
+                    .HasName("PK__Notifica__20CF2E122C031FC0");
 
                 entity.Property(e => e.CreatedDatetime)
                     .HasColumnType("datetime")
@@ -52,16 +52,16 @@ namespace NotificationManagementDBEntity.Models
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.Notifications)
                     .HasForeignKey(d => d.UserId)
-                    .HasConstraintName("FK__Notificat__UserI__3B75D760");
+                    .HasConstraintName("FK__Notificat__UserI__15502E78");
             });
 
             modelBuilder.Entity<UserDetails>(entity =>
             {
                 entity.HasKey(e => e.UserId)
-                    .HasName("PK__UserDeta__1788CC4C420F8C93");
+                    .HasName("PK__UserDeta__1788CC4C88082E0A");
 
                 entity.HasIndex(e => e.UserName)
-                    .HasName("UQ__UserDeta__C9F284562F7B7E5B")
+                    .HasName("UQ__UserDeta__C9F284565B56FC99")
                     .IsUnique();
 
                 entity.Property(e => e.ContactNumber)
@@ -89,7 +89,7 @@ namespace NotificationManagementDBEntity.Models
                 entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
 
                 entity.Property(e => e.UserAddress)
-                    .HasMaxLength(500)
+                    .HasMaxLength(250)
                     .IsUnicode(false);
 
                 entity.Property(e => e.UserName)

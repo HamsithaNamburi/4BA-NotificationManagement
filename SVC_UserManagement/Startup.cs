@@ -18,6 +18,7 @@ using log4net;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using UserManagement.Extensions;
+using UserManagement.Athuentication_Demo;
 
 namespace UserManagement
 {
@@ -62,6 +63,14 @@ namespace UserManagement
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
             });
+            services.AddAuthentication("Basic")
+
+.AddScheme<BasicAuthenticationOptions, CustomAuthenticationHandler>("Basic", null);
+            services.AddTransient<ICustomAuthenticationManager, CustomAuthenticationManager>();
+
+
+
+
         }
 
 
@@ -74,7 +83,8 @@ namespace UserManagement
             }
             
             app.UseRouting();
-
+            app.UseAuthentication();
+            app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 

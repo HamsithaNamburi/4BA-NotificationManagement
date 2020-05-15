@@ -32,7 +32,6 @@
           "NLog": "4.7.0",
           "NLog.Web.AspNetCore": "4.9.2",
           "NotificationManagementDBEntity": "1.0.0",
-          "SHR_Extensions": "1.0.0",
           "SHR_Model": "1.0.0",
           "SHR_Utility": "1.0.0",
           "Swashbuckle.AspNetCore": "5.4.1",
@@ -2446,17 +2445,6 @@
         },
         "compile": {
           "NotificationManagementDBEntity.dll": {}
-        }
-      },
-      "SHR_Extensions/1.0.0": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0"
-        },
-        "runtime": {
-          "SHR_Extensions.dll": {}
-        },
-        "compile": {
-          "SHR_Extensions.dll": {}
         }
       },
       "SHR_Model/1.0.0": {
@@ -5370,11 +5358,6 @@
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
     },
     "NotificationManagementDBEntity/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "SHR_Extensions/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
