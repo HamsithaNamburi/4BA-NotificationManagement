@@ -18,10 +18,11 @@ using UserManagement.Helper;
 
 namespace UserManagement
 {
-    [Authorize]
+  
 	[Route("api/v1")]
     [ApiController]
-	public class UserController : Controller
+ //   [Authorize]
+    public class UserController : Controller
 	{
         private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         private readonly IUserManagementHelper _iUserManagementHelper;
